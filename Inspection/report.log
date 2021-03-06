@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  4 MAR 2021 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  6 MAR 2021 16:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,7 +521,7 @@ LaTeX Info: Redefining \nameref on input line 22.
 \openout4 = `report.out'.
 
 \c@lstlisting=\count306
-<images/polimi.jpg, id=20, 1303.87125pt x 1013.7875pt>
+<images/polimi.jpg, id=44, 1303.87125pt x 1013.7875pt>
 File: images/polimi.jpg Graphic file (type jpg)
 <use images/polimi.jpg>
 Package pdftex.def Info: images/polimi.jpg  used on input line 26.
@@ -564,7 +564,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/polimi.jpg>]
-(./report.toc)
+(./report.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 5.
+)
 \tf@toc=\write5
 \openout5 = `report.toc'.
 
@@ -579,24 +586,38 @@ l.57 \chapter
 Chapter 1.
 (./assets/abstract.tex) [2
 
-]
-Chapter 2.
-(./assets/scenarios.tex) [3
+] [3
 
 ]
+Chapter 2.
+(./assets/overview.tex
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
+.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [4
+
+]) [5]
 Chapter 3.
-(./assets/execution.tex) [4
+(./assets/heuristics.tex) [6
 
 ]
 Chapter 4.
-(./assets/result.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
- [5
+(./assets/result.tex) [7
+
+] [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
+Chapter 5.
+(./assets/conclusion.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
+ [9
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
 
 
  *File List*
@@ -676,36 +697,39 @@ images/polimi.jpg
  omslmsy.fd    2009/10/30 v1.6 Font defs for Latin Modern
  omxlmex.fd    2009/10/30 v1.6 Font defs for Latin Modern
 assets/abstract.tex
-assets/scenarios.tex
-assets/execution.tex
+assets/overview.tex
+  ts1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
+assets/heuristics.tex
 assets/result.tex
+assets/conclusion.tex
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 81919E28264C4E6876EFA8FE4BBE0B72;172.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
+(rerunfilecheck)             Checksum: 41C3B758D39A9C500C36CAFD6CEAC4F3;541.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 11437 strings out of 480608
- 179706 string characters out of 5903629
- 504419 words of memory out of 5000000
- 27089 multiletter control sequences out of 15000+600000
- 564484 words of font info for 48 fonts, out of 8000000 for 9000
+ 11535 strings out of 480608
+ 181470 string characters out of 5903629
+ 506419 words of memory out of 5000000
+ 27153 multiletter control sequences out of 15000+600000
+ 578999 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,5n,45p,940b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
-texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive/2020
-/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
-1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/l
-m/lmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.p
-fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/lo
-cal/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on report.pdf (6 pages, 984917 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
+/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/
+texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive/2020/texmf-dist/f
+onts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/l
+mbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/loca
+l/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on report.pdf (10 pages, 1007429 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 10278 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 12886 words of extra memory for PDF output out of 14400 (max. 10000000)
 

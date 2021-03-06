@@ -1,4 +1,10 @@
 \BOOKMARK [0][-]{chapter.1}{Abstract}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Scenarios}{}% 2
-\BOOKMARK [0][-]{chapter.3}{Execution}{}% 3
-\BOOKMARK [0][-]{chapter.4}{Result}{}% 4
+\BOOKMARK [-1][-]{part.1}{I Inspection}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Overview}{part.1}% 3
+\BOOKMARK [1][-]{section.2.1}{Goals}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Inspection method}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Scoring metric}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.3}{Scores on each heuristics}{part.1}% 7
+\BOOKMARK [0][-]{chapter.4}{Result and Discussion}{part.1}% 8
+\BOOKMARK [-1][-]{part.2}{II Usability Test}{}% 9
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{part.2}% 10

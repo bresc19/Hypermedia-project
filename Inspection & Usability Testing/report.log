@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  7 MAR 2021 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  10 MAR 2021 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -425,7 +425,14 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 LaTeX Warning: Unused global option(s):
     [fontsize=11pt,paper=a4,pagesize=auto].
 
-(./report.aux)
+(./report.aux
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -521,50 +528,38 @@ LaTeX Info: Redefining \nameref on input line 22.
 \openout4 = `report.out'.
 
 \c@lstlisting=\count306
-<images/polimi.jpg, id=44, 1303.87125pt x 1013.7875pt>
+<images/polimi.jpg, id=100, 1303.87125pt x 1013.7875pt>
 File: images/polimi.jpg Graphic file (type jpg)
 <use images/polimi.jpg>
 Package pdftex.def Info: images/polimi.jpg  used on input line 26.
 (pdftex.def)             Requested size: 325.96701pt x 253.44626pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-47.
+<images/moviri-logo.png, id=101, 521.95pt x 260.975pt>
+File: images/moviri-logo.png Graphic file (type png)
+<use images/moviri-logo.png>
+Package pdftex.def Info: images/moviri-logo.png  used on input line 46.
+(pdftex.def)             Requested size: 156.5862pt x 78.29309pt.
+ [1
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
-7.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
+s/polimi.jpg> <./images/moviri-logo.png>]
+(./report.toc
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
+.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-47.
+5.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-47.
+5.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 47.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 47.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 47.
- [1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/polimi.jpg>]
-(./report.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -579,7 +574,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \chapter
+l.54 \chapter
              {Abstract} [1
 
 ]
@@ -600,24 +595,24 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ]) [5] [6]
 Chapter 3.
-(./assets/heuristics.tex) [7
+(./assets/heuristics.tex [7
 
-]
+] [8]) [9]
 Chapter 4.
-(./assets/result.tex) [8
+(./assets/result.tex) [10
 
-] [9
+] [11
 
 ]
 Chapter 5.
 (./assets/conclusion.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
- [10
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
+ [12
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
 
 
  *File List*
@@ -692,7 +687,7 @@ gettitlestring.sty    2019/12/15 v1.6 Cleanup title references (HO)
   report.out
   report.out
 images/polimi.jpg
- ot1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
+images/moviri-logo.png
   omllmm.fd    2009/10/30 v1.6 Font defs for Latin Modern
  omslmsy.fd    2009/10/30 v1.6 Font defs for Latin Modern
  omxlmex.fd    2009/10/30 v1.6 Font defs for Latin Modern
@@ -704,33 +699,34 @@ assets/result.tex
 assets/conclusion.tex
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 41C3B758D39A9C500C36CAFD6CEAC4F3;541.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+(rerunfilecheck)             Checksum: C730FD79E920BEC566FB80104EE6BD7D;1533.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 11550 strings out of 480608
- 181656 string characters out of 5903629
- 508419 words of memory out of 5000000
- 27156 multiletter control sequences out of 15000+600000
- 583720 words of font info for 70 fonts, out of 8000000 for 9000
+ 11554 strings out of 480608
+ 181500 string characters out of 5903629
+ 509524 words of memory out of 5000000
+ 27123 multiletter control sequences out of 15000+600000
+ 582472 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,5n,45p,940b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,8n,45p,940b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
 /texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/
-texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive/2020/texmf-dist/f
-onts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/p
-ublic/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/l
-mbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on report.pdf (11 pages, 1020656 bytes).
+texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm
+/lmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
+Output written on report.pdf (13 pages, 1031864 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 14934 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 14539 words of extra memory for PDF output out of 17280 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  17 MAR 2021 10:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  20 MAR 2021 23:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -435,35 +435,35 @@ LaTeX Warning: Label `tab:table1' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-2.
+1.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 22.
+LaTeX Info: Redefining \microtypecontext on input line 21.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 22.
+LaTeX Info: Redefining \showhyphens on input line 21.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -506,7 +506,7 @@ Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 21.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -520,23 +520,23 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count305
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
  (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
 \c@lstlisting=\count306
-<images/polimi.jpg, id=100, 1303.87125pt x 1013.7875pt>
+<images/polimi.jpg, id=116, 1303.87125pt x 1013.7875pt>
 File: images/polimi.jpg Graphic file (type jpg)
 <use images/polimi.jpg>
-Package pdftex.def Info: images/polimi.jpg  used on input line 26.
+Package pdftex.def Info: images/polimi.jpg  used on input line 25.
 (pdftex.def)             Requested size: 325.96701pt x 253.44626pt.
-<images/moviri-logo.png, id=101, 521.95pt x 260.975pt>
+<images/moviri-logo.png, id=117, 521.95pt x 260.975pt>
 File: images/moviri-logo.png Graphic file (type png)
 <use images/moviri-logo.png>
-Package pdftex.def Info: images/moviri-logo.png  used on input line 46.
+Package pdftex.def Info: images/moviri-logo.png  used on input line 45.
 (pdftex.def)             Requested size: 156.5862pt x 78.29309pt.
  [1
 
@@ -566,22 +566,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 5.
-)
-\tf@toc=\write5
-\openout5 = `report.toc'.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \chapter
-             {Abstract} [1
+l.28 ...e {6}Result Usability test}{17}{chapter.6}
+                                                  % [1
 
-]
+])
+\tf@toc=\write5
+\openout5 = `report.toc'.
+
+ [2]
 Chapter 1.
-(./assets/abstract.tex) [2
+(./assets/abstract.tex) [3
 
-] [3
+] [4
 
 ]
 Chapter 2.
@@ -591,34 +591,34 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4
+) [5
 
-]) [5] [6]
+]) [6] [7]
 Chapter 3.
 (./assets/heuristics.tex
 Overfull \hbox (53.07373pt too wide) in paragraph at lines 6--20
  [] 
  []
 
-[7
+[8
 
 ]
-<images/header.png, id=175, 1203.49625pt x 48.18pt>
+<images/header.png, id=199, 1203.49625pt x 48.18pt>
 File: images/header.png Graphic file (type png)
 <use images/header.png>
 Package pdftex.def Info: images/header.png  used on input line 42.
 (pdftex.def)             Requested size: 421.23pt x 16.86324pt.
-<images/topbar.png, id=176, 1215.54124pt x 61.73062pt>
+<images/topbar.png, id=200, 1215.54124pt x 61.73062pt>
 File: images/topbar.png Graphic file (type png)
 <use images/topbar.png>
 Package pdftex.def Info: images/topbar.png  used on input line 50.
 (pdftex.def)             Requested size: 425.44582pt x 21.60603pt.
-<images/footer.png, id=177, 1076.52188pt x 243.40938pt>
+<images/footer.png, id=201, 1076.52188pt x 243.40938pt>
 File: images/footer.png Graphic file (type png)
 <use images/footer.png>
 Package pdftex.def Info: images/footer.png  used on input line 58.
 (pdftex.def)             Requested size: 376.7883pt x 85.19455pt.
- [8 <./images/header.png> <./images/topbar.png> <./images/footer.png>]
+ [9 <./images/header.png> <./images/topbar.png> <./images/footer.png>]
 Excluding 'comment' comment.
 Overfull \hbox (44.37888pt too wide) in paragraph at lines 85--92
  [] 
@@ -629,22 +629,30 @@ Overfull \hbox (107.12924pt too wide) in paragraph at lines 103--118
  [] 
  []
 
-[9] Excluding 'comment' comment. [10]) [11]
+[10] Excluding 'comment' comment. [11]) [12]
 Chapter 4.
-(./assets/result.tex) [12
+(./assets/result.tex [13
 
-] [13] [14
+]) [14] [15
 
 ]
 Chapter 5.
-(./assets/conclusion.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
- [15
+(./assets/overviewTest.tex) [16
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
+Chapter 6.
+(./assets/resultTest.tex) [17
+
+]
+Chapter 7.
+(./assets/conclusion.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+ [18
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 
 
  *File List*
@@ -731,31 +739,27 @@ images/header.png
 images/topbar.png
 images/footer.png
 assets/result.tex
+assets/overviewTest.tex
+assets/resultTest.tex
 assets/conclusion.tex
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: C730FD79E920BEC566FB80104EE6BD7D;1533
-(rerunfilecheck)             After:  E01A00EB5B6B1160224D134405403137;1586.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 366A90158E45CDCA0513691733C76CD8;1754.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 11606 strings out of 480608
- 182225 string characters out of 5903629
+ 11626 strings out of 480608
+ 182519 string characters out of 5903629
  510717 words of memory out of 5000000
- 27151 multiletter control sequences out of 15000+600000
+ 27159 multiletter control sequences out of 15000+600000
  583053 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,45p,940b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,45p,940b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
 /texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/
 texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2020/texmf-dist/f
@@ -764,10 +768,10 @@ onts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
 /lmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pf
 b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on report.pdf (16 pages, 1121153 bytes).
+Output written on report.pdf (19 pages, 1123510 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 14554 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 14586 words of extra memory for PDF output out of 17280 (max. 10000000)
 

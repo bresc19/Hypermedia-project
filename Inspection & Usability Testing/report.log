@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  21 MAR 2021 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  21 MAR 2021 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -432,6 +432,9 @@ LaTeX Warning: Label `tab:table1' multiply defined.
 
 LaTeX Warning: Label `tab:table1' multiply defined.
 
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
 )
 \openout1 = `report.aux'.
 
@@ -528,12 +531,12 @@ LaTeX Info: Redefining \nameref on input line 21.
 \openout4 = `report.out'.
 
 \c@lstlisting=\count306
-<images/polimi.jpg, id=140, 1303.87125pt x 1013.7875pt>
+<images/polimi.jpg, id=128, 1303.87125pt x 1013.7875pt>
 File: images/polimi.jpg Graphic file (type jpg)
 <use images/polimi.jpg>
 Package pdftex.def Info: images/polimi.jpg  used on input line 25.
 (pdftex.def)             Requested size: 325.96701pt x 253.44626pt.
-<images/moviri-logo.png, id=141, 521.95pt x 260.975pt>
+<images/moviri-logo.png, id=129, 521.95pt x 260.975pt>
 File: images/moviri-logo.png Graphic file (type png)
 <use images/moviri-logo.png>
 Package pdftex.def Info: images/moviri-logo.png  used on input line 45.
@@ -570,7 +573,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...{5.1.1}User Profile}{16}{subsection.5.1.1}
+l.28 ... {6}Execution of the study}{20}{chapter.6}
                                                   % [1
 
 ])
@@ -579,7 +582,18 @@ l.29 ...{5.1.1}User Profile}{16}{subsection.5.1.1}
 
  [2]
 Chapter 1.
-(./assets/abstract.tex) [3
+(./assets/abstract.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+1.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [3
 
 ] [4
 
@@ -593,70 +607,69 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5
 
-]) [6] [7]
+] [6]) [7]
 Chapter 3.
 (./assets/heuristics.tex
-Overfull \hbox (53.07373pt too wide) in paragraph at lines 6--20
+Overfull \hbox (53.07373pt too wide) in paragraph at lines 8--22
  [] 
  []
 
 [8
 
 ]
-<images/header.png, id=229, 1203.49625pt x 48.18pt>
+<images/header.png, id=215, 1203.49625pt x 48.18pt>
 File: images/header.png Graphic file (type png)
 <use images/header.png>
-Package pdftex.def Info: images/header.png  used on input line 42.
+Package pdftex.def Info: images/header.png  used on input line 44.
 (pdftex.def)             Requested size: 421.23pt x 16.86324pt.
-<images/topbar.png, id=230, 1215.54124pt x 61.73062pt>
+<images/topbar.png, id=216, 1215.54124pt x 61.73062pt>
 File: images/topbar.png Graphic file (type png)
 <use images/topbar.png>
-Package pdftex.def Info: images/topbar.png  used on input line 50.
+Package pdftex.def Info: images/topbar.png  used on input line 52.
 (pdftex.def)             Requested size: 425.44582pt x 21.60603pt.
-<images/footer.png, id=231, 1076.52188pt x 243.40938pt>
+<images/footer.png, id=217, 1076.52188pt x 243.40938pt>
 File: images/footer.png Graphic file (type png)
 <use images/footer.png>
-Package pdftex.def Info: images/footer.png  used on input line 58.
+Package pdftex.def Info: images/footer.png  used on input line 60.
 (pdftex.def)             Requested size: 376.7883pt x 85.19455pt.
  [9 <./images/header.png> <./images/topbar.png> <./images/footer.png>]
-Excluding 'comment' comment.
 Overfull \hbox (44.37888pt too wide) in paragraph at lines 85--92
  [] 
  []
 
 
-Overfull \hbox (107.12924pt too wide) in paragraph at lines 103--118
+Overfull \hbox (107.12924pt too wide) in paragraph at lines 104--119
  [] 
  []
 
-[10] Excluding 'comment' comment. [11]) [12]
-Chapter 4.
-(./assets/result.tex [13
+[10] [11]
+Overfull \hbox (115.87914pt too wide) in paragraph at lines 149--165
+ [] 
+ []
 
-]) [14] [15
+[12]) [13]
+Chapter 4.
+(./assets/result.tex [14
+
+]) [15] [16
 
 ]
 Chapter 5.
-(./assets/overviewTest.tex [16
+(./assets/overviewTest.tex [17
 
-]) [17] [18]
+] [18]) [19]
 Chapter 6.
-(./assets/executionTest.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 3.
-
-) [19
+(./assets/executionTest.tex) [20
 
 ]
 Chapter 7.
-(./assets/resultTest.tex) [20
+(./assets/resultTest.tex) [21
 
 ]
 Chapter 8.
 (./assets/conclusion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
- [21
+ [22
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
@@ -741,6 +754,7 @@ images/moviri-logo.png
  omslmsy.fd    2009/10/30 v1.6 Font defs for Latin Modern
  omxlmex.fd    2009/10/30 v1.6 Font defs for Latin Modern
 assets/abstract.tex
+ ot1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
 assets/overview.tex
   ts1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
 assets/heuristics.tex
@@ -755,39 +769,35 @@ assets/conclusion.tex
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 97D898C2E565C161D6D85483C5930195;2149
-(rerunfilecheck)             After:  97C4A6C67F3794FC44B97F4E3AC7C805;2231.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 976D1C03DE8423C3B61A90152457C59E;1879.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
- 11661 strings out of 480608
- 182988 string characters out of 5903629
- 510717 words of memory out of 5000000
- 27167 multiletter control sequences out of 15000+600000
- 583678 words of font info for 88 fonts, out of 8000000 for 9000
+ 11713 strings out of 480608
+ 183735 string characters out of 5903629
+ 510745 words of memory out of 5000000
+ 27203 multiletter control sequences out of 15000+600000
+ 584238 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,45p,940b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,45p,940b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
 /texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/
-texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2020/texmf-dist/f
-onts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm
-/lmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pf
-b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on report.pdf (22 pages, 1133512 bytes).
+texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive/2020/texmf-dist/f
+onts/enc/dvips/lm/lm-rmsc.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/l
+mbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/loca
+l/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on report.pdf (23 pages, 1161546 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
- 14634 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 341 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 15122 words of extra memory for PDF output out of 17280 (max. 10000000)
 

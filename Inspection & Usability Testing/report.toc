@@ -25,5 +25,12 @@
 \contentsline {section}{\numberline {4.2}Comments}{14}{section.4.2}%
 \contentsline {part}{II\hspace {1em}Usability Test}{15}{part.2}%
 \contentsline {chapter}{\numberline {5}Overview}{16}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Result Usability test}{17}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion}{18}{chapter.7}%
+\contentsline {section}{\numberline {5.1}Design of the study}{16}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}User Profile}{16}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Scenarios}{16}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Variable Measure}{17}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Final Survey}{18}{subsection.5.1.4}%
+\contentsline {chapter}{\numberline {6}Execution of the study}{19}{chapter.6}%
+\contentsline {subsection}{\numberline {6.0.1}Hardware and Software settings}{19}{subsection.6.0.1}%
+\contentsline {chapter}{\numberline {7}Result Usability test}{20}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusion}{21}{chapter.8}%

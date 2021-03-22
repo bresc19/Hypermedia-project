@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  21 MAR 2021 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  22 MAR 2021 12:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -435,38 +435,68 @@ LaTeX Warning: Label `tab:table1' multiply defined.
 
 LaTeX Warning: Label `tab:table1' multiply defined.
 
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-1.
+2.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 21.
+LaTeX Info: Redefining \microtypecontext on input line 22.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 21.
+LaTeX Info: Redefining \showhyphens on input line 22.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -509,7 +539,7 @@ Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -523,23 +553,23 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count305
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
  (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
 \c@lstlisting=\count306
-<images/polimi.jpg, id=128, 1303.87125pt x 1013.7875pt>
+<images/polimi.jpg, id=160, 1303.87125pt x 1013.7875pt>
 File: images/polimi.jpg Graphic file (type jpg)
 <use images/polimi.jpg>
-Package pdftex.def Info: images/polimi.jpg  used on input line 25.
+Package pdftex.def Info: images/polimi.jpg  used on input line 26.
 (pdftex.def)             Requested size: 325.96701pt x 253.44626pt.
-<images/moviri-logo.png, id=129, 521.95pt x 260.975pt>
+<images/moviri-logo.png, id=161, 521.95pt x 260.975pt>
 File: images/moviri-logo.png Graphic file (type png)
 <use images/moviri-logo.png>
-Package pdftex.def Info: images/moviri-logo.png  used on input line 45.
+Package pdftex.def Info: images/moviri-logo.png  used on input line 46.
 (pdftex.def)             Requested size: 156.5862pt x 78.29309pt.
  [1
 
@@ -610,48 +640,64 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ] [6]) [7]
 Chapter 3.
 (./assets/heuristics.tex
-Overfull \hbox (53.07373pt too wide) in paragraph at lines 8--22
+Overfull \hbox (53.07373pt too wide) in paragraph at lines 8--23
  [] 
  []
 
 [8
 
 ]
-<images/header.png, id=215, 1203.49625pt x 48.18pt>
+<images/header.png, id=255, 1203.49625pt x 48.18pt>
 File: images/header.png Graphic file (type png)
 <use images/header.png>
-Package pdftex.def Info: images/header.png  used on input line 44.
+Package pdftex.def Info: images/header.png  used on input line 46.
 (pdftex.def)             Requested size: 421.23pt x 16.86324pt.
-<images/topbar.png, id=216, 1215.54124pt x 61.73062pt>
+<images/topbar.png, id=256, 1215.54124pt x 61.73062pt>
 File: images/topbar.png Graphic file (type png)
 <use images/topbar.png>
-Package pdftex.def Info: images/topbar.png  used on input line 52.
+Package pdftex.def Info: images/topbar.png  used on input line 54.
 (pdftex.def)             Requested size: 425.44582pt x 21.60603pt.
-<images/footer.png, id=217, 1076.52188pt x 243.40938pt>
+<images/footer.png, id=257, 1076.52188pt x 243.40938pt>
 File: images/footer.png Graphic file (type png)
 <use images/footer.png>
-Package pdftex.def Info: images/footer.png  used on input line 60.
+Package pdftex.def Info: images/footer.png  used on input line 62.
 (pdftex.def)             Requested size: 376.7883pt x 85.19455pt.
  [9 <./images/header.png> <./images/topbar.png> <./images/footer.png>]
-Overfull \hbox (44.37888pt too wide) in paragraph at lines 85--92
+Overfull \hbox (44.37888pt too wide) in paragraph at lines 87--94
  [] 
  []
 
 
-Overfull \hbox (107.12924pt too wide) in paragraph at lines 104--119
+Overfull \hbox (107.12924pt too wide) in paragraph at lines 106--121
  [] 
  []
 
 [10] [11]
-Overfull \hbox (115.87914pt too wide) in paragraph at lines 149--165
+Overfull \hbox (115.87914pt too wide) in paragraph at lines 151--167
  [] 
  []
 
 [12]) [13]
 Chapter 4.
-(./assets/result.tex [14
+(./assets/result.tex
+<images/4.png, id=289, 217.5628pt x 126.4725pt>
+File: images/4.png Graphic file (type png)
+<use images/4.png>
+Package pdftex.def Info: images/4.png  used on input line 14.
+(pdftex.def)             Requested size: 76.14812pt x 44.26602pt.
+<images/4.5.png, id=290, 219.06844pt x 128.73094pt>
+File: images/4.5.png Graphic file (type png)
+<use images/4.5.png>
+Package pdftex.def Info: images/4.5.png  used on input line 26.
+(pdftex.def)             Requested size: 76.6751pt x 45.05649pt.
+ [14
 
-]) [15] [16
+ <./images/4.png>]
+File: images/4.png Graphic file (type png)
+<use images/4.png>
+Package pdftex.def Info: images/4.png  used on input line 42.
+(pdftex.def)             Requested size: 76.14812pt x 44.26602pt.
+) [15 <./images/4.5.png>] [16
 
 ]
 Chapter 5.
@@ -659,22 +705,88 @@ Chapter 5.
 
 ] [18]) [19]
 Chapter 6.
-(./assets/executionTest.tex) [20
+(./assets/executionTest.tex
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 13--35
+ [] 
+ []
+
+[20
 
 ]
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 42--64
+ [] 
+ []
+
+
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 71--93
+ [] 
+ []
+
+[21]
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 100--122
+ [] 
+ []
+
+
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 130--152
+ [] 
+ []
+
+[22]
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 162--184
+ [] 
+ []
+
+
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 191--213
+ [] 
+ []
+
+[23]
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 220--242
+ [] 
+ []
+
+
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 249--271
+ [] 
+ []
+
+[24]
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 279--301
+ [] 
+ []
+
+) [25]
 Chapter 7.
-(./assets/resultTest.tex) [21
+(./assets/resultTest.tex
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 7--29
+ [] 
+ []
+
+
+Overfull \hbox (21.73593pt too wide) in paragraph at lines 38--60
+ [] 
+ []
+
+[26
 
 ]
+<images/averages.png, id=383, 842.14626pt x 166.6225pt>
+File: images/averages.png Graphic file (type png)
+<use images/averages.png>
+Package pdftex.def Info: images/averages.png  used on input line 68.
+(pdftex.def)             Requested size: 294.7556pt x 58.31874pt.
+) [27 <./images/averages.png>]
 Chapter 8.
 (./assets/conclusion.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
- [22
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+ [28
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 
 
  *File List*
@@ -762,26 +874,30 @@ images/header.png
 images/topbar.png
 images/footer.png
 assets/result.tex
+images/4.png
+images/4.5.png
+images/4.png
 assets/overviewTest.tex
 assets/executionTest.tex
 assets/resultTest.tex
+images/averages.png
 assets/conclusion.tex
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 976D1C03DE8423C3B61A90152457C59E;1879.
+(rerunfilecheck)             Checksum: 35A9F84A0D0B6441FD98FB2B68F04BBF;2388.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 11713 strings out of 480608
- 183735 string characters out of 5903629
- 510745 words of memory out of 5000000
- 27203 multiletter control sequences out of 15000+600000
- 584238 words of font info for 92 fonts, out of 8000000 for 9000
+ 11780 strings out of 480608
+ 184680 string characters out of 5903629
+ 526735 words of memory out of 5000000
+ 27229 multiletter control sequences out of 15000+600000
+ 584072 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,45p,940b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
@@ -794,10 +910,10 @@ mbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 l/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (23 pages, 1161546 bytes).
+Output written on report.pdf (29 pages, 1217916 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 15122 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 15201 words of extra memory for PDF output out of 17280 (max. 10000000)
 

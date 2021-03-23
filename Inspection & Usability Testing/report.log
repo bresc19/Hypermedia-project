@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  22 MAR 2021 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  23 MAR 2021 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -812,20 +812,25 @@ Overfull \hbox (21.73593pt too wide) in paragraph at lines 38--60
 [29
 
 ]
-<images/averages.png, id=424, 842.14626pt x 166.6225pt>
+<images/averages.png, id=425, 842.14626pt x 166.6225pt>
 File: images/averages.png Graphic file (type png)
 <use images/averages.png>
 Package pdftex.def Info: images/averages.png  used on input line 68.
 (pdftex.def)             Requested size: 294.7556pt x 58.31874pt.
-) [30 <./images/averages.png>]
+<images/questions.jpg, id=426, 596.2275pt x 537.00626pt>
+File: images/questions.jpg Graphic file (type jpg)
+<use images/questions.jpg>
+Package pdftex.def Info: images/questions.jpg  used on input line 76.
+(pdftex.def)             Requested size: 447.16953pt x 402.75371pt.
+ [30 <./images/averages.png>]) [31 <./images/questions.jpg>] [32]
 Chapter 8.
-(./assets/conclusion.tex) [31
+(./assets/conclusion.tex) [33
 
-]
+] [34]
 Appendix A.
 (./assets/annex.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
- [32
+ [35
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
@@ -931,6 +936,7 @@ assets/overviewTest.tex
 assets/executionTest.tex
 assets/resultTest.tex
 images/averages.png
+images/questions.jpg
 assets/conclusion.tex
 assets/annex.tex
  ***********
@@ -944,11 +950,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 11849 strings out of 480608
- 186163 string characters out of 5903629
- 527066 words of memory out of 5000000
- 27273 multiletter control sequences out of 15000+600000
- 584282 words of font info for 92 fonts, out of 8000000 for 9000
+ 11872 strings out of 480608
+ 186484 string characters out of 5903629
+ 528066 words of memory out of 5000000
+ 27279 multiletter control sequences out of 15000+600000
+ 584912 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,45p,940b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
@@ -961,10 +967,10 @@ mbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 l/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report.pdf (33 pages, 2214453 bytes).
+Output written on report.pdf (36 pages, 2349765 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 123 named destinations out of 1000 (max. 500000)
- 15239 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 438 compressed objects within 5 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 15244 words of extra memory for PDF output out of 17280 (max. 10000000)
 

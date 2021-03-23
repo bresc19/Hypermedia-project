@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  23 MAR 2021 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.11)  23 MAR 2021 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -444,7 +444,44 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 LaTeX Warning: Unused global option(s):
     [fontsize=11pt,paper=a4,pagesize=auto].
 
-No file USABILITY23-3-BRESCIANI1-D'ASCOLI2.aux.
+(./USABILITY23-3-BRESCIANI1-D'ASCOLI2.aux
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+
+LaTeX Warning: Label `tab:table1' multiply defined.
+
+)
 \openout1 = `USABILITY23-3-BRESCIANI1-D'ASCOLI2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -465,7 +502,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 3.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Info: Redefining \microtypecontext on input line 23.
@@ -535,6 +572,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
 LaTeX Info: Redefining \nameref on input line 23.
+ (./USABILITY23-3-BRESCIANI1-D'ASCOLI2.out)
+(./USABILITY23-3-BRESCIANI1-D'ASCOLI2.out)
 \@outlinefile=\write4
 \openout4 = `USABILITY23-3-BRESCIANI1-D'ASCOLI2.out'.
 
@@ -574,12 +613,12 @@ LaTeX Info: Redefining \nameref on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/polimi.jpg, id=4, 1303.87125pt x 1013.7875pt>
+<images/polimi.jpg, id=164, 1303.87125pt x 1013.7875pt>
 File: images/polimi.jpg Graphic file (type jpg)
 <use images/polimi.jpg>
 Package pdftex.def Info: images/polimi.jpg  used on input line 29.
 (pdftex.def)             Requested size: 325.96701pt x 253.44626pt.
-<images/moviri-logo.png, id=5, 521.95pt x 260.975pt>
+<images/moviri-logo.png, id=165, 521.95pt x 260.975pt>
 File: images/moviri-logo.png Graphic file (type png)
 <use images/moviri-logo.png>
 Package pdftex.def Info: images/moviri-logo.png  used on input line 51.
@@ -588,17 +627,43 @@ Package pdftex.def Info: images/moviri-logo.png  used on input line 51.
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/polimi.jpg> <./images/moviri-logo.png>]
-\tf@toc=\write5
-\openout5 = `USABILITY23-3-BRESCIANI1-D'ASCOLI2.toc'.
+(./USABILITY23-3-BRESCIANI1-D'ASCOLI2.toc
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
+.
 
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+5.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+5.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 5.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \chapter
-             {Abstract} [1
+l.41 ...ter}{\numberline {A}Annex}{27}{appendix.A}
+                                                  % [1
 
-]
+])
+\tf@toc=\write5
+\openout5 = `USABILITY23-3-BRESCIANI1-D'ASCOLI2.toc'.
+
+ [2]
 Chapter 1.
 (./assets/abstract.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
@@ -611,33 +676,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-.
+) [3
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-1.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-1.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 1.
-) [2
-
-] [3
+] [4
 
 ]
 Chapter 2.
@@ -647,43 +688,30 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4
+) [5
 
-]) [5]
+]) [6]
 Chapter 3.
 (./assets/heuristics.tex
-
-LaTeX Warning: Reference `Header' on page 6 undefined on input line 30.
-
-
-LaTeX Warning: Reference `topbar' on page 6 undefined on input line 37.
-
-
-LaTeX Warning: Reference `Footer' on page 6 undefined on input line 38.
-
-<images/header.png, id=53, 1203.49625pt x 48.18pt>
+<images/header.png, id=254, 1203.49625pt x 48.18pt>
 File: images/header.png Graphic file (type png)
 <use images/header.png>
 Package pdftex.def Info: images/header.png  used on input line 46.
 (pdftex.def)             Requested size: 421.23pt x 16.86324pt.
-[6
+ [7
 
 ]
-<images/topbar.png, id=63, 1215.54124pt x 61.73062pt>
+<images/topbar.png, id=263, 1215.54124pt x 61.73062pt>
 File: images/topbar.png Graphic file (type png)
 <use images/topbar.png>
 Package pdftex.def Info: images/topbar.png  used on input line 54.
 (pdftex.def)             Requested size: 425.44582pt x 21.60603pt.
-<images/footer.png, id=64, 1076.52188pt x 243.40938pt>
+<images/footer.png, id=264, 1076.52188pt x 243.40938pt>
 File: images/footer.png Graphic file (type png)
 <use images/footer.png>
 Package pdftex.def Info: images/footer.png  used on input line 62.
 (pdftex.def)             Requested size: 376.7883pt x 85.19455pt.
-
-
-LaTeX Warning: Reference `grid' on page 7 undefined on input line 69.
-
-<images/structural_navigation.png, id=65, 834.86906pt x 394.47375pt>
+<images/structural_navigation.png, id=266, 834.86906pt x 394.47375pt>
 File: images/structural_navigation.png Graphic file (type png)
 <use images/structural_navigation.png>
 Package pdftex.def Info: images/structural_navigation.png  used on input line 7
@@ -694,85 +722,63 @@ Overfull \hbox (8.61423pt too wide) in paragraph at lines 77--78
  [][] 
  []
 
-<images/structural_navigation_2.png, id=66, 593.21625pt x 310.15875pt>
+<images/structural_navigation_2.png, id=267, 593.21625pt x 310.15875pt>
 File: images/structural_navigation_2.png Graphic file (type png)
 <use images/structural_navigation_2.png>
 Package pdftex.def Info: images/structural_navigation_2.png  used on input line
  83.
 (pdftex.def)             Requested size: 207.6288pt x 108.55717pt.
-
-LaTeX Warning: Reference `landmarks' on page 7 undefined on input line 103.
-
-<images/Landmarks.png, id=67, 1245.65375pt x 139.52126pt>
+<images/Landmarks.png, id=269, 1245.65375pt x 139.52126pt>
 File: images/Landmarks.png Graphic file (type png)
 <use images/Landmarks.png>
 Package pdftex.def Info: images/Landmarks.png  used on input line 108.
 (pdftex.def)             Requested size: 435.98535pt x 48.83316pt.
-[7 <./images/header.png> <./images/topbar.png> <./images/footer.png> <./images/
-structural_navigation.png> <./images/structural_navigation_2.png>] [8 <./images
+[8 <./images/header.png> <./images/topbar.png> <./images/footer.png> <./images/
+structural_navigation.png> <./images/structural_navigation_2.png>] [9 <./images
 /Landmarks.png>]
-
-LaTeX Warning: Reference `text' on page 9 undefined on input line 157.
-
-<images/text.png, id=89, 530.98375pt x 298.11375pt>
+<images/text.png, id=289, 530.98375pt x 298.11375pt>
 File: images/text.png Graphic file (type png)
 <use images/text.png>
-Package pdftex.def Info: images/text.png  used on input line 163.
+Package pdftex.def Info: images/text.png  used on input line 162.
 (pdftex.def)             Requested size: 185.84709pt x 104.34137pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-[9 <./images/text.png>]
-
-LaTeX Warning: Reference `space' on page 10 undefined on input line 184.
-
-<images/spatial_allocation.png, id=98, 855.94781pt x 409.53pt>
+<images/spatial_allocation.png, id=291, 855.94781pt x 409.53pt>
 File: images/spatial_allocation.png Graphic file (type png)
 <use images/spatial_allocation.png>
-Package pdftex.def Info: images/spatial_allocation.png  used on input line 189.
+Package pdftex.def Info: images/spatial_allocation.png  used on input line 188.
 
 (pdftex.def)             Requested size: 427.97285pt x 204.7645pt.
-[10 <./images/spatial_allocation.png>]
-
-LaTeX Warning: Reference `ind' on page 11 undefined on input line 248.
-
-
-LaTeX Warning: Reference `res' on page 11 undefined on input line 248.
-
-<images/H8_Nielsen.png, id=107, 834.86906pt x 396.7322pt>
+[10 <./images/text.png> <./images/spatial_allocation.png>] [11]
+<images/H8_Nielsen.png, id=307, 834.86906pt x 396.7322pt>
 File: images/H8_Nielsen.png Graphic file (type png)
 <use images/H8_Nielsen.png>
-Package pdftex.def Info: images/H8_Nielsen.png  used on input line 253.
+Package pdftex.def Info: images/H8_Nielsen.png  used on input line 252.
 (pdftex.def)             Requested size: 417.43352pt x 198.3656pt.
-<images/H8_Nielsen_2.png, id=108, 594.72188pt x 313.9228pt>
+<images/H8_Nielsen_2.png, id=308, 594.72188pt x 313.9228pt>
 File: images/H8_Nielsen_2.png Graphic file (type png)
 <use images/H8_Nielsen_2.png>
-Package pdftex.def Info: images/H8_Nielsen_2.png  used on input line 262.
+Package pdftex.def Info: images/H8_Nielsen_2.png  used on input line 261.
 (pdftex.def)             Requested size: 267.62238pt x 141.26395pt.
-) [11 <./images/H8_Nielsen.png>] [12 <./images/H8_Nielsen_2.png>]
+) [12 <./images/H8_Nielsen.png> <./images/H8_Nielsen_2.png>]
 Chapter 4.
 (./assets/result.tex
-
-LaTeX Warning: Reference `Navigation' on page 13 undefined on input line 6.
-
-<images/4.png, id=122, 217.5628pt x 126.4725pt>
+<images/4.png, id=320, 217.5628pt x 126.4725pt>
 File: images/4.png Graphic file (type png)
 <use images/4.png>
 Package pdftex.def Info: images/4.png  used on input line 14.
 (pdftex.def)             Requested size: 76.14812pt x 44.26602pt.
-<images/4.5.png, id=123, 219.06844pt x 128.73094pt>
+<images/4.5.png, id=321, 219.06844pt x 128.73094pt>
 File: images/4.5.png Graphic file (type png)
 <use images/4.5.png>
 Package pdftex.def Info: images/4.5.png  used on input line 26.
 (pdftex.def)             Requested size: 76.6751pt x 45.05649pt.
-[13
+ [13
 
  <./images/4.png> <./images/4.5.png>]
-
-LaTeX Warning: Reference `Layout' on page 14 undefined on input line 33.
-
 File: images/4.png Graphic file (type png)
 <use images/4.png>
 Package pdftex.def Info: images/4.png  used on input line 42.
@@ -796,12 +802,12 @@ Chapter 7.
 (./assets/resultTest.tex [22
 
 ]
-<images/averages.png, id=225, 1003.75pt x 198.7425pt>
+<images/averages.png, id=402, 1003.75pt x 198.7425pt>
 File: images/averages.png Graphic file (type png)
 <use images/averages.png>
 Package pdftex.def Info: images/averages.png  used on input line 100.
 (pdftex.def)             Requested size: 351.31776pt x 69.56091pt.
-<images/questions.jpg, id=226, 596.2275pt x 537.00626pt>
+<images/questions.jpg, id=403, 596.2275pt x 537.00626pt>
 File: images/questions.jpg Graphic file (type jpg)
 <use images/questions.jpg>
 Package pdftex.def Info: images/questions.jpg  used on input line 109.
@@ -893,13 +899,15 @@ ltcaption.sty    2018/08/26 v1.4a longtable captions (AR)
  nameref.sty    2019/09/16 v2.46 Cross-referencing by name of section
 refcount.sty    2019/12/15 v3.6 Data extraction from label references (HO)
 gettitlestring.sty    2019/12/15 v1.6 Cleanup title references (HO)
+USABILITY23-3-BRESCIANI1-D'ASCOLI2.out
+USABILITY23-3-BRESCIANI1-D'ASCOLI2.out
 images/polimi.jpg
 images/moviri-logo.png
-assets/abstract.tex
- ot1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
   omllmm.fd    2009/10/30 v1.6 Font defs for Latin Modern
  omslmsy.fd    2009/10/30 v1.6 Font defs for Latin Modern
  omxlmex.fd    2009/10/30 v1.6 Font defs for Latin Modern
+assets/abstract.tex
+ ot1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
 assets/overview.tex
   ts1lmr.fd    2009/10/30 v1.6 Font defs for Latin Modern
 assets/heuristics.tex
@@ -928,32 +936,22 @@ assets/annex.tex
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
+Package rerunfilecheck Info: File `USABILITY23-3-BRESCIANI1-D'ASCOLI2.out' has 
+not changed.
+(rerunfilecheck)             Checksum: 89425DF9882BC14947EEC01A62B8AE13;2436.
 
-Package rerunfilecheck Warning: File `USABILITY23-3-BRESCIANI1-D'ASCOLI2.out' h
-as changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `USABILITY23-3-BRESCIANI1-D'ASCOLI2.
-out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  89425DF9882BC14947EEC01A62B8AE13;2436.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 12278 strings out of 480608
- 192814 string characters out of 5903629
- 546340 words of memory out of 5000000
- 27694 multiletter control sequences out of 15000+600000
- 584614 words of font info for 96 fonts, out of 8000000 for 9000
+ 12330 strings out of 480608
+ 193778 string characters out of 5903629
+ 547218 words of memory out of 5000000
+ 27736 multiletter control sequences out of 15000+600000
+ 584697 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,45p,968b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,45p,968b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
 /texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/
 texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive/2020/texmf-dist/f
@@ -964,11 +962,11 @@ mbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 l/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on USABILITY23-3-BRESCIANI1-D'ASCOLI2.pdf (27 pages, 2725830 byt
+Output written on USABILITY23-3-BRESCIANI1-D'ASCOLI2.pdf (27 pages, 2731336 byt
 es).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 485 PDF objects out of 1000 (max. 8388607)
+ 414 compressed objects within 5 object streams
  123 named destinations out of 1000 (max. 500000)
- 14929 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 15249 words of extra memory for PDF output out of 17280 (max. 10000000)
 

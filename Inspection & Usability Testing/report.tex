@@ -1,6 +1,4 @@
 \listfiles
-
-
 \documentclass[fontsize=11pt,paper=a4,pagesize=auto]{report}
 
 \usepackage{lmodern}
@@ -14,11 +12,14 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{listings}
 \usepackage{xurl}
+\usepackage{geometry}
 
-
-\makeatletter
-\def\p@subsection{}
-\makeatother
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
 \begin{document}
 
 \begin{titlepage}
@@ -49,7 +50,6 @@
 % Bottom of the page
 \end{titlepage}
 
-\pagebreak
 \tableofcontents
 \chapter{Abstract}
 \input{assets/abstract.tex}

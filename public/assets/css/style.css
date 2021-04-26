@@ -120,3 +120,33 @@ div.grid-cell-left{
     padding: 30px;
     text-align: center;
 }
+
+.secondary-title{
+    padding: 15px;
+    text-align: left;
+    font-size: 24px;
+
+}
+
+.desc{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+
+    text-decoration: none;
+    outline: none;
+}
+
+.name-surname{
+   font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+}
+
+.no-signature{
+    text-decoration: none;
+    outline: none;
+    color: black;
+}

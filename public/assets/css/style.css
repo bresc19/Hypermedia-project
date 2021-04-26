@@ -115,3 +115,8 @@ div.grid-cell-left{
 .aboutus-text{
     font-size: 24px;
 }
+
+.title-topic-single {
+    padding: 30px;
+    text-align: center;
+}

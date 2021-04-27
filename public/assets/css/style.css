@@ -21,7 +21,6 @@
     horiz-align: center;
     align-items: center;
     justify-content: center;
-
 }
 
 .grid-container > text-right {
@@ -29,7 +28,6 @@
     text-align: right;
     font-size: 20px;
     vertical-align: middle;
-
 }
 
 .grid-container > text-left {
@@ -37,7 +35,6 @@
     text-align: left;
     font-size: 20px;
     vertical-align: middle;
-
 }
 
 
@@ -47,13 +44,11 @@ img{
 
 div.gallery {
     border: 1px solid #000000;
-
 }
 
 div.gallery:hover {
     border: 3px solid #000000;
     max-width: 100%;
-
 }
 
 div.gallery img {
@@ -77,7 +72,6 @@ div.desc {
     width: 54.99999%;
     max-width: 100%;
     display: inline-block;
-
 }
 
 
@@ -117,22 +111,22 @@ div.grid-cell-left{
 }
 
 .title-topic-single {
-    padding: 30px;
-    text-align: center;
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 18px;
+    text-align: left;
 }
 
 .secondary-title{
     padding: 15px;
     text-align: left;
     font-size: 24px;
-
 }
 
 .desc{
     font-size: 18px;
     text-align: center;
     font-style: italic;
-
     text-decoration: none;
     outline: none;
 }
@@ -142,11 +136,41 @@ div.grid-cell-left{
     text-align: center;
     text-decoration: none;
     outline: none;
-
 }
 
 .no-signature{
     text-decoration: none;
     outline: none;
     color: black;
+}
+
+.wrapper {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    grid-auto-rows: 200px;
+}
+
+.cell-product{
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
+.cell-product:hover{
+    border: solid black;
+
+}
+
+
+.product-title{
+    float: bottom;
+    clear: left;
+    padding: 4px;
+}
+
+.product-image{
+    float:top;
+    padding: 3px;
 }

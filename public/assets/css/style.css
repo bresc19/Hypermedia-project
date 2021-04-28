@@ -145,7 +145,8 @@ div.grid-cell-left{
 }
 
 .wrapper {
-    padding: 20px;
+    position: relative;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
@@ -174,3 +175,4 @@ div.grid-cell-left{
     float:top;
     padding: 3px;
 }
+

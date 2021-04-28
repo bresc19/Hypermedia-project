@@ -41,6 +41,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -65,9 +66,14 @@
       <updated>1618927132130</updated>
       <workItem from="1618927133339" duration="16481000" />
       <workItem from="1619008562599" duration="2938000" />
-      <workItem from="1619011517365" duration="9643000" />
-      <workItem from="1619080957674" duration="13000" />
-      <workItem from="1619080973156" duration="1000" />
+      <workItem from="1619011517365" duration="9382000" />
+      <workItem from="1619080989257" duration="1008000" />
+      <workItem from="1619097152129" duration="2582000" />
+      <workItem from="1619100522784" duration="1974000" />
+      <workItem from="1619107050878" duration="1635000" />
+      <workItem from="1619169815595" duration="32000" />
+      <workItem from="1619253673399" duration="649000" />
+      <workItem from="1619535557979" duration="1511000" />
     </task>
     <servers />
   </component>

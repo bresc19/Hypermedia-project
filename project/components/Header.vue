@@ -1,47 +1,48 @@
 <template>
   <div class="navbar">
-    <a id="landmark" href="HomePage.html">
-      <img src="assets/img/toptech_logo.png"   width="180" height="43">
+
+    <a id="landmark">
+      <img src="../assets/img/toptech_logo.png"   width="180" height="43">
     </a>
     <div class="dropdown">
       <button class="dropbtn">
-        <a href="pages/AboutUs.html">About Us</a>
+        <RouterLink to="/aboutus">About Us</RouterLink>
       </button>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn">
-        <a href="pages/Contact.html">Contact</a>
+      <RouterLink to="/contact" >Contact</RouterLink>
       </button>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn">
-        <a href="pages/People.html">People</a>
+        <RouterLink to="/people">People</RouterLink>
       </button>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn">
-        <a href="pages/Areas.html">Areas</a>
+        <RouterLink to="/areas">Areas</RouterLink>
       </button>
       <div class="dropdown-content">
-        <a href="pages/Areas.html">Data Bases</a>
-        <a href="pages/Areas.html">Security</a>
-        <a href="pages/Areas.html">IoT</a>
-        <a href="pages/Areas.html">Machine Learning</a>
+        <a>Data Bases</a>
+        <a>Security</a>
+        <a>IoT</a>
+        <a>Machine Learning</a>
       </div>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn">
-        <a href="pages/Products.html">Products</a>
+        <RouterLink to="/products">Products</RouterLink>
       </button>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn">
-        <a href="HomePage.html">Home</a>
+        <RouterLink to="/">Home</RouterLink>
       </button>
     </div>
   </div>

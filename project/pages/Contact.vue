@@ -1,16 +1,14 @@
 <template>
-  <div>
-    <p>Homepage</p>
-  </div>
+<p>Contact</p>
 </template>
 
 <script>
-
 export default {
-  layout: 'default',
+  name: "Contact",
+  layout:'default'
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

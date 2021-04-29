@@ -1,9 +1,9 @@
 <template>
   <div class="navbar">
 
-    <a id="landmark">
-      <img src="../assets/img/toptech_logo.png"   width="180" height="43">
-    </a>
+     <NuxtLink to="/" id="landmark">
+       <img src="../assets/img/toptech_logo.png"   width="180" height="43">
+     </NuxtLink>
     <div class="dropdown">
       <button class="dropbtn">
         <RouterLink to="/aboutus">About Us</RouterLink>

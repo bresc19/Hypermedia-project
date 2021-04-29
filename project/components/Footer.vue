@@ -12,27 +12,27 @@
 
     <div class="col">
       <h2>Explore</h2>
-      <a class="footer-link" href="../HomePage.html">Home</a>
-      <a class="footer-link" href="Products.html">Products</a>
-      <a class="footer-link" href="People.html"> People </a>
-      <a class="footer-link" href="AboutUs.html">About Us</a>
-      <a class="footer-link" href="Contact.html">Contact</a>
+      <NuxtLink class="footer-link" to="/">Home</NuxtLink>
+      <NuxtLink class="footer-link" to="/products">Products</NuxtLink>
+      <NuxtLink class="footer-link" to="/people"> People </NuxtLink>
+      <NuxtLink class="footer-link" to="/aboutus">About Us</NuxtLink>
+      <NuxtLink class="footer-link" to="/contact">Contact</NuxtLink>
     </div>
 
     <div class="col">
       <h2>Areas</h2>
-      <a class="footer-link" href="../../HomePage.html">Data Bases</a>
-      <a class="footer-link" href="Products.html">IoT</a>
-      <a class="footer-link" href="People.html">Security</a>
-      <a class="footer-link" href="AboutUs.html">Machine Learning</a>
+      <NuxtLink class="footer-link" to="#">Data Bases</NuxtLink>
+      <NuxtLink class="footer-link" to="#">IoT</NuxtLink>
+      <NuxtLink class="footer-link" to="#">Security</NuxtLink>
+      <NuxtLink class="footer-link" to="#">Machine Learning</NuxtLink>
     </div>
 
     <div class="col">
       <h2>Social</h2>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-twitter"></a>
+      <NuxtLink href="#" class="fa fa-facebook"></NuxtLink>
+      <NuxtLink href="#" class="fa fa-instagram"></NuxtLink>
+      <NuxtLink href="#" class="fa fa-linkedin"></NuxtLink>
+      <NuxtLink href="#" class="fa fa-twitter"></NuxtLink>
     </div>
 
 

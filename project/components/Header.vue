@@ -56,25 +56,6 @@ export default {
 </script>
 
 <style scoped>
-.jumbotron {
-  position: relative;
-  background:none;
-}
-.jumbotron:after {
-  content : "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(https://cdn.pixabay.com/photo/2014/01/30/01/36/girl-254708_960_720.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  opacity : 0.2;
-  z-index: -1;
-}
 
 .header {
   overflow: hidden;
@@ -140,6 +121,7 @@ export default {
   background-color: red;
 
 }
+
 
 .dropdown-content {
   display: none;

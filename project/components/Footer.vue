@@ -29,10 +29,10 @@
 
     <div class="col">
       <h2>Social</h2>
-      <NuxtLink href="#" class="fa fa-facebook"></NuxtLink>
-      <NuxtLink href="#" class="fa fa-instagram"></NuxtLink>
-      <NuxtLink href="#" class="fa fa-linkedin"></NuxtLink>
-      <NuxtLink href="#" class="fa fa-twitter"></NuxtLink>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-twitter"></a>
     </div>
 
 

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "AboutUs",
+    "path": "/AboutUs",
+    "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/AboutUs.vue",
+    "chunkName": "pages/AboutUs"
+  },
+  {
+    "name": "Areas",
+    "path": "/Areas",
+    "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/Areas.vue",
+    "chunkName": "pages/Areas"
+  },
+  {
+    "name": "Contact",
+    "path": "/Contact",
+    "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/Contact.vue",
+    "chunkName": "pages/Contact"
+  },
+  {
+    "name": "People",
+    "path": "/People",
+    "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/People.vue",
+    "chunkName": "pages/People"
+  },
+  {
+    "name": "Products",
+    "path": "/Products",
+    "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/Products.vue",
+    "chunkName": "pages/Products"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

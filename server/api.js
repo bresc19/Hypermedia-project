@@ -9,8 +9,8 @@ app.use(express.json());
 async function init(){
   const Database = await createDatabase();
   app.get('/', async (req, res) => {
-    const posts = await Database.Post.findAll()
-    return res.json(posts)
+    const people = await Database.Post.findAll()
+    return res.json(people)
   })
 
 }

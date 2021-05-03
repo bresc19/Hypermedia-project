@@ -3,42 +3,36 @@
     "name": "AboutUs",
     "path": "/AboutUs",
     "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/AboutUs.vue",
-    "chunkName": "pages/AboutUs",
-    "_name": "_3401f7f2"
+    "chunkName": "pages/AboutUs"
   },
   {
     "name": "Areas",
     "path": "/Areas",
     "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/Areas.vue",
-    "chunkName": "pages/Areas",
-    "_name": "_6fa4acad"
+    "chunkName": "pages/Areas"
   },
   {
     "name": "Contact",
     "path": "/Contact",
     "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/Contact.vue",
-    "chunkName": "pages/Contact",
-    "_name": "_1787eaf2"
+    "chunkName": "pages/Contact"
   },
   {
     "name": "People",
     "path": "/People",
     "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/People.vue",
-    "chunkName": "pages/People",
-    "_name": "_6d028bf8"
+    "chunkName": "pages/People"
   },
   {
     "name": "Products",
     "path": "/Products",
     "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/Products.vue",
-    "chunkName": "pages/Products",
-    "_name": "_f1832fe6"
+    "chunkName": "pages/Products"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/Brescia/Desktop/Hypermedia-project/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_65f623ce"
+    "chunkName": "pages/index"
   }
 ]

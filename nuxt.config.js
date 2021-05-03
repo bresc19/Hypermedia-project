@@ -7,7 +7,7 @@ export default {
   ],
   ssr: true,
   env:{
-    BASE_URL: 'https://prova.com'
+    BASE_URL: 'https://toptech-polimi.herokuapp.com'
   },
   head: {
     title: 'project',

@@ -2,4 +2,4 @@
 .DS_Store
 /.idea
 /.nuxt
-/node-modules
+/node_modules

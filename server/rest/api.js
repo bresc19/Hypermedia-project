@@ -2,7 +2,7 @@ import {DataTypes} from "sequelize";
 
 const express = require("express");
 const app = express();
-const createDatabase = require('./db-conn');
+const createDatabase = require('../db-conn');
 app.use(express.json());
 
 

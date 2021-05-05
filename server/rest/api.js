@@ -1,20 +1,18 @@
-import {DataTypes} from "sequelize";
+const express = require('express')
+const app = express()
+app.use(express.json())
+const createDB = require('../db-conn')
 
-const express = require("express");
-const app = express();
-const createDatabase = require('../db-conn');
-app.use(express.json());
+async function init() {
+    const Database = await createDB()
 
-
-async function init(){
-  const Database = await createDatabase();
-  app.get('/', async (req, res) => {
-    const people = await Database.Post.findAll()
-    return res.json(people)
-  })
-
+    app.get('/', async (req, res) => {
+        const peoples = await Database.People.findAll()
+        console.log(peoples)
+        return res.json(peoples)
+    })
 }
+init()
 
-init();
 
 export default app

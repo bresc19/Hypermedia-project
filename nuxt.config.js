@@ -2,12 +2,13 @@ export default {
   serverMiddleware: [
     {
       path: "/api",
-      handle: "~/server/api.js"
+      handle: "~/server/rest/api.js"
     }
   ],
   ssr: true,
   env:{
-    BASE_URL: 'https://toptech-polimi.herokuapp.com'
+    //BASE_URL: 'https://toptech-polimi.herokuapp.com'
+    BASE_URL: 'localhost:3000'
   },
   head: {
     title: 'project',
@@ -38,10 +39,14 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@nuxtjs/axios',
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+
+  },
 
   router: {
     base: '/'

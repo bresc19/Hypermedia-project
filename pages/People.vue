@@ -1,11 +1,23 @@
 <template>
-<p>People</p>
+  <div>
+    <p>People</p>
+  </div>
 </template>
 
 <script>
+const axios = require('axios')
+
+
 export default {
   name: 'People',
-  layout: 'default'
+  layout: 'default',
+ /* async asyncData({ $axios }) {
+    const {data} = await $axios.get(`/api/peoples`)
+    return{
+      data,
+    }
+  },*/
+
 }
 </script>
 

@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"BASE_URL":"https://toptech-polimi.herokuapp.com"}
+      env: {"BASE_URL":"localhost:3000"}
     }
     // Only set once
 

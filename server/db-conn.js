@@ -7,6 +7,14 @@ db.People = db.define("people",{
     surname: DataTypes.STRING,
 })
 
+/*db.People.create({
+    name: "matteo",
+    surname: "Brescio"
+})
+*/
+
+
+
 async function createDB(){
     return new Promise(async (res, rej) =>{
         await db.sync()

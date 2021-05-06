@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>People</p>
+    <p>{{ p.id }}</p>
   </div>
 </template>
 
@@ -11,12 +11,14 @@ const axios = require('axios')
 export default {
   name: 'People',
   layout: 'default',
- /* async asyncData({ $axios }) {
+  async asyncData({ $axios }) {
     const {data} = await $axios.get(`/api/peoples`)
+    const p = data[0]
+    console.log(p)
     return{
-      data,
+      p,
     }
-  },*/
+  },
 
 }
 </script>

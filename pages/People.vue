@@ -1,6 +1,10 @@
 <template>
   <div>
     <p>{{ p.id }}</p>
+    <p>{{ p.name }}</p>
+    <p>{{ p.surname }}</p>
+    <p>{{ p.role }}</p>
+
   </div>
 </template>
 
@@ -13,8 +17,7 @@ export default {
   layout: 'default',
   async asyncData({ $axios }) {
     const {data} = await $axios.get(`/api/peoples`)
-    const p = data[0]
-    console.log(p)
+    const p = data
     return{
       p,
     }

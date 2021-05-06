@@ -193,14 +193,14 @@ export async function setContext (app, context) {
   if (!app.context) {
     app.context = {
       isStatic: process.static,
-      isDev: true,
+      isDev: false,
       isHMR: false,
       app,
 
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"BASE_URL":"localhost:3000"}
+      env: {"BASE_URL":"localhost:3000","DATABASE_URL":"postgres://lnjtjbzjogupnb:3347350d1c81eaa341f905fc7e436ef53053e45c73aa4542a00dc0f225692086@ec2-34-250-16-127.eu-west-1.compute.amazonaws.com:5432/d5kfvb6ra7u04b"}
     }
     // Only set once
 
@@ -279,7 +279,7 @@ export async function setContext (app, context) {
   app.context.next = context.next
   app.context._redirected = false
   app.context._errored = false
-  app.context.isHMR = Boolean(context.isHMR)
+  app.context.isHMR = false
   app.context.params = app.context.route.params || {}
   app.context.query = app.context.route.query || {}
 }
@@ -297,9 +297,6 @@ export function middlewareSeries (promises, appContext) {
 export function promisify (fn, context) {
   let promise
   if (fn.length === 2) {
-      console.warn('Callback-based asyncData, fetch or middleware calls are deprecated. ' +
-        'Please switch to promises or async/await syntax')
-
     // fn(context, callback)
     promise = new Promise((resolve) => {
       fn(context, function (err, data) {

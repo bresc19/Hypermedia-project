@@ -5,9 +5,9 @@ const createDB = require('../db-conn')
 
 async function init() {
     const Database = await createDB()
-    const {People} = Database._tables
+
     app.get('/peoples', async (req, res) => {
-        const peoples = await People.findOne()
+        const peoples = await Database.People.findAll()
         console.log(peoples)
         return res.json(peoples)
     })

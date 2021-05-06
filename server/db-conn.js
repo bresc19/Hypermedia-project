@@ -6,6 +6,9 @@ const db = new Sequelize(process.env.DATABASE_URL, {
     ssl: true,
     dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
 })
+
+
+process.env.DATABASE_URL
 const People = db.define("people",{
     id: DataTypes.INT,
     name: DataTypes.STRING,

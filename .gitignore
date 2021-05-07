@@ -1,6 +1,6 @@
 
 .DS_Store
+/dist
 /.idea
 /.nuxt
 /node_modules
-.nuxt/routes.json

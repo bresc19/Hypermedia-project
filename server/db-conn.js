@@ -16,13 +16,13 @@ db.People = db.define("people",{
 
 })
 
-db.People.create({
-    name: "matteo",
-    surname: "Brescio"
-})
-
-
-
+/*
+    db.People.create({
+        name: "matteo",
+        surname: "Brescio"
+    })
+}
+*/
 
 async function createDB(){
     return new Promise(async (res, rej) =>{

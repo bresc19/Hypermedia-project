@@ -10,18 +10,29 @@ const db = new Sequelize('postgres://lnjtjbzjogupnb:3347350d1c81eaa341f905fc7e43
 
 
 
-db.People = db.define("people",{
+const People = db.define("people",{
     name: DataTypes.STRING,
     surname: DataTypes.STRING,
+    role: DataTypes.STRING,
+    image: DataTypes.TEXT,
 
 })
 
-/*
-    db.People.create({
+
+db._tables = {People}
+
+
+
+
+
+   /* db.People.create({
         name: "matteo",
-        surname: "Brescio"
+        surname: "Brescio",
+        role: "I'm CEO",
+        image: "blabla"
+
     })
-}
+
 */
 
 async function createDB(){

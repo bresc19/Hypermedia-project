@@ -1,6 +1,10 @@
 <template>
   <div>
     <p>{{ p.id }}</p>
+    <p>{{ p.name }}</p>
+    <p>{{ p.surname }}</p>
+    <p>{{ p.role }}</p>
+    <p>{{ p.image }}</p>
   </div>
 </template>
 

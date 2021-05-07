@@ -9,7 +9,7 @@ async function init() {
     const {People} = Database._tables
     app.get('/peoples', async (req, res) => {
         const peoples = await People.findAll()
-        console.log(peoples)
+        console.log(process.env.DATABSE_URL)
         return res.json(peoples)
     })
 }

@@ -15,8 +15,10 @@ const People = db.define("people",{
     surname: DataTypes.STRING,
     role: DataTypes.STRING,
     image: DataTypes.TEXT,
-
-})
+},
+    {
+        timestamps: false
+    })
 
 
 db._tables = {People}

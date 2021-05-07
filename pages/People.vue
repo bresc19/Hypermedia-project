@@ -17,8 +17,7 @@ export default {
   layout: 'default',
   async asyncData({ $axios }) {
     const {data} = await $axios.get(`/api/peoples`)
-    const p = data[0]
-    console.log(p)
+    const p = data[1]
     return{
       p,
     }

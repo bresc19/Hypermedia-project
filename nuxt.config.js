@@ -10,11 +10,11 @@ export default {
     //BASE_URL: 'https://toptech-polimi.herokuapp.com',
     //BASE_URL: 'https://localhost:3000',
     //DATABASE_URL: 'postgres://postgres:admin@localhost:5432/hypermedia-project'
-    //DATABASE_URL: 'postgres://lnjtjbzjogupnb:3347350d1c81eaa341f905fc7e436ef53053e45c73aa4542a00dc0f225692086@ec2-34-250-16-127.eu-west-1.compute.amazonaws.com:5432/d5kfvb6ra7u04b'
+    DATABASE_URL: 'postgres://lnjtjbzjogupnb:3347350d1c81eaa341f905fc7e436ef53053e45c73aa4542a00dc0f225692086@ec2-34-250-16-127.eu-west-1.compute.amazonaws.com:5432/d5kfvb6ra7u04b'
 
   },
   head: {
-    title: 'project',
+    title: 'TopTech',
     htmlAttrs: {
       lang: 'en',
     },

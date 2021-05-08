@@ -12,6 +12,17 @@ async function init() {
         console.log(process.env.DATABSE_URL)
         return res.json(peoples)
     })
+
+  /*  app.get('/peoples/:id', async (req, res) => {
+        const { id } = req.params
+        const person = await People.findOne({
+            where: { id },
+        })
+        return res.json(person)
+    })
+*/
+
+
 }
 init()
 

@@ -154,5 +154,13 @@ export default {
   vertical-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 
 </style>

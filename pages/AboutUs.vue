@@ -1,88 +1,81 @@
 <template>
-  <div class=e5_84>
-    <div class="e5_85"></div>
-    <div class="e5_86"></div>
-    <div class=e5_87>
-      <div class=e5_88>
-        <div class="e5_89"></div>
-      </div>
-      <div class=e5_90>
-        <div class="e5_91"></div>
-      </div>
-      <div class=e5_92>
-        <div class=e5_93>
-          <div class="e5_94"></div>
-        </div>
-      </div>
-      <div class=e5_95>
-        <div class=e5_96>
-          <div class="e5_97"></div>
-        </div>
+<div>
+  <h1 class="title-topic-single">About Us</h1>
+  <hr>
+  <div class="grid-container">
+    <div>
+      <img src="../assets/img/aboutus1.jpg">
+    </div>
+    <div class="grid-cell-left">
+      <a class="aboutus-text"> Founded in Italy in 2000, today TopTech is a multinational group that focuses its consulting offering on
+        hard technology challenges with large-scale business impact in data bases, security, IoT and machine
+        learning.</a>
+    </div>
+    <div class="grid-cell-right">
+      <a  class="aboutus-text">TopTech started as a research spinoff at Politecnico of Milan and was incubated at its startup accelerator.
+        Data and experimentation are part of our DNA. </a>
+    </div>
+    <div>
+      <img src="../assets/img/aboutus2.jpg">
+    </div>
+    <div>
+      <img src="../assets/img/aboutus3.jpg">
+    </div>
+    <div class="grid-cell-left aboutus-text">
+      <a  class="aboutus-text">We believe that science and engineering need to be seen as one. It is for this reason that we continuously
+        focus on research, emerging ideas, and new technologies, routinely partnering with top academic and
+        engineering research institutions.</a>
+    </div>
+    <div class="grid-cell-right">
+      <a  class="aboutus-text">In all we do, our goal is to build trusted relationships through client proximity, providing industry and
+        technology expertise to help you meet the needs of your customers and citizens. </a>
+    </div>
+    <div>
+      <img src="../assets/img/aboutus4.jpg">
+    </div>
+  </div>
+  <p class="secondary-title">Leadership Team</p>
+  <hr>
+  <div class="grid-people">
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="#">
+          <img src="../assets/img/people/CEOfabrizio-venditti.jpg"  width="600" height="400">
+        </a>
+        <div class="name-surname"><a class="no-signature" href="#">Fabrizio Venditti</a></div>
+        <div class="desc"><a class="no-signature" href="#" >CEO</a></div>
       </div>
     </div>
-    <div class=e5_98>
-      <div class="e5_99"></div>
-    </div>
-    <div class=e5_100>
-      <div class="e5_101"></div>
-      <div class="e5_102"></div>
-      <div class="e5_103"></div>
-    </div>
-    <div class=e5_104>
-      <div class="e5_105"></div>
-      <div class=e5_106>
-        <div class="e5_107"></div>
-      </div>
-      <div class=e5_108>
-        <div class="e5_109"></div>
-      </div>
-      <div class=e5_110>
-        <div class=e5_111>
-          <div class="e5_112"></div>
-        </div>
-      </div>
-      <div class=e5_113>
-        <div class=e5_114>
-          <div class="e5_115"></div>
-        </div>
-      </div><span  class="e5_116">http://example.com</span>
-    </div><span  class="e5_117">Browser</span>
-    <div class=e5_118>
-      <div class=e5_119>
-        <div class="e5_120"></div>
-      </div>
-      <div class=e5_121>
-        <div class="e5_122"></div>
-      </div>
-      <div class=e5_123>
-        <div class="e5_124"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="#">
+          <img src="../assets/img/people/paola-falcone.jpg"  width="600" height="400">
+        </a>
+        <div class="name-surname"> <a class="no-signature" href="#">Paola Falcone</a> </div>
+        <div class="desc"><a class="no-signature" href="#">General Manager</a></div>
       </div>
     </div>
-    <div class=e5_125>
-      <div class=e5_126>
-        <div class="e5_127"></div>
-        <div class=e5_128>
-          <div class="e5_129"></div>
-        </div>
-        <div class=e5_130>
-          <div class="e5_131"></div>
-        </div>
-        <div class=e5_132>
-          <div class=e5_133>
-            <div class="e5_134"></div>
-          </div>
-        </div>
-        <div class=e5_135>
-          <div class=e5_136>
-            <div class="e5_137"></div>
-          </div>
-        </div><span  class="e5_138">        Search</span>
-      </div>
-      <div class=e5_139>
-        <div class="e5_140"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="#">
+          <img src="../assets/img/people/roberto-clemente.jpg"  width="600" height="400">
+        </a>
+        <div class="name-surname"><a class="no-signature" href="#" >Roberto Clemente</a></div>
+        <div class="desc"><a class="no-signature" href="#" >Chief research officer</a></div>
       </div>
     </div>
-  </div></template>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="#">
+          <img src="../assets/img/people/antonella-barberisHR.jpg" width="600" height="400">
+        </a>
+        <div class="name-surname"><a class="no-signature" href="#">Antonella Barberis</a></div>
+        <div class="desc"><a class="no-signature" href="#">HR manager</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</template>
 
 <script>
 export default {
@@ -92,5 +85,183 @@ export default {
 </script>
 
 <style scoped>
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 50px;
+  background-color: white;
+  padding: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-people{
+  padding: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.grid-people > div{
+  horiz-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container > text-right {
+  background-color: #ffffff;
+  text-align: right;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.grid-container > text-left {
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+div.gallery {
+  border: 1px solid #000000;
+}
+
+div.gallery:hover {
+  border: 3px solid #000000;
+  max-width: 100%;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  horiz-align: center;
+  padding: 0 6px;
+  float: left;
+  width: 54.99999%;
+  max-width: 100%;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+div.grid-cell-right {
+  vertical-align: middle;
+  text-align: right;
+}
+
+
+div.grid-cell-left{
+  vertical-align: middle;
+  text-align: left;
+}
+
+.aboutus-text{
+  font-size: 24px;
+}
+
+.title-topic-single {
+  padding: 10px;
+  margin-left: 50px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.secondary-title{
+  padding: 15px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.desc{
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  text-decoration: none;
+  outline: none;
+}
+
+.name-surname{
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+
+.no-signature{
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
+.wrapper {
+  position: relative;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  grid-auto-rows: 200px;
+}
+
+.cell-product{
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
+
+.cell-product:hover{
+  border: solid black;
+
+}
+
+
+.product-title{
+  float: bottom;
+  clear: left;
+  padding: 4px;
+}
+
+.product-image{
+  float:top;
+  padding: 3px;
+}
+
 
 </style>

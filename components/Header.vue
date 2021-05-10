@@ -47,6 +47,7 @@
     </div>
   </div>
 -->
+  <ClientOnly>
   <b-nav align="right" id="nv_bar" pills>
     <b-nav-item href="/">
       <a class="item-nav" >Home</a>
@@ -72,6 +73,7 @@
       <a class="item-nav" >Contact</a>
     </b-nav-item>
   </b-nav>
+  </ClientOnly>
 </template>
 
 <script>

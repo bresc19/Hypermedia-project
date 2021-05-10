@@ -1,25 +1,22 @@
 <template>
   <div>
-    <div>
+    <div id="container-carousel">
+      <div>
       <b-carousel
           id="carousel-1"
           v-model="slide"
           :interval="4000"
           controls
           indicators
-          background="#ababab"
-          img-width="1024"
-          img-height="480"
-          style="text-shadow: 1px 1px 2px #333;"
+          style="display: inline-block"
           @sliding-start="onSlideStart"
           @sliding-end="onSlideEnd"
       >
         <!-- Text slides with image -->
         <b-carousel-slide
-            caption="First slide"
-            text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-            img-src="https://picsum.photos/1024/480/?image=52"
-        ></b-carousel-slide>
+            text="Whether you're looking for compute power, database storage, content delivery, or other functionality, TopTech has the services to help you build sophisticated applications with increased flexibility, scalability and reliability"
+            img-src="https://picsum.photos/1024/480/?image=54">
+        </b-carousel-slide>
 
         <!-- Slides with custom text -->
         <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
@@ -51,19 +48,8 @@
           </p>
         </b-carousel-slide>
       </b-carousel>
-
-      <p class="mt-4">
-        Slide #: {{ slide }}<br>
-        Sliding: {{ sliding }}
-      </p>
     </div>
-      <!--  <div id="container-areas-contents">
-          <div><img id="areas-image" src="../assets/img/areas11.jpg"></div>
-          <div id="text-description-areas">
-            <p>Whether you're looking for compute power, database storage, content delivery, or other functionality, TopTech has the services to help you build sophisticated applications with increased flexibility, scalability and reliability</p>
-          </div>
-        </div> -->
-
+    </div>
 
         <div class="flex-container">
           <div>
@@ -196,5 +182,11 @@
     border-radius: 10px;
     width: auto;
     position: relative;
+  }
+  #container-carousel{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    padding: 15px;
   }
   </style>

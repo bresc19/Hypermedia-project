@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <!--<div class="navbar">
 
      <NuxtLink to="/" id="landmark">
        <img src="../assets/img/toptech_logo.png"   width="180" height="43">
@@ -46,7 +46,32 @@
       </button>
     </div>
   </div>
-
+-->
+  <b-nav align="right" id="nv_bar" pills>
+    <b-nav-item href="/">
+      <a class="item-nav" >Home</a>
+    </b-nav-item>
+    <b-nav-item href="/products"><a class="item-nav" >Products</a></b-nav-item>
+    <b-nav-item-dropdown
+        id="my-nav-dropdown"
+        text="Areas"
+        toggle-class="nav-link-custom item-nav"
+        right
+    >
+      <b-dropdown-item href="/"><a class="item-nav" >Data Base</a></b-dropdown-item>
+      <b-dropdown-item href="/"><a class="item-nav">IoT</a></b-dropdown-item>
+      <b-dropdown-item href="/"><a class="item-nav">Security</a></b-dropdown-item>
+      <b-dropdown-item><a class="item-nav">Machine Learning</a></b-dropdown-item>
+      <b-dropdown-divider></b-dropdown-divider>
+      <b-dropdown-item  href="/areas"><a class="item-nav">All Areas</a></b-dropdown-item>
+    </b-nav-item-dropdown>
+    <b-nav-item href="/aboutus">
+      <a class="item-nav" >About Us</a>
+    </b-nav-item>
+    <b-nav-item href="/contact">
+      <a class="item-nav" >Contact</a>
+    </b-nav-item>
+  </b-nav>
 </template>
 
 <script>
@@ -57,110 +82,16 @@ export default {
 
 <style scoped>
 
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
-}
-.ul {
-  background-color: #47494E;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-.a {
-  color: dodgerblue;
+.item-nav {
+  //color: #292121 !important;
   text-decoration: none;
-  display: inline-block;
-  width: 200px;
-  padding: 30px;
-  background-color: lightgrey;
-  outline: none;
 
 }
 
-.li {
-  float: right;
-}
+#nv_bar {
+  background: #4e555b;
 
-.navbar {
-  text-align: center;
-  overflow: hidden;
-  background-color: #333;
-  white-space: nowrap;
-
-}
-
-.navbar a {
-  float: right;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-
-}
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-#landmark{
-  float: left;
-  vertical-align: center;
-}
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
 }
 
 </style>

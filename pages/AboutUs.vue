@@ -263,5 +263,8 @@ div.grid-cell-left{
   padding: 3px;
 }
 
-
+a{
+  color: black;
+  text-decoration: none;
+}
 </style>

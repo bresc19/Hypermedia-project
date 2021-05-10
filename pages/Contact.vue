@@ -97,7 +97,10 @@ export default {
 .address{
   font-size: 20px;
 }
-
+a{
+  color: black;
+  text-decoration: none;
+}
 .text-block {
   position: absolute;
   bottom: 20%;

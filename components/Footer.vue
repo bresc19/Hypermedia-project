@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!--<div>
   <div class="col-container">
 
     <div class="col">
@@ -39,7 +39,109 @@
 
 
   </div>
-  </div>
+  </div>-->
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+
+    </section>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>TopTech
+            </h6>
+            <p>
+              Via Schiaffino 11
+              20158 Milano, Italy <br>
+              P. IVA IT13187610152
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Explore
+            </h6>
+            <p>
+              <a href="/products" class="text-reset">Products</a>
+            </p>
+            <p>
+              <a href="/people" class="text-reset">People</a>
+            </p>
+            <p>
+              <a href="/aboutus" class="text-reset">About Us</a>
+            </p>
+            <p>
+              <a href="/contact" class="text-reset">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Areas
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Data Base</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">IoT</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Security</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Machine Learning</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Social
+            </h6>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+
+      <a class="text-reset fw-bold" style="text-decoration: none;"> Developed by Bresciani Matteo & D'Ascoli Gabriele <br>
+        Politecnico of Milan</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
 </template>
 
 <script>

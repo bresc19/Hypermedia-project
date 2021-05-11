@@ -1,4 +1,5 @@
 <template>
+  <ClientOnly>
   <div class="col-container">
 
     <div class="col">
@@ -33,11 +34,12 @@
       <a href="#" class="fa fa-instagram"></a>
       <a href="#" class="fa fa-linkedin"></a>
       <a href="#" class="fa fa-twitter"></a>
+
     </div>
 
 
   </div>
-
+  </ClientOnly>
 </template>
 
 <script>

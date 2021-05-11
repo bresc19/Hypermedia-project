@@ -15,7 +15,7 @@
         <!-- Text slides with image -->
         <b-carousel-slide
             text="Whether you're looking for compute power, database storage, content delivery, or other functionality, TopTech has the services to help you build sophisticated applications with increased flexibility, scalability and reliability"
-            img-src="https://picsum.photos/1024/480/?image=54">
+            :img-src="require('~/assets/img/areas11.jpg')">
         </b-carousel-slide>
 
         <!-- Slides with custom text -->
@@ -51,6 +51,107 @@
     </div>
     </div>
 
+
+
+    <div id="cont-area-link">
+      <b-card
+          title="Data Base"
+          :img-src="require('~/assets/img/Database/db-logo.png')"
+          img-alt="Image"
+          img-top
+          tag="article"
+          style="max-width: 200px;
+                max-height: 600px;"
+          class="mb-2 card-area"
+      >
+        <b-card-text>
+          Toptech databases, you don’t need to worry about database management tasks such as server provisioning, patching, configuration, or backups.
+        </b-card-text>
+
+        <b-button class="link-area" href="#" variant="primary">
+          <b-icon-arrow-up rotate="90"></b-icon-arrow-up>
+        </b-button>
+      </b-card>
+
+
+      <b-card
+          title="IoT"
+          :img-src="require('~/assets/img/IoT/IOT.png')"
+          img-alt="Image"
+          img-top
+          tag="article"
+          style="max-width: 200px;
+                max-height: 600px;"
+          class="mb-2"
+      >
+        <b-card-text>
+          With the proliferation of devices, you increasingly need solutions to connect them, and collect, store, and analyze device data.        </b-card-text>
+
+        <b-button class="link-area" href="#" variant="primary">
+          <b-icon-arrow-up rotate="90"></b-icon-arrow-up>
+        </b-button>
+      </b-card>
+
+
+
+      <b-card
+          title="Security"
+          :img-src="require('~/assets/img/Security/security-logo.png')"
+          img-alt="Image"
+          img-top
+          tag="article"
+          style="max-width: 200px;
+                max-height: 600px;"
+          class="mb-2"
+      >
+        <b-card-text>
+          Security concerns dominate how we outsource computation. Emerging security technology will fundamentally change future IT systems.
+        </b-card-text>
+
+        <b-button class="link-area" href="#" variant="primary">
+          <b-icon-arrow-up rotate="90"></b-icon-arrow-up>
+        </b-button>
+      </b-card>
+
+
+
+      <b-card
+          title="Machine Learning"
+          :img-src="require('~/assets/img/MachineLearning/ml-logo.png')"
+          img-alt="Image"
+          img-top
+          tag="article"
+          style="max-width: 200px;
+                max-height: 600px;"
+          class="mb-2"
+      >
+        <b-card-text>
+          Explore machine learning services that fit your business needs, and learn how to get started.
+        </b-card-text>
+
+        <b-button class="link-area" href="#" variant="primary">
+          <b-icon-arrow-up rotate="90"></b-icon-arrow-up>
+        </b-button>
+      </b-card>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--
         <div class="flex-container">
           <div>
             <img class="area-logo-image" src="../assets/img/Database/db-logo.png">
@@ -76,7 +177,7 @@
           </div>
         </div>
       </div>
-
+-->
   </template>
   <script>
 
@@ -188,5 +289,26 @@
     width: 50%;
     height: 50%;
     padding: 15px;
+  }
+
+  #cont-area-link{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 85%;
+    padding: 10px;
+    height: 50%;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .card-area{
+    padding: 10px;
+  }
+
+  .link-area{
+    bottom: 5px;
+    position: absolute;
   }
   </style>

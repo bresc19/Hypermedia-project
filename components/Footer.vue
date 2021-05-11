@@ -1,5 +1,5 @@
 <template>
-  <ClientOnly>
+  <div>
   <div class="col-container">
 
     <div class="col">
@@ -39,7 +39,7 @@
 
 
   </div>
-  </ClientOnly>
+  </div>
 </template>
 
 <script>

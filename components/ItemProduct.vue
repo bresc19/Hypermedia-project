@@ -1,5 +1,5 @@
 <template>
-  <mdb-card wide ecommerce>
+  <!--<mdb-card wide ecommerce>
     <mdb-view cascade>
       <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes%20(2).jpg" top alt="sample photo" />
       <mdb-mask overlay="white-slight" waves />
@@ -37,11 +37,12 @@
       </mdb-card-footer>
     </mdb-card-body>
   </mdb-card>
+  -->
 </template>
 
 <script>
 export default {
-  name: "Item-Product"
+  name: 'ItemProduct'
 }
 </script>
 

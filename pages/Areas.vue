@@ -1,4 +1,5 @@
 <template>
+  <!--
   <div>
     <div id="container-carousel">
       <div>
@@ -12,22 +13,18 @@
           @sliding-start="onSlideStart"
           @sliding-end="onSlideEnd"
       >
-        <!-- Text slides with image -->
         <b-carousel-slide
             text="Whether you're looking for compute power, database storage, content delivery, or other functionality, TopTech has the services to help you build sophisticated applications with increased flexibility, scalability and reliability"
             :img-src="require('~/assets/img/areas11.jpg')">
         </b-carousel-slide>
 
-        <!-- Slides with custom text -->
         <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
           <h1>Hello world!</h1>
         </b-carousel-slide>
 
-        <!-- Slides with image only -->
         <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
 
-        <!-- Slides with img slot -->
-        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+
         <b-carousel-slide>
           <template #img>
             <img
@@ -40,7 +37,6 @@
           </template>
         </b-carousel-slide>
 
-        <!-- Slide with blank fluid image to maintain slide aspect ratio -->
         <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
@@ -151,7 +147,7 @@
 
 
 
-    <!--
+
         <div class="flex-container">
           <div>
             <img class="area-logo-image" src="../assets/img/Database/db-logo.png">
@@ -184,26 +180,12 @@
   import Vue from 'vue'
 
   import { CarouselPlugin } from 'bootstrap-vue'
-  Vue.use(CarouselPlugin)
 
 
   export default {
     name: 'Areas',
     layout: 'default',
-    data() {
-      return {
-        slide: 0,
-        sliding: null
-      }
-    },
-    methods: {
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      }
-    }
+
   }
 
 

@@ -2,7 +2,6 @@
 .DS_Store
 .idea
 # dependencies
-node_modules
 
 # logs
 npm-debug.log

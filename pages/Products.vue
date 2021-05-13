@@ -134,19 +134,18 @@
       <a href="#" class="no-signature product-title">
         Product</a>
     </div>
-
-
-
-
   </div>
 </div>
 
 </template>
 
 <script>
+import ItemProduct from "../components/ItemArea";
 export default {
   name: "Products",
+  components: {ItemProduct},
   layout: 'default'
+
 }
 </script>
 

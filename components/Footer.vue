@@ -119,9 +119,9 @@
               Social
             </h6>
             <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-instagram"></a>
+            <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-linkedin"></a>
+            <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-twitter"></a>
           </div>
           <!-- Grid column -->
         </div>

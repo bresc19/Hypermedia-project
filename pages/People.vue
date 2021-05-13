@@ -2,7 +2,7 @@
 <div>
   <h1 class="title-topic-single">People</h1>
   <hr>
-  <div class="grid-container">
+  <div class="grid-contaner">
     <div>
     <img src="../assets/img/team-leasing-1024x700.jpg">
     </div>

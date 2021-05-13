@@ -19,7 +19,7 @@
 
 <script>
 
-import ItemsArea from "../components/ItemsArea";
+import ItemsArea from "../components/ItemsProduct";
 export default {
   name: "Area",
   components: {ItemsArea},

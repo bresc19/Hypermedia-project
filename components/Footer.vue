@@ -118,7 +118,7 @@
             <h6 class="text-uppercase fw-bold mb-4">
               Social
             </h6>
-            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-twitter"></a>

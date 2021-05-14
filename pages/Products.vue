@@ -1,151 +1,188 @@
 <template>
-<div>
-  <h1 class="title-topic-single">Products</h1>
-  <hr>
-
-  <div class="wrapper">
-
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
+  <div>
+    <div class="input-group mb-3 cont-search">
+      <div class="input-group-prepend">
+        <select class="custom-select" id="inputGroupSelect02">
+          <option selected>Search in:</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
       </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
+      <input type="text" class="form-control text-space" aria-label="Text input with segmented dropdown button">
+      <button type="button" class="btn btn-outline-secondary">Action</button>
+
     </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+    <div class="row container-products">
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
     </div>
+    <div aria-label="Page navigation example">
+      <ul class="pagination pages-class">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+    <!-- <h1 class="title-topic-single">Products</h1>
+     <hr>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+     <div class="wrapper">
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
 
-    <div class="cell-product">
-      <div class="product-image">
-        <a href="#">
-          <img src="../assets/img/setting.png" width="120" height="100">
-        </a>
-      </div>
-      <a href="#" class="no-signature product-title">
-        Product</a>
-    </div>
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
+
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
+
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
+
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
+
+       <div class="cell-product">
+         <div class="product-image">
+           <a href="#">
+             <img src="../assets/img/setting.png" width="120" height="100">
+           </a>
+         </div>
+         <a href="#" class="no-signature product-title">
+           Product</a>
+       </div>
+     </div> -->
   </div>
-</div>
 
 </template>
 
 <script>
-import ItemProduct from "../components/ItemArea";
+import ItemProduct from "../components/ItemProduct";
 export default {
   name: "Products",
   components: {ItemProduct},
-  layout: 'default'
-
+  layout: 'default',
 }
 </script>
 
@@ -329,6 +366,26 @@ div.grid-cell-left{
   float:top;
   padding: 3px;
 }
+.container-products{
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 10px;
+}
 
+.prod-item {
+  padding-top: 20px;
 
+}
+
+.cont-search{
+  width: 40%;
+  padding: 20px;
+  float: right;
+}
+.text-space{
+  min-width: 80px;
+}
+.pages-class{
+  justify-content: center;
+}
 </style>

@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "ItemProduct"
+  name: "AreaAspect"
 }
 </script>
 

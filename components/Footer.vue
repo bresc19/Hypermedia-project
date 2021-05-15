@@ -1,46 +1,4 @@
 <template>
-  <!--<div>
-  <div class="col-container">
-
-    <div class="col">
-      <h2>TopTech</h2>
-      <a class="footer-link" id="footer-left">© 2021 TopTech S.p.A. <br>
-        Via Schiaffino 11
-        20158 Milano, Italy <br>
-        P. IVA IT13187610152</a>
-
-    </div>
-
-    <div class="col">
-      <h2>Explore</h2>
-      <NuxtLink class="footer-link" to="/">Home</NuxtLink>
-      <NuxtLink class="footer-link" to="/products">Products</NuxtLink>
-      <NuxtLink class="footer-link" to="/people"> People </NuxtLink>
-      <NuxtLink class="footer-link" to="/aboutus">About Us</NuxtLink>
-      <NuxtLink class="footer-link" to="/contact">Contact</NuxtLink>
-    </div>
-
-    <div class="col">
-      <h2>Areas</h2>
-      <NuxtLink class="footer-link" to="#">Data Bases</NuxtLink>
-      <NuxtLink class="footer-link" to="#">IoT</NuxtLink>
-      <NuxtLink class="footer-link" to="#">Security</NuxtLink>
-      <NuxtLink class="footer-link" to="#">Machine Learning</NuxtLink>
-    </div>
-
-    <div class="col">
-      <h2>Social</h2>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-twitter"></a>
-
-    </div>
-
-
-  </div>
-  </div>-->
-
 
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-light text-muted">
@@ -68,8 +26,6 @@
               P. IVA IT13187610152
             </p>
           </div>
-          <!-- Grid column -->
-
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->

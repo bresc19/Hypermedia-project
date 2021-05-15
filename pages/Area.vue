@@ -74,19 +74,17 @@
 
 
   </div>
-
 </div>
 </template>
 
 
 <script>
 
-import ItemsArea from "../components/ItemsProduct";
+
 export default {
   name: "Area",
-  components: {ItemsArea},
+  components: {},
   template: "default",
-
 
 }
 </script>

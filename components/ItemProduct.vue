@@ -4,9 +4,8 @@
       <img class="card-img-top" src="../assets/img/areas11.jpg" alt="Card image cap">
     </div>
     <div class="card-body pt-0">
-      <h5 class="card-title">Product</h5>
+      <a href="#" ><h5 class="card-title">Product</h5></a>
       <p class="card-text">Description</p>
-
     </div>
   </div>
 </template>

@@ -37,7 +37,7 @@
         CARD HERE
       </div>
       <div class="col-6">
-        <div class="card" style="">
+        <div class="card">
           <div class="card-body" style="text-align: right;">
             <h5 class="card-title">Card title</h5>
             <ul>

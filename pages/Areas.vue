@@ -1,6 +1,8 @@
 <template>
 <div>
 
+  <!--Alienato a sx testo-->
+
   <div id="carouselExampleIndicators" class="carousel slide container-carousel" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -211,12 +213,5 @@
     bottom: 5px;
     position: absolute;
   }
-
-
-
-
-
-
-
 
   </style>

@@ -1,4 +1,5 @@
 <template>
+  <!-- parole orfane -->
   <div>
     <div class="input-group mb-3 cont-search">
       <div class="input-group-prepend">

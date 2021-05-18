@@ -1,5 +1,4 @@
 <template>
-<div>
 
     <div class="cont-product">
       <div class="container">
@@ -15,7 +14,6 @@
       </div>
     </div>
 
-</div>
 </template>
 
 <script>

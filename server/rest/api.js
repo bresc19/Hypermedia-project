@@ -6,21 +6,22 @@ const createDB = require('../db-conn')
 async function init() {
     const Database = await createDB()
 
-    const {People} = Database._tables
+    const {People, AreaInfo, descriptionAreas} = Database._tables
+
     app.get('/peoples', async (req, res) => {
         const peoples = await People.findAll()
-        console.log(process.env.DATABSE_URL)
         return res.json(peoples)
     })
 
-  /*  app.get('/peoples/:id', async (req, res) => {
-        const { id } = req.params
-        const person = await People.findOne({
-            where: { id },
-        })
-        return res.json(person)
+    app.get('/areas', async (req, res) =>{
+        const areaInfo = await AreaInfo.findAll()
+        const descriptions = await descriptionAreas.findAll()
+        const data = {areaInfo, descriptions}
+        return res.json(data)
+
     })
-*/
+
+
 
 
 }

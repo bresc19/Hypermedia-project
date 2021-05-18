@@ -6,40 +6,68 @@ const db = new Sequelize('postgres://lnjtjbzjogupnb:3347350d1c81eaa341f905fc7e43
         protocol: 'postgres',
         dialectOptions: {
             ssl: { rejectUnauthorized: false }        }
-    })
+    });
+
 
 
 
 const People = db.define("people",{
-    name: DataTypes.STRING,
-    surname: DataTypes.STRING,
-    role: DataTypes.STRING,
-    image: DataTypes.TEXT,
-},
+        name: DataTypes.STRING,
+        surname: DataTypes.STRING,
+        role: DataTypes.STRING,
+        image: DataTypes.TEXT,
+    },
     {
         timestamps: false
     })
 
 
-db._tables = {People}
+const AreaInfo = db.define("areainfo", {
+        area_name: DataTypes.STRING,
+        brief_description: DataTypes.STRING,
+        url_image: DataTypes.STRING
+    },
+    {
+        timestamps: false
+    })
 
 
+const descriptionAreas = db.define("descriptionareas", {
+        carouseltext: DataTypes.TEXT,
+        url: DataTypes.STRING,
+
+    },
+    {
+        timestamps: false
+    })
 
 
+db._tables = {People, AreaInfo, descriptionAreas}
 
-   /* db.People.create({
+async function createData() {
+    await People.create({
         name: "matteo",
-        surname: "Brescio",
-        role: "I'm CEO",
-        image: "blabla"
+        surname: "bresciani",
+        role: "ceo",
+        image: "bla"
 
     })
 
-*/
+
+    await AreaInfo.create({
+        area_name: "bla",
+        brief_description: "bla"
+    })
+
+
+}
+
+
 
 async function createDB(){
     return new Promise(async (res, rej) =>{
         await db.sync()
+   //     await createData()
         res(db)
     })
 }

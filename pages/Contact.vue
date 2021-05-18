@@ -8,45 +8,36 @@
       <a>Get in touch with us!</a>
     </div>
   </div>
+  <div class="grid-container">
+    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
+    <div class="classe_img_con_didascalia">
+      <img src="../assets/img/aboutus2.jpg"/>
+      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
 
-  <div class="grid2x2">
-    <div class="box box1">
-
-      <a class="title-city">Italy - Milan</a>
-      <br>
-      <a class="address">
-        Via Schiaffino, 11 <br>
-        20158 MILANO <br>
-        T: +39 02 4951 7001
-
-      </a></div>
-    <div class="box box2">
-      <a class="title-city">USA - Boston</a>
-      <br>
-      <a class="address">
-        211 Congress Street <br>
-        Boston, MA 02110 <br>
-        T: +1 617 936 0212</a></div>
-    <div class="box box3">
-      <a class="title-city">
-        USA - Los Angeles
-      </a>
-      <br>
-      <a class="address">
-        12130 Millennium Drive <br>
-        Los Angeles, CA 90094 <br>
-        T: +1 323 524 0524
-      </a>
+      </p>
     </div>
-    <div class="box box4">
-      <a class="title-city">
-        Singapore
-      </a>
-      <br>
-      <a class="address">5 Temasek Blvd,<br>
-        Singapore 03898</a></div>
-  </div>
+    <div class="classe_img_con_didascalia">
+      <img src="../assets/img/aboutus2.jpg"/>
+      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
 
+      </p>
+    </div>
+    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
+    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
+    <div class="classe_img_con_didascalia">
+      <img src="../assets/img/aboutus2.jpg"/>
+      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
+
+      </p>
+    </div>
+    <div class="classe_img_con_didascalia">
+      <img src="../assets/img/aboutus2.jpg"/>
+      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
+
+      </p>
+    </div>
+    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
+  </div>
 </div>
   </template>
 
@@ -64,25 +55,46 @@ export default {
   padding: 40px;
 }
 
-.grid2x2 {
-  max-width: 50%;
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  text-align: center;
-}
-.grid2x2 > div {
-  display: flex;
-  flex-basis: calc(50% - 40px);
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 50px;
+  background-color: white;
+  padding: 120px;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
-.grid2x2 > div > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  text-align: center;
+.grid-container > text-right {
+  background-color: #ffffff;
+  text-align: right;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.grid-container > text-left {
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+div.gallery {
+  border: 1px solid #000000;
+}
+
+div.gallery:hover {
+  border: 3px solid #000000;
+  max-width: 100%;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
 
 .box {
@@ -97,19 +109,33 @@ export default {
 .address{
   font-size: 20px;
 }
+p{
+  font-size: 24px;
+}
 a{
   color: black;
   text-decoration: none;
+  align: justify;
 }
-.text-block {
+.classe_img_con_didascalia {
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.classe_img_con_didascalia p {
   position: absolute;
-  bottom: 20%;
-  right: 5%;
-  left: 40%;
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+  left: 0;
+  bottom: 0;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: none;
+  width: 100%;
+  padding: 10px;
 }
+
+.classe_img_con_didascalia:hover p {
+  display:block;
+}
+
 </style>

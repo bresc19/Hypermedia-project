@@ -14,7 +14,9 @@ async function init() {
     })
 
     app.get('/areas', async (req, res) =>{
-        const areaInfo = await AreaInfo.findAll()
+        const areaInfo = await AreaInfo.findAll({
+            order: ['id']
+        })
         const descriptions = await descriptionAreas.findAll()
         const data = {areaInfo, descriptions}
         return res.json(data)

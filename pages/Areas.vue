@@ -11,9 +11,9 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="~/assets/img/areas11.jpg" class="d-block w-100" alt="...">
+          <img :src="require(`~/assets/img${carousel1.url}`)" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <p>Whether you're looking for compute power, database storage, content delivery, or other functionality, TopTech has the services to help you build sophisticated applications with increased flexibility, scalability and reliability.</p>
+           <p>  {{ carousel1.carouseltext }}  </p>
           </div>
         </div>
         <div class="carousel-item">
@@ -65,14 +65,23 @@ export default {
   layout: 'default',
   async asyncData({$axios}) {
     const {data} = await $axios.get("/api/areas")
-    console.log(data)
     const info_area = data.areaInfo
-    const carousel = data.descriptions
+    const carousel1 = data.descriptions[0]
+    console.log(data.descriptions)
+    //const carousel2 = data.descriptions[1]
+    //const carousel3 = data.descriptions[2]
+   // console.log(res.text(carousel1.carouseltext))
+
     return {
       info_area,
-      carousel
+      carousel1
     }
-  }
+  },
+  data() {
+    return {
+      url1: require('../assets/img/areas11.jpg'),
+    }
+  },
 }
 
 

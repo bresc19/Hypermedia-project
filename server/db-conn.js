@@ -22,7 +22,11 @@ const People = db.define("people",{
     })
 
 
-const AreaInfo = db.define("areainfo", {
+const AreaInfo = db.define("areainfos", {
+        id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true
+        },
         area_name: DataTypes.STRING,
         brief_description: DataTypes.STRING,
         url_image: DataTypes.STRING
@@ -32,7 +36,7 @@ const AreaInfo = db.define("areainfo", {
     })
 
 
-const descriptionAreas = db.define("descriptionareas", {
+const descriptionAreas = db.define("description_areas", {
         carouseltext: DataTypes.TEXT,
         url: DataTypes.STRING,
 
@@ -67,7 +71,7 @@ async function createData() {
 async function createDB(){
     return new Promise(async (res, rej) =>{
         await db.sync()
-   //     await createData()
+        //     await createData()
         res(db)
     })
 }

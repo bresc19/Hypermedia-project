@@ -282,7 +282,7 @@
     <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="#">
-          <img src="Hypermedia-project/assets/img/people/Paolo-Bozzola-1.jpg"  width="600" height="400">
+          <img src="~/assets/img/people/Paolo-Bozzola-1.jpg"  width="600" height="400">
         </a>
         <div class="name-surname"><a class="no-signature" href="#">Paolo Bozzola</a></div>
         <div class="desc"><a class="no-signature" href="#" >Computer scientist</a></div>
@@ -366,13 +366,6 @@ const axios = require('axios')
 export default {
   name: 'People',
   layout: 'default',
-  async asyncData({ $axios }) {
-    const {data} = await $axios.get(`/api/peoples`)
-    const p = data[1]
-    return{
-      p,
-    }
-  },
 
 }
 </script>

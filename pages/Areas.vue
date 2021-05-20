@@ -13,7 +13,7 @@
         <div class="carousel-item active">
           <img :src="require(`~/assets/img${carousel1.url}`)" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-           <p>  {{ carousel1.carouseltext }}  </p>
+            <p>  {{ carousel1.carouseltext }}  </p>
           </div>
         </div>
         <div class="carousel-item">
@@ -43,8 +43,7 @@
     <div id="cont-area-link">
 
       <ItemArea v-for="item in info_area" v-bind:key="item.id"
-                :name="item.area_name"
-                :description="item.brief_description"
+                :name="item.area_name" :description="item.brief_description"
                 :url = "item.url_image"/>
 
     </div>
@@ -70,7 +69,7 @@ export default {
     console.log(data.descriptions)
     //const carousel2 = data.descriptions[1]
     //const carousel3 = data.descriptions[2]
-   // console.log(res.text(carousel1.carouseltext))
+    // console.log(res.text(carousel1.carouseltext))
 
     return {
       info_area,

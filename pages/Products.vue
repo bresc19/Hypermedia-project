@@ -16,18 +16,13 @@
     </div>
 
     <div class="row container-products">
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
-      <div class="col-sm-4 prod-item" ><ItemProduct></ItemProduct></div>
+      <div class="col-sm-4 prod-item" >
+        <ItemProduct v-for="item in productItems"
+                     v-bind:key="item.name"
+                     :product_name="item.name" :description="item.brief_description"
+                     :url = "item.image_product"
+        />
+      </div>
 
     </div>
     <div aria-label="Page navigation example">
@@ -74,6 +69,15 @@ export default {
   name: "Products",
   components: {ItemProduct},
   layout: 'default',
+  async asyncData({ $axios }) {
+    const {data} = await $axios.get(`/api/products`)
+    const productItems = data
+    console.log(productItems)
+    return{
+      productItems,
+    }
+  },
+
 }
 </script>
 

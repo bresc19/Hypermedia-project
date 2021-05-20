@@ -356,16 +356,40 @@
       </div>
     </div>
   </div>
+
+
+  <!--  dfghjghjk-->
+
+<ItemPerson v-for="item in peopleItems"
+            v-bind:key="item.id"
+            :name="item.name"
+            :surname="item.surname"
+            :role="item.role"
+            :url = "item.id_image"/>
+
 </div>
 </template>
 
 <script>
 const axios = require('axios')
 
+import ItemPerson from '../components/ItemPerson'
+
 
 export default {
   name: 'People',
   layout: 'default',
+  components: ItemPerson,
+
+  async asyncData({ $axios }) {
+    const {data} = await $axios.get(`/api/people`)
+    const peopleItems = data
+    console.log(peopleItems)
+    return{
+      peopleItems,
+    }
+  },
+
 
 }
 </script>

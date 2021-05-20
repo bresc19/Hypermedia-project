@@ -1,11 +1,11 @@
 <template>
   <div class="card profile-card-5">
     <div class="card-img-block">
-      <img class="card-img-top" src="../assets/img/areas11.jpg" alt="Card image cap">
+      <img class="card-img-top" :src="require(`~/assets/img${url}`)" alt="Card image cap">
     </div>
     <div class="card-body pt-0">
-      <a href="#" ><h5 class="card-title">Product</h5></a>
-      <p class="card-text">Description</p>
+      <a href="#" ><h5 class="card-title">{{ product_name }}</h5></a>
+      <p class="card-text">{{ description }}</p>
     </div>
   </div>
 </template>
@@ -13,6 +13,11 @@
 <script>
 export default {
   name: "ItemProduct",
+  props: {
+    product_name: { type: String, default: () => '' },
+    description: { type: String, default: () => '' },
+    url: { type: String, default: () => '' },
+  },
 }
 </script>
 

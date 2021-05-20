@@ -33,6 +33,10 @@ const People = db.define("people",{
 
 const Product = db.define("products",{
 
+        id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true
+        },
         name: DataTypes.STRING,
         brief_description: DataTypes.TEXT,
         large_description: DataTypes.TEXT,
@@ -49,6 +53,10 @@ const Product = db.define("products",{
 
 const Area = db.define("areas",{
 
+        id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true
+        },
         name_area: DataTypes.STRING,
         brief_description: DataTypes.ARRAY(DataTypes.TEXT),
         item: DataTypes.ARRAY(DataTypes.STRING),
@@ -86,7 +94,7 @@ const descriptionAreas = db.define("description_areas", {
     })
 
 
-db._tables = {People, AreaInfo, descriptionAreas}
+db._tables = {People, AreaInfo, descriptionAreas, Product, Area}
 
 async function createData() {
 

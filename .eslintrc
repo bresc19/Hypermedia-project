@@ -5,6 +5,8 @@
     "sourceType": "module"
   },
   "extends": [
-    "@nuxtjs"
+    "@nuxtjs",
+    "eslint:recommended",
+    "plugin:jest/recommended"
   ]
 }

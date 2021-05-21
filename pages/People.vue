@@ -1,4 +1,13 @@
 <template>
+
+
+  <!--
+
+  people (3x1)x4
+  product 3x3
+  
+
+  -->
 <div>
   <h1 class="title-topic-single">People</h1>
   <hr>

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide container-carousel" data-ride="carousel" >
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -253,5 +253,13 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+
+
+.container-carousel{
+  margin: 0 auto;
+  width: 80%;
+  height: 50%;
+  padding: 15px;
 }
 </style>

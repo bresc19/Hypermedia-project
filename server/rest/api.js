@@ -36,6 +36,14 @@ async function init() {
         return res.json(people_info)
     })
 
+    app.get('/people/:id_person', async (req, res) => {
+
+        const person = await People.findOne({
+            where: {
+                id: req.params.id_person },
+        })
+        return res.json(person)
+    })
 
 
 

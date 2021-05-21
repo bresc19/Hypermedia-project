@@ -13,3 +13,4 @@ npm-debug.log
 # Nuxt generate
 dist
 .idea/inspectionProfiles/Project_Default.xml
+.eslintcache

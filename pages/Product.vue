@@ -22,12 +22,7 @@
       </div>
     </div>
     <div>
-
-
     </div>
-
-
-
 
     <div class="row">
       <div class="col-9">
@@ -50,24 +45,19 @@
       </div>
     </div>
 
-
-
-
-
-
-
   </div>
-
 
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: "Product"
 }
 </script>
 
 <style scoped>
+/* eslint-disable */
 .container {
   max-width: 960px;
 }

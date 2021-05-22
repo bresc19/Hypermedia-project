@@ -36,22 +36,21 @@
     </div>
     <div class="row" id="cont-products-descriptions">
       <div class="card col-sm-4 item-cont-description-products" style="width: 18rem;">
-        <img src="../assets/img/areas11.jpg" class="card-img-top" alt="...">
+        <img src="../../assets/img/areas11.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
 
       <div class="card col-sm-4 item-cont-description-products" style="width: 18rem;">
-        <img src="../assets/img/areas11.jpg" class="card-img-top" alt="...">
+        <img src="../../assets/img/areas11.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
 
-
       <div class="card col-sm-4 item-cont-description-products" style="width: 18rem;">
-        <img src="../assets/img/areas11.jpg" class="card-img-top" alt="...">
+        <img src="../../assets/img/areas11.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
@@ -64,7 +63,9 @@
 </template>
 
 <script>
-import ItemProduct from "../components/ItemProduct";
+/* eslint-disable */
+
+import ItemProduct from "../../components/ItemProduct";
 export default {
   name: "Products",
   components: {ItemProduct},
@@ -82,6 +83,7 @@ export default {
 </script>
 
 <style scoped>
+/* eslint-disable */
 
 .container-products{
   margin: 0 auto;

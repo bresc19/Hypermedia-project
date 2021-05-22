@@ -5,7 +5,7 @@
 
   people (3x1)x4
   product 3x3
-  
+
 
   -->
 <div>
@@ -13,7 +13,7 @@
   <hr>
   <div class="grid-container">
     <div>
-    <img src="../assets/img/team-leasing-1024x700.jpg">
+    <img src="../../assets/img/team-leasing-1024x700.jpg">
     </div>
     <div class="grid-cell-right">
     <a class="people-text"> We believe our strength lies in the diversity of<br>our employees.
@@ -382,7 +382,7 @@
 <script>
 const axios = require('axios')
 
-import ItemPerson from '../components/ItemPerson'
+import ItemPerson from '../../components/ItemPerson'
 
 
 export default {

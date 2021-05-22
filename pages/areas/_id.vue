@@ -124,6 +124,15 @@ export default {
   components: {},
   template: "default",
 
+  async asyncData ({ $axios, route }) {
+    const { id } = route.params
+    const { data } = await $axios.get(`/api/areas/${id}`)
+    const area_data = data
+    return {
+      area_data
+    }
+  }
+
 }
 </script>
 

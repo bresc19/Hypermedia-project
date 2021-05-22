@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-8">Description Description Description Description Description Description Description</div>
       <div class="col-4">
-        <img style="margin: 0 auto; padding: 10px; width: 100%;" src="../assets/img/areas11.jpg">
+        <img style="margin: 0 auto; padding: 10px; width: 100%;" src="../../assets/img/areas11.jpg">
       </div>
     </div>
     <div class="row">
@@ -52,7 +52,17 @@
 <script>
 /* eslint-disable */
 export default {
-  name: "Product"
+  name: "Product",
+  async asyncData ({ $axios, route }) {
+    const { id } = route.params
+    console.log('this url', process.env.BASE_URL)
+    const { data } = await $axios.get(`/api/products/${id}`)
+    const product_data = data
+    return {
+      product_data
+    }
+  }
+
 }
 </script>
 

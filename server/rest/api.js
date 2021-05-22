@@ -45,6 +45,25 @@ async function init() {
         return res.json(person)
     })
 
+  app.get('/products/:id', async (req, res) => {
+
+    const product = await Product.findOne({
+      where: {
+        id: req.params.id },
+    })
+    return res.json(product)
+  })
+
+  app.get('/areas/:id', async (req, res) => {
+
+    const area = await Area.findOne({
+      where: {
+        name_area: req.params.id
+      },
+    })
+    return res.json(area)
+  })
+
 
 
 

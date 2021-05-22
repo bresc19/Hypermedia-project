@@ -1,3 +1,4 @@
+
 <template>
 <div>
   <nav aria-label="breadcrumb">
@@ -6,11 +7,11 @@
       <li class="breadcrumb-item active" aria-current="page">Person</li>
     </ol>
   </nav>
-  <p class="secondary-title">Anagrafic</p>
+  <p class="secondary-title">Anagafic</p>
   <hr>
   <div class="grid-container">
     <div>
-      <img src="../assets/img/aboutus1.jpg">
+      <img src="../../assets/img/aboutus1.jpg">
     </div>
     <div class="grid-cell-left">
       <a class="aboutus-text">Name:...<br>Surname:...<br>Role:...<br>Area:...<br>Years of collaboration:...</a>
@@ -21,7 +22,7 @@
   <div class="grid-container">
     <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
     <div class="classe_img_con_didascalia">
-      <img src="../assets/img/aboutus2.jpg"/>
+      <img src="../../assets/img/aboutus2.jpg"/>
       <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
 
       </p>
@@ -39,28 +40,28 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
+          <img src="../../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
+          <img src="../../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
+          <img src="../../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Praesen t commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
+          <img src="../../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -81,9 +82,22 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  name: "Person",
-  layout: "default"
+  name: 'Person',
+  layout: 'default"',
+
+  async asyncData ({ $axios, route }) {
+    const { id } = route.params
+    console.log('this url', process.env.BASE_URL)
+    const { data } = await $axios.get(`/api/people/${id}`)
+    // eslint-disable-next-line camelcase
+    const person_data = data
+    return {
+      person_data
+    }
+  }
+
 }
 </script>
 
@@ -106,7 +120,6 @@ export default {
   align-items: center;
 }
 
-
 .grid-people > div{
   horiz-align: center;
   align-items: center;
@@ -126,7 +139,6 @@ export default {
   font-size: 20px;
   vertical-align: middle;
 }
-
 
 img{
   max-width: 100%;
@@ -184,12 +196,10 @@ div.desc {
   clear: both;
 }
 
-
 div.grid-cell-right {
   vertical-align: middle;
   text-align: right;
 }
-
 
 div.grid-cell-left{
   vertical-align: middle;
@@ -253,7 +263,6 @@ div.grid-cell-left{
   border: solid black;
 
 }
-
 
 .product-title{
   float: bottom;

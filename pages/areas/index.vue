@@ -57,7 +57,7 @@
 
 
 
-import ItemArea from "../components/ItemArea";
+import ItemArea from "../../components/ItemArea";
 export default {
   name: 'Areas',
   components: {ItemArea},
@@ -78,7 +78,7 @@ export default {
   },
   data() {
     return {
-      url1: require('../assets/img/areas11.jpg'),
+      url1: require('../../assets/img/areas11.jpg'),
     }
   },
 }

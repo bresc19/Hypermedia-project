@@ -50,10 +50,16 @@ export default {
       },
       {
         rel: "stylesheet",
-        src: "./assets/css/fontawesome.min.css"
+        src: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      },
+      {
+        rel: "stylesheet",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css"
       }
 
+
     ],
+
 
     script: [
 
@@ -71,6 +77,10 @@ export default {
             "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
         type: "text/javascript"
       },
+      {
+        src: "https://kit.fontawesome.com/13f7323266.js",
+        type: "text/javascript"
+      }
     ]
   },
 

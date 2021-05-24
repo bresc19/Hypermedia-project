@@ -17,17 +17,17 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>TopTech
+            <h6 class="text-uppercase fw-bold mb-4" style="text-align: left;">
+              TopTech     <i class="fas fa-building"></i>
             </h6>
-            <p>
+            <p style="text-align: left;">
               Via Schiaffino 11
               20158 Milano, Italy <br>
               P. IVA IT13187610152
             </p>
           </div>
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
               Explore
@@ -48,7 +48,7 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
               Areas
@@ -73,10 +73,10 @@
             <h6 class="text-uppercase fw-bold mb-4">
               Social
             </h6>
-            <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-facebook"></a>
-            <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-instagram"></a>
-            <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-linkedin"></a>
-            <a href="#" style="object-fit: contain; padding-left: 0; padding-right: 0; padding-bottom: 0;" class="fa fa-twitter"></a>
+            <i class="fab fa-facebook-square fa-3x" style="color: #3B5998;"></i>
+            <i class="fab fa-twitter-square fa-3x" style="color: #55ACEE;"></i>
+            <i class="fab fa-google-plus-square fa-3x" style="color: #dd4b39;"></i>
+            <i class="fab fa-instagram-square fa-3x" style="color: #125688;"></i>
           </div>
           <!-- Grid column -->
         </div>
@@ -88,20 +88,18 @@
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
 
-      <a class="text-reset fw-bold" style="text-decoration: none;"> Developed by Bresciani Matteo & D'Ascoli Gabriele <br>
+      <a class="text-reset" style="text-decoration: none;"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
         Politecnico of Milan</a>
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
 
-
-
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: 'Footer'
 }
 </script>
 
@@ -122,7 +120,6 @@ export default {
   horiz-align: center;
 }
 
-
 .col {
   display: table-cell;
   flex: 1;
@@ -137,7 +134,6 @@ export default {
     width: 100%;
   }
 }
-
 
 /* Style all font awesome icons */
 .fa {
@@ -175,7 +171,6 @@ export default {
   color: white;
 }
 
-
 a.footer-link{
   display: block;
   text-decoration: none;
@@ -186,6 +181,5 @@ a.footer-link{
 #footer-left{
   color: #adc9ff;
 }
-
 
 </style>

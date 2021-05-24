@@ -12,6 +12,7 @@
     "dev-debug": "node --inspect-brk node_modules/.bin/nuxt"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@growthbunker/vuesocial": "^0.1.2",
     "@nuxtjs/axios": "^5.13.1",
     "bootstrap": "^5.0.0",

@@ -1,5 +1,7 @@
 <template>
+
   <div class="wrapper">
+    <Breadcumb/>
 
     <div class="row">
       <div class="col-8">Description Description Description Description Description Description Description</div>

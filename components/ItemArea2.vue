@@ -1,7 +1,9 @@
 <template>
 <div>
   <div class="card card-custom bg-white border-white border-0 card-container">
-    <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+    <div class="card-custom-img" style="background: #2cd8ff;" >
+
+    </div>
     <div class="card-custom-avatar">
       <img class="img-fluid" :src="require(`~/assets/img${url}`)" />
     </div>
@@ -10,8 +12,7 @@
       <p class="card-text">{{description}} <a  target="_blank">card-decks</a> to align multiple cards nicely in a row.</p>
     </div>
     <div class="card-footer" style="background: inherit; border-color: inherit;">
-      <a href="#" class="btn btn-primary">Option</a>
-      <a href="#" class="btn btn-outline-primary">Other option</a>
+      <a href="#">Visit</a>
     </div>
   </div>
   <!-- Copy until here -->
@@ -79,7 +80,7 @@ export default {
 
 .card-container{
   height: 400px;
-  width: 300px;
+  width: 250px;
   padding: 10px;
 }
 </style>

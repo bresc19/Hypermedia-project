@@ -1,12 +1,7 @@
 
 <template>
 <div>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">People</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Person</li>
-    </ol>
-  </nav>
+<Breadcumb/>
   <p class="secondary-title">Anagafic</p>
   <hr>
   <div class="grid-container">
@@ -83,8 +78,10 @@
 
 <script>
 /* eslint-disable */
+import Breadcumb from "../../components/Breadcumb";
 export default {
   name: 'Person',
+  components: {Breadcumb},
   layout: 'default"',
 
   async asyncData ({ $axios, route }) {

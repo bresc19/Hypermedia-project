@@ -71,7 +71,7 @@ export default {
   components: {ItemArea2, ItemArea},
   layout: 'default',
   async asyncData({$axios}) {
-    const {data} = await $axios.get('http://toptech-polimi.herokuapp.com/api/areas')
+    const {data} = await $axios.get('https://toptech-polimi.herokuapp.com/api/areas')
     const info_area = data.areaInfo
     const carousel1 = data.descriptions[0]
     console.log(data.descriptions)

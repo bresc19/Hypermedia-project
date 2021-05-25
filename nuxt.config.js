@@ -48,14 +48,16 @@ export default {
         rel: "stylesheet",
         src: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       },
-      {
-        rel: "stylesheet",
-        src: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
-      },
+
       {
         rel: "stylesheet",
         src: "https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/pure-min.css"
-      }
+      },
+      {
+        rel: "stylesheet",
+        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      },
+
 
 
     ],
@@ -79,6 +81,18 @@ export default {
       },
       {
         src: "https://kit.fontawesome.com/13f7323266.js",
+        type: "text/javascript"
+      },
+      {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js",
+        type: "text/javascript"
+      },
+      {
+        src: "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",
+        type: "text/javascript"
+      },
+      {
+        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js",
         type: "text/javascript"
       }
     ]

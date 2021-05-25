@@ -1,4 +1,4 @@
-import {Sequelize, DataTypes} from 'sequelize'
+const {Sequelize, DataTypes} = require('sequelize')
 
 const db = new Sequelize('postgres://lnjtjbzjogupnb:3347350d1c81eaa341f905fc7e436ef53053e45c73aa4542a00dc0f225692086@ec2-34-250-16-127.eu-west-1.compute.amazonaws.com:5432/d5kfvb6ra7u04b',
     {

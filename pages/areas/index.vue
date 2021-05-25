@@ -40,13 +40,20 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <div id="cont-area-link">
 
-      <ItemArea v-for="item in info_area" v-bind:key="item.id"
-                :name="item.area_name" :description="item.brief_description"
-                :url = "item.url_image"/>
+    <div class="container"  style="width: 60%; margin: 0 auto;">
+      <div class="row" >
+        <div class="col-lg-6 col-sm-12" style = "padding: 50px;"  v-for="item in info_area" v-bind:key="item.id">
+          <ItemArea2
+            :name="item.area_name" :description="item.brief_description"
+            :url = "item.url_image"
+          ></ItemArea2>
+        </div>
+      </div>
 
     </div>
+
+
 
 
   </div>
@@ -58,12 +65,13 @@
 
 
 import ItemArea from "../../components/ItemArea";
+import ItemArea2 from "../../components/ItemArea2";
 export default {
   name: 'Areas',
-  components: {ItemArea},
+  components: {ItemArea2, ItemArea},
   layout: 'default',
   async asyncData({$axios}) {
-    const {data} = await $axios.get("/api/areas")
+    const {data} = await $axios.get('http://toptech-polimi.herokuapp.com/api/areas')
     const info_area = data.areaInfo
     const carousel1 = data.descriptions[0]
     console.log(data.descriptions)
@@ -76,13 +84,14 @@ export default {
       carousel1
     }
   },
+
   data() {
     return {
       url1: require('../../assets/img/areas11.jpg'),
     }
   },
-}
 
+}
 
 
 </script>
@@ -165,7 +174,7 @@ export default {
 }
 .container-carousel{
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   height: 50%;
   padding: 15px;
 }

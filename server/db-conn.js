@@ -105,7 +105,7 @@ async function createData() {
 
 
 async function createDB() {
-        await db.sync()
+        await db.sync({ force: true })
    //     await createData()
   return db
 

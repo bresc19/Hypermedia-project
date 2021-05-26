@@ -32,6 +32,20 @@ export default {
 
       {
         rel: "stylesheet",
+        href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      },
+
+      {
+        rel: "stylesheet",
+        href: "https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css"
+      },
+
+      {
+        rel: "stylesheet",
+      href: "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      },
+      {
+        rel: "stylesheet",
         src: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       },
 
@@ -60,7 +74,11 @@ export default {
             "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
         type: "text/javascript"
       },
-
+      {
+        src:
+            "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+        type: "text/javascript"
+      },
       {
         src: "https://kit.fontawesome.com/13f7323266.js",
         type: "text/javascript"

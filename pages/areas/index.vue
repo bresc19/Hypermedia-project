@@ -45,8 +45,8 @@
       <div class="row" >
         <div class="col-lg-6 col-sm-12" style = "padding: 50px;"  v-for="item in info_area" v-bind:key="item.id">
           <ItemArea2
-            :name="item.area_name" :description="item.brief_description"
-            :url = "item.url_image"
+            :name="item.area_name" :description="item.initial_description"
+            :url = "item.area_logo"
           ></ItemArea2>
         </div>
       </div>

@@ -29,7 +29,7 @@ export default {
         rel: "stylesheet",
         href: "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       },
-
+      
       {
         rel: "stylesheet",
         src: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -52,33 +52,33 @@ export default {
     script: [
 
       {
-        src: "/js/jquery-3.5.1.slim.min.js",
+        src: "https://code.jquery.com/jquery-3.5.1.slim.min.js",
         type: "text/javascript"
       },
       {
         src:
-            "/js/bootstrap.bundle.min.js",
+            "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
         type: "text/javascript"
       },
       {
         src:
-            "/js/popper.min.js",
+            "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
         type: "text/javascript"
       },
       {
-        src: "/js/13f7323266.js",
+        src: "https://kit.fontawesome.com/13f7323266.js",
         type: "text/javascript"
       },
       {
-        src: "/js/all.min.js",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js",
         type: "text/javascript"
       },
       {
-        src: "/js/popper2.min.js",
+        src: "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js",
         type: "text/javascript"
       },
       {
-        src: "/js/bootstrap.min.js",
+        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js",
         type: "text/javascript"
       }
     ]

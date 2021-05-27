@@ -105,12 +105,7 @@ async function createData() {
 
   })
 
-  await AreaInfo.create({
-    id: "1",
-    area_name: "bla",
-    brief_description: "d",
-    url_image: "/Database/db-logo.png"
-  })
+
 
   await Product.create({
     id: "1",
@@ -147,7 +142,7 @@ async function createData() {
 async function createDB() {
   return new Promise(async (res, rej) => {
     await db.sync()
-    //await createData()
+  //  await createData()
     res(db)
   })
   return db

@@ -388,7 +388,7 @@ import ItemPerson from '../../components/ItemPerson'
 export default {
   name: 'People',
   layout: 'default',
-  components: ItemPerson,
+  components: {ItemPerson},
 
   async asyncData({ $axios }) {
     const {data} = await $axios.get(`/api/people`)

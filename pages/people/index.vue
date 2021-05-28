@@ -1,6 +1,8 @@
 <template>
 
 
+
+
   <!--
 
   people (3x1)x4
@@ -9,6 +11,7 @@
 
   -->
 <div>
+
   <h1 class="title-topic-single">People</h1>
   <hr>
   <div class="grid-container">

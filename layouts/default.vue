@@ -20,10 +20,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../assets/css/bootstrap.4.1.3.min.css';
-@import '../assets/css/bootstrap.4.3.1.min.css';
-@import '../assets/css/bootstrap.4.4.min.css';
-@import '../assets/css/bootstrap5.min.css';
-
 
 </style>

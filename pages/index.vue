@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>Prova heroku seo optimization</p>
   </div>
 </template>
 

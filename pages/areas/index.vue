@@ -50,15 +50,8 @@
           ></ItemArea2>
         </div>
       </div>
-
     </div>
-
-
-
-
   </div>
-
-
 </template>
 <script>
 

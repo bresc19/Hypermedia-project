@@ -35,24 +35,27 @@
       </ul>
     </div>
     <div class="row" id="cont-products-descriptions">
-      <div class="card col-sm-4 item-cont-description-products" style="width: 18rem;">
-        <img src="../../assets/img/areas11.jpg" class="card-img-top" alt="...">
+      <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
+        <h4 style="text-align: center;">Agile transformation</h4>
+        <img src="../../assets/img/p1.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Drive disruption by applying Lean principles to achieve substantial performance improvements, accelerating business change.</p>
         </div>
       </div>
 
-      <div class="card col-sm-4 item-cont-description-products" style="width: 18rem;">
-        <img src="../../assets/img/areas11.jpg" class="card-img-top" alt="...">
+      <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
+        <br><h4 style="text-align: center;">DevOps</h4>
+        <img src="../../assets/img/p2.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Streamline IT by bringing business, development and operations teams together and applying automated processes.</p>
         </div>
       </div>
 
-      <div class="card col-sm-4 item-cont-description-products" style="width: 18rem;">
-        <img src="../../assets/img/areas11.jpg" class="card-img-top" alt="...">
+      <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
+        <h4 style="text-align: center;">Application modernization</h4>
+        <img src="../../assets/img/p3.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Transform your legacy applications to become more agile and efficient through the power of New IT.</p>
         </div>
       </div>
 

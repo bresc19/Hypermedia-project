@@ -3,7 +3,7 @@
   <h1 class="title-topic-single">About Us</h1>
   <hr>
   <div class="grid-container">
-    <div>
+    <div class="scroll-element js-scroll fade-in">
       <img src="../assets/img/aboutus1.jpg">
     </div>
     <div class="grid-cell-left">
@@ -15,10 +15,10 @@
       <a  class="aboutus-text">TopTech started as a research spinoff at Politecnico of Milan and was incubated at its startup accelerator.
         Data and experimentation are part of our DNA. </a>
     </div>
-    <div>
+    <div class="scroll-element js-scroll fade-in">
       <img src="../assets/img/aboutus2.jpg">
     </div>
-    <div>
+    <div class="scroll-element js-scroll fade-in">
       <img src="../assets/img/aboutus3.jpg">
     </div>
     <div class="grid-cell-left aboutus-text">
@@ -30,7 +30,7 @@
       <a  class="aboutus-text">In all we do, our goal is to build trusted relationships through client proximity, providing industry and
         technology expertise to help you meet the needs of your customers and citizens. </a>
     </div>
-    <div>
+    <div class="scroll-element js-scroll fade-in">
       <img src="../assets/img/aboutus4.jpg">
     </div>
   </div>
@@ -80,7 +80,49 @@
 <script>
 export default {
   name: "AboutUs",
-  layout: "default"
+  layout: "default",
+  mounted() {
+    const scrollElements = document.querySelectorAll(".js-scroll");
+
+    const elementInView = (el, dividend = 1) => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      return (
+        elementTop <=
+        (window.innerHeight || document.documentElement.clientHeight) / dividend
+      );
+    };
+
+    const elementOutofView = (el) => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      return (
+        elementTop > (window.innerHeight || document.documentElement.clientHeight)
+      );
+    };
+
+    const displayScrollElement = (element) => {
+      element.classList.add("scrolled");
+    };
+
+    const hideScrollElement = (element) => {
+      element.classList.remove("scrolled");
+    };
+
+    const handleScrollAnimation = () => {
+      scrollElements.forEach((el) => {
+        if (elementInView(el, 1.25)) {
+          displayScrollElement(el);
+        } else if (elementOutofView(el)) {
+          hideScrollElement(el)
+        }
+      })
+    }
+
+    window.addEventListener("scroll", () => {
+      handleScrollAnimation();
+    });
+  }
 }
 </script>
 
@@ -267,4 +309,86 @@ a{
   color: black;
   text-decoration: none;
 }
+
+.scroll-container {
+  height: 100vh;
+  min-height: 450px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.scroll-container:nth-of-type(1) {
+  background-color: #bdd0c4;
+}
+.scroll-container:nth-of-type(2) {
+  background-color: #f5d2d3;
+}
+.scroll-container:nth-of-type(3) {
+  background-color: #9ab7d3;
+}
+.scroll-container:nth-of-type(4) {
+  background-color: #dfccf1;
+}
+
+.scroll-container:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.scroll-element,
+.scroll-caption {
+}
+
+.scroll-element {
+  min-height: 300px;
+  height: 100%;
+}
+
+.scroll-caption {
+  margin: 1rem;
+}
+@media screen and (max-width: 650px) {
+  .scroll-container,
+  .scroll-container:nth-of-type(even) {
+    flex-direction: column;
+    align-content: inherit;
+  }
+
+  .scroll-element {
+    height: 100%;
+  }
+
+  .scroll-element,
+  .scroll-caption {
+    width: 100%;
+  }
+}
+/**Styling scrollable elements*/
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
 </style>

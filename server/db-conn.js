@@ -117,7 +117,7 @@ async function createData() {
     image_product: "/Database/product image1.jpg",
     large_image: "/Database/large image1.jpg",
     manager: "Martin Atoche",
-  }
+  },
   {
     id: "2",
       name: "TopTech Elasticache",
@@ -128,7 +128,7 @@ async function createData() {
     image_product: "/Database/product image2.jpg",
     large_image: "/Database/large image2.jpg",
     manager: "Martin Atoche",
-  }
+  },
   {
     id: "3",
       name: "TopTech db2-warehouse",
@@ -139,7 +139,7 @@ async function createData() {
     image_product: "/Database/product image3.jpg",
     large_image: "/Database/large image3.jpg",
     manager: "Martin Atoche",
-  }
+  },
   {
     id: "4",
       name: "TopTech DataRiskManager",
@@ -150,7 +150,7 @@ async function createData() {
     image_product: "/Security/product image1.jpg",
     large_image: "/Security/large image1.png",
     manager: "Osmani Martinez",
-  }
+  },
   {
     id: "5",
       name: "TopTech Macie",
@@ -162,7 +162,7 @@ async function createData() {
     image_product: "/Security/product image2.jpg",
     large_image: "/Security/large image2.jpg",
     manager: "Osmani Martinez",
-  }
+  },
   {
     id: "6",
       name: "TopTech Cognito",
@@ -173,7 +173,7 @@ async function createData() {
     image_product: "/Security/product image3.jpg",
     large_image: "/Security/large image3.jpg",
     manager: "Osmani Martinez",
-  }
+  },
   {
     id: "7",
       name: "TopTech Maximo",
@@ -185,7 +185,7 @@ async function createData() {
     image_product: "/IoT/product image1.jpg",
     large_image: "/IoT/large image1.png",
     manager: "Paolo Bozzola",
-  }
+  },
   {
     id: "8",
       name: "TopTech GreenGrass",
@@ -196,7 +196,7 @@ async function createData() {
     image_product: "/IoT/product image2.jpg",
     large_image: "/IoT/large image2.png",
     manager: "Paolo Bozzola",
-  }
+  },
   {
     id: "9",
       name: "TopTech IoT-analytics",
@@ -207,7 +207,7 @@ async function createData() {
     image_product: "/IoT/product image3.jpg",
     large_image: "/IoT/large image3.jpg",
     manager: "Paolo Bozzola",
-  }
+  },
   {
     id: "10",
       name: "TopTech Watson-Konwledge Catalog",
@@ -219,7 +219,7 @@ async function createData() {
     image_product: "/MachineLearning/product image1.jpg",
     large_image: "/MachineLearning/large image1.jpg",
     manager: "Roberto Clemente",
-  }
+  },
   {
     id: "11",
       name: "TopTech SageMaker-Debugger",
@@ -230,7 +230,7 @@ async function createData() {
     image_product: "/MachineLearning/product image2.jpg",
     large_image: "/MachineLearning/large image2.jpeg",
     manager: "Roberto Clemente",
-  }
+  },
   {
     id: "12",
       name: "TopTech Pipelines",
@@ -255,7 +255,7 @@ async function createData() {
     cit: "Today I have a lot of challenges, as create a powerful and united team, in which everyone is capable of having the personal and professional development he wants",
     team_members: ["Martin Atoche", "Jonathan Mancilla"]
 
-  }
+  },
   {
     id: "2",
       name: "Martin",
@@ -268,7 +268,7 @@ async function createData() {
     cit: "“Project management is like juggling three balls – time, cost and quality. Program management is like a troupe of circus performers standing in a circle, each juggling three balls and swapping balls from time to time.”",
     team_members: ["Dario Fracassetti", "Jonathan Mancilla"]
 
-  }
+  },
   {
     id: "3",
       name: "Jonathan",
@@ -281,7 +281,7 @@ async function createData() {
     cit: "“It is better to lead from behind and to put others in front, especially when you celebrate victory when nice things occur. You take the front line when there is danger. Then people will appreciate your leadership.”",
     team_members: ["Martin Atoche", "Dario Fracassetti"]
 
-  }
+  },
   {
     id: "4",
       name: "Osmani",
@@ -294,7 +294,7 @@ async function createData() {
     cit: "“Know when to cut your losses if necessary. Don’t let your desire to succeed be the enemy of good judgment. If Napoleon had left Moscow immediately, he may have returned with a salvageable army.”",
     team_members: ["Camilla Stefani", "Ilenia Panicucci"]
 
-  }
+  },
   {
     id: "5",
       name: "Camilla",
@@ -307,7 +307,7 @@ async function createData() {
     cit: "“As you navigate through the rest of your life, be open to collaboration. Other people and other people’s ideas are often better than your own. Find a group of people who challenge and inspire you, spend a lot of time with them, and it will change your life.”",
     team_members: ["Osmani Martinez", "Ilenia Panicucci"]
 
-  }
+  },
   {
     id: "6",
       name: "Ilenia",
@@ -320,7 +320,7 @@ async function createData() {
     cit: "“People are more inclined to be drawn in if their leader has a compelling vision. Great leaders help people get in touch with their own aspirations and then will help them forge those aspirations into a personal vision.”",
     team_members: ["Osmani Martinez", "Camilla Stefani"]
 
-  }
+  },
   {
     id: "7",
       name: "Paolo",
@@ -333,7 +333,7 @@ async function createData() {
     cit: "“To effectively communicate, we must realize that we are all different in the way we perceive the world and use this understanding as a guide to our communication with others.”",
     team_members: ["Luca Valentini", "Giancarlo Vitali"]
 
-  }
+  },
   {
     id: "8",
       name: "Luca",
@@ -346,7 +346,7 @@ async function createData() {
     cit: "“In poorly run projects, problems can go undetected until the project fails. It’s like the drip … drip … drip of a leaky underground pipe. Money is being lost, but you don’t see it until there is an explosion.” ",
     team_members: ["Paolo Bozzola", "Giancarlo Vitali"]
 
-  }
+  },
   {
     id: "9",
       name: "Giancarlo",
@@ -359,7 +359,7 @@ async function createData() {
     cit: "“Know when to cut your losses if necessary. Don’t let your desire to succeed be the enemy of good judgment. If Napoleon had left Moscow immediately, he may have returned with a salvageable army.”",
     team_members: ["Paolo Bozzola", "Luca Valentini"]
 
-  }
+  },
   {
     id: "10",
       name: "Roberto",
@@ -372,7 +372,7 @@ async function createData() {
     cit: "“The challenge of leadership is to be strong, but not rude; be kind, but not weak; be bold, but not bully; be thoughtful, but not lazy; be humble, but not timid; be proud, but not arrogant; have humor, but without folly.”",
     team_members: ["Luisa Bianchi", "Bruno De Luca"]
 
-  }
+  },
   {
     id: "11",
       name: "Luisa",
@@ -385,7 +385,7 @@ async function createData() {
     cit: "“The very essence of leadership is that you have to have a vision. It’s got to be a vision you articulate clearly and forcefully on every occasion. You can’t blow an uncertain trumpet.”",
     team_members: ["Roberto Clemente", "Bruno De Luca"]
 
-  }
+  },
   {
     id: "12",
       name: "Bruno",
@@ -398,7 +398,7 @@ async function createData() {
     cit: "“First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end.”",
     team_members: ["Roberto Clemente", "Luisa Bianchi"]
 
-  }
+  },
   {
     id: "13",
       name: "Fabrizio",
@@ -411,7 +411,7 @@ async function createData() {
     cit: "“A true leader has the confidence to stand alone, the courage to make tough decisions, and the compassion to listen to the needs of others. He does not set out to be a leader, but becomes one by the equality of his actions and the integrity of his intent.”",
     team_members: ["Paola Falcone", "Antonella Barberis"]
 
-  }
+  },
   {
     id: "14",
       name: "Paola",
@@ -424,7 +424,7 @@ async function createData() {
     cit: "“Inspire your people to think like entrepreneurs, and whatever you do, treat them like adults. The hardest taskmaster of all is a person’s own conscience, so the more responsibility you give people, the better they will work for you.”",
     team_members: ["Fabrizio Venditti", "Antonella Barberis"]
 
-  }
+  },
   {
     id: "15",
       name: "Antonella",

@@ -30,15 +30,7 @@ export default {
         href: '/css/bootstrap.4.6.min.css'
       },
 
-      {
-        rel: "stylesheet",
-        src: "/css/font-awesome.4.7.min.css"
-      },
 
-      {
-        rel: "stylesheet",
-        src: "/css/pure-min.css"
-      },
       {
         rel: "stylesheet",
         src: "/css/bootstrap5.min.css"
@@ -67,36 +59,6 @@ export default {
 
     script: [
 
-      {
-        src: "/js/jquery-3.5.1.slim.min.js",
-        type: "text/javascript"
-      },
-      {
-        src:
-            "/js/bootstrap.bundle.min.js",
-        type: "text/javascript"
-      },
-      {
-        src:
-            "/js/popper.min.js",
-        type: "text/javascript"
-      },
-      {
-        src: "/js/13f7323266.js",
-        type: "text/javascript"
-      },
-      {
-        src: "/js/all.min.js",
-        type: "text/javascript"
-      },
-      {
-        src: "/js/popper2.min.js",
-        type: "text/javascript"
-      },
-      {
-        src: "/js/bootstrap.min.js",
-        type: "text/javascript"
-      }
     ]
   },
 

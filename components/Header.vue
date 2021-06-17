@@ -66,6 +66,7 @@ export default {
 .container-menu-item{
   text-align: center;
 }
+
 .container-menu-item:hover {
   background-color: #9bb3b0;
 }

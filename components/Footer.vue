@@ -68,7 +68,6 @@ export default {
 
 <style scoped>
 
-@import "../static/css/style.css";
 * {
   box-sizing: border-box;
 }

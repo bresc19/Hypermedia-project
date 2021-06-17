@@ -1,44 +1,10 @@
 <template>
   <div>
 
-    <!--Alienato a sx testo-->
+    <div id="text">
+      <p>Test for the Text</p>
+      <img src="~/assets/img/areas11.jpg" width=100% height=100%>
 
-    <div id="carouselExampleIndicators" class="carousel slide container-carousel" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img :src="require(`~/assets/img${carousel1.url}`)" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <p>  {{ carousel1.carouseltext }}  </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="~/assets/img/areas11.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="~/assets/img/areas11.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
 
     <div class="container"  style="width: 60%; margin: 0 auto;">
@@ -90,14 +56,7 @@ export default {
 </script>
 <style scoped>
 @font-face
-.flex-container {
-  margin: inherit;
-  horiz-align: center;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  height: 100%;
-}
+
 .flex-container > div {
   flex-direction: column;
   background-color: white;
@@ -112,85 +71,23 @@ export default {
   vertical-align: middle;
   height: 100%;
 }
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 500px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    vertical-align: middle;
-    horiz-align: center;
-    align-items: center;
-    background-color: white;
-    height: 100%;
+
+#text p {
+  display: inline-block;
+  font-size: 21px;
+  text-align: center;
+  position: absolute;
+  animation: appear 2s;
+  left: 43%;
+  color: #bee5eb;
+}
+@keyframes appear {
+  from {
+    left: -100px;
   }
-}
-#areas-image {
-  position: relative;
-  padding: 10px;
-  width: 50%;
-  height: 50%;
-  opacity: 0.6;
-}
-#container-areas-contents {
-  position: relative;
-  text-align: center;
-}
-#text-description-areas{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
-}
-.title-area-areas {
-  font-size: 18px;
-  position: relative;
-}
-.area-logo-image{
-  height: 100px;
-  width: 100%;
-  position: relative;
-}
-.description-area-areas {
-  font-size: 12px;
-}
-.btn-1 {
-  background: #0F0F6D;
-  color: #ffffff;
-  cursor: pointer;
-  border: 0;
-  transition: all 0.5s;
-  border-radius: 10px;
-  width: auto;
-  position: relative;
-}
-.container-carousel{
-  margin: 0 auto;
-  width: 70%;
-  height: 50%;
-  padding: 15px;
-}
-
-#cont-area-link{
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 85%;
-  padding: 10px;
-  height: 50%;
-  text-align: center;
-  justify-content: space-between;
-  position: relative;
-}
-
-.card-area{
-  padding: 10px;
-}
-
-.link-area{
-  bottom: 5px;
-  position: absolute;
+  to {
+    left: 43%;
+  }
 }
 
 </style>

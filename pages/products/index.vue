@@ -1,19 +1,7 @@
 <template>
   <!-- parole orfane -->
   <div>
-    <div class="input-group mb-3 cont-search">
-      <div class="input-group-prepend">
-        <select class="custom-select" id="inputGroupSelect02">
-          <option selected>Search in:</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-      </div>
-      <input type="text" class="form-control text-space" aria-label="Text input with segmented dropdown button">
-      <button type="button" class="btn btn-outline-secondary">Action</button>
 
-    </div>
 
     <div class="row container-products">
       <div class="col-sm-4 prod-item" >

@@ -15,7 +15,6 @@
       <a href="#">Visit</a>
     </div>
   </div>
-  <!-- Copy until here -->
 
 </div>
 </template>
@@ -60,7 +59,6 @@ export default {
   border-top-width: 40px;
   border-right-width: 0;
   border-bottom-width: 0;
-  border-left-width: 545px;
   border-left-width: calc(575px - 5vw);
   border-top-color: transparent;
   border-right-color: transparent;

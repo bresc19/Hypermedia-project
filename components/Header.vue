@@ -1,50 +1,38 @@
 <template>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-  <a class="navbar-brand" href="/">
-    <img src="~/assets/img/toptech_logo.png"  height="28" alt="CoolBrand">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto ">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Areas
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Data Base</a>
-          <a class="dropdown-item" href="#">IoT</a>
-          <a class="dropdown-item" href="#">Security</a>
-          <a class="dropdown-item" href="#">Machine Learning</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/areas">All Areas</a>
+  <div class="container-header">
+    <div class="container container-menu">
+      <div class="row no-gutters" >
+        <div class="col-sm container-menu-item" >
+          <a href="/">
+          <img href="/" src="~/assets/img/toptech_logo.png" width="140" height="40">
+          </a>
         </div>
-      </li>
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+        </div>
+          <div class="col-sm container-menu-item" >
+            <a class="menu-item" href="/">Home</a>
+          </div>
+          <div class="col-sm container-menu-item">
+            <a class="menu-item" href="/products">Products</a>
+          </div>
+          <div class="col-sm container-menu-item">
+            <a class="menu-item" href="/areas">Areas</a>
+          </div>
+          <div class="col-sm container-menu-item">
+            <a class="menu-item" href="people">People</a>
+          </div>
+          <div class="col-sm container-menu-item">
+            <a class="menu-item" href="/aboutus">About Us</a>
+          </div>
+          <div class="col-sm container-menu-item">
+            <a class="menu-item" href="/contact">Contact</a>
+          </div>
+        </div>
+      </div>
 
-      <li class="nav-item">
-        <a class="nav-link" href="/products">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/people">People</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/aboutus">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-  </div>
+    </div>
 </template>
 
 <script>
@@ -56,15 +44,29 @@ export default {
 
 <style scoped>
 
-.item-nav {
-  //color: #292121 !important;
+.no-gutters{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container-header {
+  background-color: #bee5eb;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.menu-item{
+  vertical-align: middle;
   text-decoration: none;
-
+  color: black;
 }
 
-#nv_bar {
-  background: #4e555b;
-
+.container-menu-item{
+  text-align: center;
 }
-
+.container-menu-item:hover {
+  background-color: #9bb3b0;
+}
 </style>

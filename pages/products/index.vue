@@ -55,7 +55,6 @@
 
 <script>
 /* eslint-disable */
-
 import ItemProduct from "../../components/ItemProduct";
 export default {
   name: "Products",

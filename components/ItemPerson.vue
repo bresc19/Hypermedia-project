@@ -7,6 +7,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: "Person",
   props: {
@@ -18,29 +19,10 @@ export default {
 </script>
 
 <style scoped>
-.social-link {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  border-radius: 50%;
-  transition: all 0.3s;
-  font-size: 0.9rem;
-}
-
-.social-link:hover, .social-link:focus {
-  background: #ddd;
-  text-decoration: none;
-  color: #555;
-}
-
+/* eslint-disable */
 .person-container {
   width: 250px;
   margin: 0 auto;
   text-align: center;
-
 }
 </style>

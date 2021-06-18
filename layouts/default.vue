@@ -5,9 +5,8 @@
     <Footer />
   </div>
 </template>
-
 <script>
-
+/* eslint-disable */
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 export default {
@@ -15,10 +14,15 @@ export default {
     Header,
     Footer
   },
-
 }
 </script>
 
 <style scoped>
-
+/* eslint-disable */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 </style>

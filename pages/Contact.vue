@@ -1,141 +1,198 @@
 <template>
-<div>
-  <h1 class="title-topic-single">Contact</h1>
-  <hr>
-  <div class="image-contact">
-    <img src="../assets/img/Contact-Us-Header.jpg" width=70% height=70%>
-    <div class="text-block">
-      <a>Get in touch with us!</a>
+  <div>
+    <h1 class="title-topic-single">Contact</h1>
+    <hr>
+    <div class="image-contact" id="text">
+      <img src="../assets/img/Contact-Us-Header.jpg" width=80% height=80%>
+      <p>Get in touch with us!</p>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <div class="container">
+            <div class="row margin-grid">
+              <div class="col-md-6 px-2"><a class="title-city">Italy - Milan</a>
+                <br>
+                <a class="address">
+                  Via Schiaffino, 11 <br>
+                  20158 MILANO <br>
+                  T: +39 02 4951 7001</a></div>
+              <div class="col-md-6 px-2 ">
+                <a class="title-city">USA - Boston</a>
+                <br>
+                <a class="address">
+                  211 Congress Street <br>
+                  Boston, MA 02110 <br>
+                  T: +1 617 936 0212</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 px-2 "><a class="title-city">
+                USA - Los Angeles
+              </a>
+                <br>
+                <a class="address">
+                  12130 Millennium Drive <br>
+                  Los Angeles, CA 90094 <br>
+                  T: +1 323 524 0524
+                </a></div>
+              <div class="col-md-6 px-2 "><a class="title-city">
+                Singapore
+              </a>
+                <br>
+                <a class="address">5 Temasek Blvd,<br>
+                  Singapore 03898</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <form v-on:submit.prevent="submitForm" method="post">
+            <h3 style="text-align: center">Contact Us!</h3>
+
+            <ul>
+              <li>
+                <label>Name:</label>
+                <input type="text" v-model="formAttr.name" placeholder="name">
+              </li>
+              <li>
+                <label>Surname:</label>
+                <input type="text" v-model="formAttr.surname" placeholder="surname">
+              </li>
+              <li>
+                <label>E-mail:</label>
+                <input type="email" v-model="formAttr.email" placeholder="e-mail">
+              </li>
+              <li>
+                <label>Message:</label>
+                <input type="text" v-model="formAttr.message" placeholder="message">
+              </li>
+              <li class="button">
+                <button  class="btn btn-primary">Submit</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+        Form correctly Sent!
+      </div>
+    </div>
+
   </div>
-  <div class="grid-container">
-    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
-    <div class="classe_img_con_didascalia">
-      <img src="../assets/img/aboutus2.jpg"/>
-      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
-
-      </p>
-    </div>
-    <div class="classe_img_con_didascalia">
-      <img src="../assets/img/aboutus2.jpg"/>
-      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
-
-      </p>
-    </div>
-    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
-    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
-    <div class="classe_img_con_didascalia">
-      <img src="../assets/img/aboutus2.jpg"/>
-      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
-
-      </p>
-    </div>
-    <div class="classe_img_con_didascalia">
-      <img src="../assets/img/aboutus2.jpg"/>
-      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
-
-      </p>
-    </div>
-    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
-  </div>
-</div>
-  </template>
+</template>
 
 <script>
+/* eslint-disable */
+
+import axios from "axios";
+import * as result from "core-js";
+
 export default {
   name: "Contact",
-  layout:'default'
+  layout:'default',
+  data() {
+    return {
+      formSent:'',
+      formAttr: {
+        name: '',
+        surname: '',
+        email: '',
+        message: ''
+      }
+    }
+  },
+  methods: {
+    submitForm() {
+      axios.post('/api/contact', this.formAttr)
+      .then((result)=>
+        console.log("the response is: " + result.data)
+      )
+        location.reload()
+        var report = document.getElementById("alert_message")
+        report.style.visibility= 'visible'
+
+
+}
+
+}
+
 }
 </script>
 
 <style scoped>
+/* eslint-disable */
+
 .image-contact{
   position: relative;
   text-align: center;
   padding: 40px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto ;
-  grid-gap: 50px;
-  background-color: white;
-  padding: 120px;
-  align-items: center;
-  justify-content: center;
-}
-.grid-container > text-right {
-  background-color: #ffffff;
-  text-align: right;
-  font-size: 20px;
-  vertical-align: middle;
-}
-
-.grid-container > text-left {
-  background-color: #ffffff;
-  text-align: left;
-  font-size: 20px;
-  vertical-align: middle;
-}
-
-
 img{
   max-width: 100%;
-}
-
-div.gallery {
-  border: 1px solid #000000;
-}
-
-div.gallery:hover {
-  border: 3px solid #000000;
-  max-width: 100%;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.box {
-  margin: 20px;
+  position: relative;
 }
 
 .title-city{
-  font-size: 25px;
+  font-size: 100%;
   font-weight: bold;
 }
 
+
 .address{
-  font-size: 20px;
+  font-size: 100%;
 }
 p{
-  font-size: 24px;
+  left: 40%;
+  position: absolute;
+  font-size: 100%;
+  bottom: 35px;
+  text-align: center;
 }
 a{
   color: black;
   text-decoration: none;
-  align: justify;
 }
-.classe_img_con_didascalia {
-  float: left;
-  position: relative;
-  overflow: hidden;
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
 }
-
-.classe_img_con_didascalia p {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
-  color: #fff;
-  display: none;
-  width: 100%;
-  padding: 10px;
+input{
+  width: 300px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.classe_img_con_didascalia:hover p {
-  display:block;
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+.button {
+  padding-left: 90px;
 }
 
+button {
+  margin-left: .5em;
+}
+
+.margin-grid{
+  margin-bottom: 10px;
+
+}
 </style>

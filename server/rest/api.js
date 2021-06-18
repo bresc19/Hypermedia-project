@@ -57,7 +57,6 @@ async function init() {
   })
 
   app.get('/areas/:id', async (req, res) => {
-
     const area = await Area.findOne({
       where: {
         name_area: req.params.id
@@ -66,7 +65,10 @@ async function init() {
     return res.json(area)
   })
 
-
+  app.post('/contact', (req, res) => {
+    console.log("Data received: " + req.body.data())
+    res.send("ok")
+  })
 
 
 

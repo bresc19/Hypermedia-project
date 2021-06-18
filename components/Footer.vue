@@ -61,13 +61,14 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'Footer'
 }
 </script>
 
 <style scoped>
-
+/* eslint-disable */
 * {
   box-sizing: border-box;
 }

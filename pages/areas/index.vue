@@ -20,9 +20,7 @@
   </div>
 </template>
 <script>
-
-
-
+/* eslint-disable */
 import ItemArea from "../../components/ItemArea";
 import ItemArea2 from "../../components/ItemArea2";
 export default {
@@ -55,6 +53,7 @@ export default {
 
 </script>
 <style scoped>
+/* eslint-disable */
 @font-face
 
 .flex-container > div {

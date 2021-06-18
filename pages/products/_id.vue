@@ -2,51 +2,52 @@
 
   <div class="wrapper">
     <Breadcumb/>
-
-    <div class="row">
-      <div class="col-8">Description Description Description Description Description Description Description</div>
-      <div class="col-4">
-        <img style="margin: 0 auto; padding: 10px; width: 100%;" src="../../assets/img/areas11.jpg">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-8">Description Description Description Description Description Description Description</div>
+        <div class="col-sm-4">
+          <img style="margin: 0 auto; padding: 10px; width: 100%;" src="../../assets/img/areas11.jpg">
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm">
-        <h2>Functionality</h2>
-        <p>Description Description Description Description Description Description Description</p>
+      <hr class="featurette-divider">
+      <div class="row">
+        <div class="col-sm">
+          <h2>Functionality</h2>
+          <p>Description Description Description Description Description Description Description</p>
+        </div>
+        <div class="col-sm">
+          <h2>Functionality</h2>
+          <p>Description Description Description Description Description Description Description</p>
+        </div>
+        <div class="col-sm">
+          <h2>Functionality</h2>
+          <p>Description Description Description Description Description Description Description</p>
+        </div>
       </div>
-      <div class="col-sm">
-        <h2>Functionality</h2>
-        <p>Description Description Description Description Description Description Description</p>
+      <div>
       </div>
-      <div class="col-sm">
-        <h2>Functionality</h2>
-        <p>Description Description Description Description Description Description Description</p>
-      </div>
-    </div>
-    <div>
-    </div>
-
-    <div class="row">
-      <div class="col-9">
-        <h2>Collaboration</h2>
-      </div>
-      <div class="col-6">
-        CARD HERE
-      </div>
-      <div class="col-6">
-        <div class="card">
-          <div class="card-body" style="text-align: right;">
-            <h5 class="card-title">Card title</h5>
-            <ul>
-              <p class="card-text"><i>1</i></p>
-              <p class="card-text"><i>1</i></p>
-              <p class="card-text"><i>1</i></p>
-            </ul>
+      <hr class="featurette-divider">
+      <div class="row">
+        <div class="col-9">
+          <h2>Collaboration</h2>
+        </div>
+        <div class="col-6">
+          CARD HERE
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body" style="text-align: right;">
+              <h5 class="card-title">Card title</h5>
+              <ul>
+                <p class="card-text"><i>1</i></p>
+                <p class="card-text"><i>1</i></p>
+                <p class="card-text"><i>1</i></p>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
 </template>

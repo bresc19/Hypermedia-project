@@ -83,7 +83,7 @@
         </div>
       </div>
       <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-        Form correctly Sent!
+        Message sent correctly!
       </div>
     </div>
 
@@ -116,9 +116,13 @@ export default {
       .then((result)=>
         console.log("the response is: " + result.data)
       )
-        location.reload()
         var report = document.getElementById("alert_message")
         report.style.visibility= 'visible'
+      setTimeout(function() {
+        report.style.visibility = 'hidden'
+        location.reload()
+
+      }, 3000)
 
 
 }

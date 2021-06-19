@@ -4,80 +4,33 @@
 <Breadcumb
 :group="groupTopic"
 :topic="singleTopic">
-
 </Breadcumb>
   <p class="secondary-title">Anagafic</p>
   <hr>
-  <div class="grid-container">
-    <div>
-      <img src="../../assets/img/aboutus1.jpg">
-    </div>
-    <div class="grid-cell-left">
-      <a class="aboutus-text">Name:...<br>Surname:...<br>Role:...<br>Area:...<br>Years of collaboration:...</a>
-    </div>
-  </div>
-  <p class="secondary-title">Contribution</p>
-  <hr>
-  <div class="grid-container">
-    <P ALIGN="CENTER">Italy - Milan<br>Via reggio, 23<br>20158 Milano<br>T: +39 22222222</P>
-    <div class="classe_img_con_didascalia">
-      <img src="../../assets/img/aboutus2.jpg"/>
-      <p>We believe that science and engineering need to be seen as one. It is for this reason that we continuously focus on research, emerging ideas, and new technologies, routinely partnering with top academic and engineering research institutions.
-
-      </p>
-    </div>
-  </div>
-  <p class="secondary-title">Developed products</p>
-  <hr>
-  <div class="bd-example">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesen t commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../../assets/img/aboutus2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </div>
-        </div>
+  <div class="container people-card ">
+    <div class="row w-75" style="margin: 0 auto;">
+      <div class="col-md-6 justify-content-center align-self-center" style="text-align: center; vertical-align: middle;">
+        <img src="~/assets/img/areas11.jpg" width="50%" height="50%">
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="col-md-6 ">
+        <ul>
+          <li>Name: </li>
+          <li>Surname: </li>
+          <li>Role: </li>
+          <li>Area: </li>
+          <li>Years of collaboration: </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row p-5">
+      quotation
+      description
     </div>
   </div>
+
 </div>
+
 </template>
 
 <script>
@@ -278,10 +231,15 @@ div.grid-cell-left{
   float:top;
   padding: 3px;
 }
-
 a{
   color: black;
   text-decoration: none;
 }
-
+ul {
+  list-style-type: none;
+}
+.people-card {
+  background-color: #bee5eb;
+  padding: 10px;
+}
 </style>

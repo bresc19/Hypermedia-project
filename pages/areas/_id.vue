@@ -1,6 +1,9 @@
 <template>
   <div>
-    <Breadcumb/>
+    <Breadcumb
+    :group="groupTopic"
+    :topic="singleTopic">
+    </Breadcumb>
     <br>
     <br>
     <div class="container">
@@ -67,11 +70,15 @@
   </div>
 </template>
 <script>
-
+/*eslint-disable*/
 export default {
   name: 'Area',
   components: {},
   template: 'default',
+  props: {
+    groupTopic: 'Areas',
+    singleTopic: '',
+  },
 
   async asyncData ({ $axios, route }) {
     const { id } = route.params
@@ -81,7 +88,8 @@ export default {
     return {
       area_data
     }
-  }
+  },
+
 
 }
 </script>

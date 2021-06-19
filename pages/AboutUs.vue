@@ -1,9 +1,9 @@
 <template>
-<div>
+<div class="container">
   <h1 class="title-topic-single">About Us</h1>
   <hr>
   <div class="grid-container">
-    <div class="scroll-element js-scroll fade-in">
+    <div >
       <img src="../assets/img/aboutus1.jpg">
     </div>
     <div class="grid-cell-left">
@@ -15,10 +15,10 @@
       <a  class="aboutus-text">TopTech started as a research spinoff at Politecnico of Milan and was incubated at its startup accelerator.
         Data and experimentation are part of our DNA. </a>
     </div>
-    <div class="scroll-element js-scroll fade-in">
+    <div >
       <img src="../assets/img/aboutus2.jpg">
     </div>
-    <div class="scroll-element js-scroll fade-in">
+    <div>
       <img src="../assets/img/aboutus3.jpg">
     </div>
     <div class="grid-cell-left aboutus-text">
@@ -30,7 +30,7 @@
       <a  class="aboutus-text">In all we do, our goal is to build trusted relationships through client proximity, providing industry and
         technology expertise to help you meet the needs of your customers and citizens. </a>
     </div>
-    <div class="scroll-element js-scroll fade-in">
+    <div>
       <img src="../assets/img/aboutus4.jpg">
     </div>
   </div>
@@ -78,55 +78,17 @@
 </template>
 
 <script>
+/* eslint-disable */
+
 export default {
   name: "AboutUs",
   layout: "default",
-  mounted() {
-    const scrollElements = document.querySelectorAll(".js-scroll");
 
-    const elementInView = (el, dividend = 1) => {
-      const elementTop = el.getBoundingClientRect().top;
-
-      return (
-        elementTop <=
-        (window.innerHeight || document.documentElement.clientHeight) / dividend
-      );
-    };
-
-    const elementOutofView = (el) => {
-      const elementTop = el.getBoundingClientRect().top;
-
-      return (
-        elementTop > (window.innerHeight || document.documentElement.clientHeight)
-      );
-    };
-
-    const displayScrollElement = (element) => {
-      element.classList.add("scrolled");
-    };
-
-    const hideScrollElement = (element) => {
-      element.classList.remove("scrolled");
-    };
-
-    const handleScrollAnimation = () => {
-      scrollElements.forEach((el) => {
-        if (elementInView(el, 1.25)) {
-          displayScrollElement(el);
-        } else if (elementOutofView(el)) {
-          hideScrollElement(el)
-        }
-      })
-    }
-
-    window.addEventListener("scroll", () => {
-      handleScrollAnimation();
-    });
-  }
 }
 </script>
 
 <style scoped>
+/* eslint-disable */
 
 .grid-container {
   display: grid;

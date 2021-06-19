@@ -1,7 +1,11 @@
 
 <template>
 <div>
-<Breadcumb/>
+<Breadcumb
+:group="groupTopic"
+:topic="singleTopic">
+
+</Breadcumb>
   <p class="secondary-title">Anagafic</p>
   <hr>
   <div class="grid-container">
@@ -83,7 +87,10 @@ export default {
   name: 'Person',
   components: {Breadcumb},
   layout: 'default"',
-
+  props: {
+    groupTopic: 'People' ,
+    singleTopic: '' ,
+  },
   async asyncData ({ $axios, route }) {
     const { id } = route.params
     console.log('this url', process.env.BASE_URL)

@@ -69,20 +69,7 @@ const Area = db.define("areas",{
 
 
 
-
-
-
-const descriptionAreas = db.define("description_areas", {
-    carouseltext: DataTypes.TEXT,
-    url: DataTypes.STRING,
-
-  },
-  {
-    timestamps: false
-  })
-
-
-db._tables = {People, descriptionAreas, Product, Area}
+db._tables = {People, Product, Area}
 
 async function createData() {
 

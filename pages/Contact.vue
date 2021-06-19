@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1 class="title-topic-single">Contact</h1>
     <hr>
     <div class="image-contact" id="text">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
 
     <div id="text">
       <p>Test for the Text</p>
@@ -34,7 +34,7 @@ export default {
     console.log(data.descriptions)
     //const carousel2 = data.descriptions[1]
     //const carousel3 = data.descriptions[2]
-    // console.log(res.text(carousel1.carouseltext))
+    //console.log(res.text(carousel1.carouseltext))
 
     return {
       info_area,

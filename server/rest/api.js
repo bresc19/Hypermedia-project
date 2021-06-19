@@ -6,7 +6,7 @@ const createDB = require('../db-conn')
 async function init() {
     const Database = await createDB()
 
-    const {People, descriptionAreas, Product, Area} = Database._tables
+    const {People, Product, Area} = Database._tables
 
 
     app.get('/areas', async (req, res) =>{
@@ -14,8 +14,7 @@ async function init() {
           attributes: ['name_area', 'initial_description', 'area_logo'],
             order: ['id']
         })
-      const descriptions = await descriptionAreas.findAll()
-      const data = {areaInfo, descriptions}
+      const data = {areaInfo}
       return res.json(data)
 
 

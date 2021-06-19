@@ -1,7 +1,9 @@
 <template>
 
   <div class="wrapper">
-    <Breadcumb/>
+    <Breadcumb
+      :group = "groupTopic"
+      :topic="singleTopic"></Breadcumb>
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-sm-8">Description Description Description Description Description Description Description</div>
@@ -56,6 +58,13 @@
 /* eslint-disable */
 export default {
   name: "Product",
+  props: {
+    groupTopic: 'Products',
+    singleTopic: '',
+  },
+
+
+
   async asyncData ({ $axios, route }) {
     const { id } = route.params
     console.log('this url', process.env.BASE_URL)

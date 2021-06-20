@@ -10,22 +10,22 @@
   <div class="container people-card ">
     <div class="row w-75" style="margin: 0 auto;">
       <div class="col-md-6 justify-content-center align-self-center" style="text-align: center; vertical-align: middle;">
-        <img src="~/assets/img/areas11.jpg" width="50%" height="50%">
+        <img :src="require(`~/assets/img/people${id_image}`)" width="50%" height="50%">
       </div>
       <div class="col-md-6 ">
         <ul>
-          <li>Name: </li>
-          <li>Surname: </li>
-          <li>Role: </li>
-          <li>Area: </li>
-          <li>Years of collaboration: </li>
+          <li>Name: {{name_employee}}</li>
+          <li>Surname: {{surname_employee}}</li>
+          <li>Role: {{role}}</li>
+          <li>Area: {{area}}</li>
+          <li>Years of collaboration: {{contribution_year}}</li>
         </ul>
       </div>
     </div>
     <hr>
     <div class="row p-5">
-      quotation
-      description
+      <p>{{ cit }} </p>
+      <p>{{ description }}</p>
     </div>
   </div>
 
@@ -43,6 +43,15 @@ export default {
   props: {
     groupTopic: 'People' ,
     singleTopic: '' ,
+    name_employee: '',
+    surname_employee: '',
+    role: '',
+    area: '',
+    id_image: '',
+    contribution_year: 0,
+    description: '',
+    cit: '',
+
   },
   async asyncData ({ $axios, route }) {
     const { id } = route.params

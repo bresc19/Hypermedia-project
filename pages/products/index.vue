@@ -1,8 +1,6 @@
 <template>
   <!-- parole orfane -->
   <div>
-
-
     <div class="row container-products">
       <div class="col-sm-4 prod-item" >
         <ItemProduct v-for="item in productItems"
@@ -11,16 +9,6 @@
                      :url = "item.image_product"
         />
       </div>
-
-    </div>
-    <div aria-label="Page navigation example">
-      <ul class="pagination pages-class">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul>
     </div>
     <div class="row" id="cont-products-descriptions">
       <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
@@ -30,7 +18,6 @@
           <p class="card-text">Drive disruption by applying Lean principles to achieve substantial performance improvements, accelerating business change.</p>
         </div>
       </div>
-
       <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
         <br><h4 style="text-align: center;">DevOps</h4>
         <img src="../../assets/img/p2.png" class="card-img-top" alt="...">
@@ -38,7 +25,6 @@
           <p class="card-text">Streamline IT by bringing business, development and operations teams together and applying automated processes.</p>
         </div>
       </div>
-
       <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
         <h4 style="text-align: center;">Application modernization</h4>
         <img src="../../assets/img/p3.png" class="card-img-top" alt="...">
@@ -46,11 +32,8 @@
           <p class="card-text">Transform your legacy applications to become more agile and efficient through the power of New IT.</p>
         </div>
       </div>
-
     </div>
-
   </div>
-
 </template>
 
 <script>

@@ -58,9 +58,10 @@ const Area = db.define("areas",{
     initial_description: DataTypes.TEXT,
     area_logo: DataTypes.STRING,
     brief_description: DataTypes.ARRAY(DataTypes.TEXT),
-    item: DataTypes.ARRAY(DataTypes.STRING),
-    image_item : DataTypes.ARRAY(DataTypes.STRING),
+    small_description: DataTypes.ARRAY(DataTypes.STRING),
+    small_image : DataTypes.ARRAY(DataTypes.STRING),
     large_description: DataTypes.ARRAY(DataTypes.TEXT),
+    large_image: DataTypes.ARRAY(DataTypes.TEXT),
 
   },
   {
@@ -286,8 +287,8 @@ async function createData() {
     area: "Database",
     id_image: "/people/dario-fracassetti.jpg",
     contribution_years: 5,
-    contribution_description: "Contribution in the company: with a foundation in Statistics, Analytics and modelling, coupled with a strong business sense, Dario helps the company interpret and manage data and solve complex problems using expertise in a variety of data niches",
-    cit: "Today I have a lot of challenges, as create a powerful and united team, in which everyone is capable of having the personal and professional development he wants",
+    contribution_description: "Contribution in the company: with a foundation in Statistics, Analytics and modelling, coupled with a strong business sense, Dario helps the company interpret and manage data and solve complex problems using expertise in a variety of data niches.",
+    cit: "Today I have a lot of challenges, as create a powerful and united team, in which everyone is capable of having the personal and professional development he wants.",
     team_members: ["Martin Atoche", "Jonathan Mancilla"]
 
   })
@@ -301,7 +302,7 @@ async function createData() {
       area: "Database",
       id_image: "/people/martin-atoche.jpg",
       contribution_years: 9,
-      contribution_description: "Project managers play as coordinators among stakeholders in completing product handover and accumulating knowledge asset, thus indirectly enhancing organizational strategic value integration in project ending",
+      contribution_description: "Project managers play as coordinators among stakeholders in completing product handover and accumulating knowledge asset, thus indirectly enhancing organizational strategic value integration in project ending.",
       cit: "“Project management is like juggling three balls – time, cost and quality. Program management is like a troupe of circus performers standing in a circle, each juggling three balls and swapping balls from time to time.”",
       team_members: ["Dario Fracassetti", "Jonathan Mancilla"]
 
@@ -317,7 +318,7 @@ async function createData() {
       area: "Database",
       id_image: "/people/jonathan-mancilla.jpg",
       contribution_years: 7,
-      contribution_description: "In the role of Senior Software Engineer, Jonathan develops information systems by studying operations; designing, developing and installing software solutions; support and develop software team. Jonathan leads a team of developers responsible for building new and support existing websites",
+      contribution_description: "In the role of Senior Software Engineer, Jonathan develops information systems by studying operations; designing, developing and installing software solutions; support and develop software team. Jonathan leads a team of developers responsible for building new and support existing websites.",
       cit: "“It is better to lead from behind and to put others in front, especially when you celebrate victory when nice things occur. You take the front line when there is danger. Then people will appreciate your leadership.”",
       team_members: ["Martin Atoche", "Dario Fracassetti"]
 

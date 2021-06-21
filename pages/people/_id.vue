@@ -10,22 +10,22 @@
   <div class="container people-card ">
     <div class="row w-75" style="margin: 0 auto;">
       <div class="col-md-6 justify-content-center align-self-center" style="text-align: center; vertical-align: middle;">
-        <img :src="require(`~/assets/img/people${id_image}`)" width="50%" height="50%">
+        <img :src="require(`~/assets/img${person_data.id_image}`)" width="50%" height="50%">
       </div>
       <div class="col-md-6 ">
         <ul>
-          <li>Name: {{name_employee}}</li>
-          <li>Surname: {{surname_employee}}</li>
-          <li>Role: {{role}}</li>
-          <li>Area: {{area}}</li>
-          <li>Years of collaboration: {{contribution_year}}</li>
+          <li>Name: {{person_data.name}}</li>
+          <li>Surname: {{person_data.surname}}</li>
+          <li>Role: {{person_data.role}}</li>
+          <li>Area: {{person_data.area}}</li>
+          <li>Years of collaboration: {{person_data.contribution_years}}</li>
         </ul>
       </div>
     </div>
     <hr>
     <div class="row p-5">
-      <p>{{ cit }} </p>
-      <p>{{ description }}</p>
+      <p>{{ person_data.cit }} </p>
+      <p>{{ person_data.contribution_description }}</p>
     </div>
   </div>
 
@@ -59,6 +59,7 @@ export default {
     const { data } = await $axios.get(`/api/people/${id}`)
     // eslint-disable-next-line camelcase
     const person_data = data
+    console.log(person_data)
     return {
       person_data
     }

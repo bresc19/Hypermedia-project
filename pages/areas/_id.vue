@@ -96,12 +96,6 @@ export default {
 
 <style scoped>
 
-.image-area {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
 
 .image-area img {
   width: 100%;

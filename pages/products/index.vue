@@ -7,6 +7,7 @@
                      v-bind:key="item.name"
                      :product_name="item.name" :description="item.brief_description"
                      :url = "item.image_product"
+                     :id = "item.id"
         />
       </div>
     </div>
@@ -67,18 +68,6 @@ export default {
 .prod-item {
   padding-top: 20px;
 
-}
-
-.cont-search{
-  width: 40%;
-  padding: 20px;
-  float: right;
-}
-.text-space{
-  min-width: 80px;
-}
-.pages-class{
-  justify-content: center;
 }
 
 .item-cont-description-products{

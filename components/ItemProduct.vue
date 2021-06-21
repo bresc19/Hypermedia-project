@@ -4,31 +4,33 @@
       <img class="card-img-top" :src="require(`~/assets/img${url}`)" alt="Card image cap">
     </div>
     <div class="card-body pt-0">
-      <a href="#" ><h5 class="card-title">{{ product_name }}</h5></a>
+      <a @click="goToProduct(`/products/${id}`)" ><h5 class="card-title">{{ product_name }}</h5></a>
       <p class="card-text">{{ description }}</p>
     </div>
   </div>
 </template>
 
 <script>
+/*eslint-disable*/
 export default {
   name: "ItemProduct",
   props: {
     product_name: { type: String, default: () => '' },
     description: { type: String, default: () => '' },
     url: { type: String, default: () => '' },
+    id: { type: Number, default: () => 0}
   },
+  methods: {
+
+    goToProduct(path) {
+      this.$router.push({path})
+    }
+}
 }
 </script>
 
 <style scoped>
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
-
-
-
-
+/*eslint-disable*/
 *:hover{
   -webkit-transition: all 1s ease;
   transition: all 1s ease;

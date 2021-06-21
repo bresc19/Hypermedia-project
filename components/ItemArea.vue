@@ -1,28 +1,91 @@
 <template>
+<div>
+  <div class="card card-custom bg-white border-white border-0 card-container">
+    <div class="card-custom-img" style="background: #b2d6d9;" >
 
-  <div class="card"  style="width: 18rem;">
-    <img class="card-img-top" :src="require(`~/assets/img${url}`)" alt="Card image cap">
-    <div  class="card-body">
-      <h5 class="card-title">{{name}}</h5>
-      <p class="card-text">{{description}}</p>
-      <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
-        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
-      </svg></a>
+    </div>
+    <div class="card-custom-avatar">
+      <img class="img-fluid" :src="require(`~/assets/img${url}`)" />
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">{{name}}</h4>
+      <p>{{description}} </p>
+    </div>
+    <div class="card-footer" style="background: inherit; border-color: inherit;">
+      <a  role="button" @click="goToArea(`/areas/${id}`)">Visit</a>
     </div>
   </div>
+
+</div>
 </template>
 
 <script>
+/*eslint-disable*/
 export default {
-  name: "ItemArea",
+  name: 'ItemArea2',
   props: {
     name: { type: String, default: () => '' },
     description: { type: String, default: () => '' },
     url: { type: String, default: () => '' },
+    id: {type: Number, default: ()=> 1 }
+  },
+  methods: {
+    goToArea(path) {
+      this.$router.push({ path })
+    },
   },
 }
 </script>
 
 <style scoped>
+.card-custom {
+  min-width: 300px;
+  overflow: hidden;
+  min-height: 450px;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
 
+.card-custom-img {
+  height: 200px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: inherit;
+}
+
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+  position: absolute;
+  content: '';
+  top: 161px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 40px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: calc(575px - 5vw);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: inherit;
+}
+
+.card-custom-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  top: 100px;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px;
+}
+
+.card-container{
+  height: 400px;
+  width: 250px;
+  padding: 10px;
+}
 </style>

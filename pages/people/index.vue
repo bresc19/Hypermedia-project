@@ -62,13 +62,14 @@
   </div>
   <br>
   <br>
-  <!--  dfghjghjk-->
 <ItemPerson v-for="item in peopleItems"
             v-bind:key="item.id"
             :name="item.name"
             :surname="item.surname"
             :role="item.role"
-            :url = "item.id_image"/>
+            :url = "item.id_image"
+            :id="item.id"
+/>
 </div>
 </template>
 

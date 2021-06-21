@@ -2,8 +2,8 @@
 <template>
 <div>
 <Breadcumb
-:group="groupTopic"
-:topic="singleTopic">
+
+:topic="person_data.surname+' '+person_data.name">
 </Breadcumb>
   <p class="secondary-title">Anagafic</p>
   <hr>
@@ -24,8 +24,9 @@
     </div>
     <hr>
     <div class="row p-5">
-      <p>{{ person_data.cit }} </p>
-      <p>{{ person_data.contribution_description }}</p>
+      <p class="blockquote text-center display-4">{{ person_data.cit }} </p>
+      <hr>
+      <p class="display-6">{{ person_data.contribution_description }}</p>
     </div>
   </div>
 
@@ -39,20 +40,8 @@ import Breadcumb from "../../components/Breadcumb";
 export default {
   name: 'Person',
   components: {Breadcumb},
-  layout: 'default"',
-  props: {
-    groupTopic: 'People' ,
-    singleTopic: '' ,
-    name_employee: '',
-    surname_employee: '',
-    role: '',
-    area: '',
-    id_image: '',
-    contribution_year: 0,
-    description: '',
-    cit: '',
+  layout: 'default',
 
-  },
   async asyncData ({ $axios, route }) {
     const { id } = route.params
     console.log('this url', process.env.BASE_URL)

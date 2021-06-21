@@ -16,12 +16,13 @@ export default {
     topic:  '' ,
   },
   mounted() {
+    this.group= window.location.pathname
+    const path = this.group.split('/')
+    this.group = path[1].charAt(0).toUpperCase() + path[1].slice(1);
     const id = document.getElementById("groupOfTopic")
-  //  id.setAttribute("href", this.props.group)
-
+    id.setAttribute("href", "/" + this.group)
+    }
   }
-
-}
 </script>
 
 <style scoped>

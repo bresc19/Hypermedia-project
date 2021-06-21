@@ -43,8 +43,10 @@ async function init() {
             where: {
                 id: req.params.id_person },
         })
+
         return res.json(person)
     })
+
 
   app.get('/products/:id', async (req, res) => {
 
@@ -52,7 +54,16 @@ async function init() {
       where: {
         id: req.params.id },
     })
-    return res.json(product)
+
+
+    var words = Object(product.dataValues).manager.split(' ')
+    const manager = await People.findOne({
+      where: {
+        surname: words[1] },
+    })
+
+    var result = {product, manager}
+    return res.json(result)
   })
 
   app.get('/areas/:id', async (req, res) => {

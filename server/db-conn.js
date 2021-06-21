@@ -57,7 +57,6 @@ const Area = db.define("areas",{
     name_area: DataTypes.STRING,
     initial_description: DataTypes.TEXT,
     area_logo: DataTypes.STRING,
-    brief_description: DataTypes.ARRAY(DataTypes.TEXT),
     small_description: DataTypes.ARRAY(DataTypes.STRING),
     small_image : DataTypes.ARRAY(DataTypes.STRING),
     large_description: DataTypes.ARRAY(DataTypes.TEXT),
@@ -77,8 +76,7 @@ async function createData() {
   await Area.create({
     id: "1",
     name_area: "Database",
-    brief_description: ["Descrizione"],
-    initial_description: "qqq",
+    initial_description: "With Toptech databases, you don’t need to worry about database management tasks such as server provisioning, patching, configuration, or backups. ",
     area_logo: "/Database/db-logo.png",
     small_description: ["Choose from more than 15 ad hoc database engines including relational, key-value, document, in-memory, graph, time series, columnar, and accounting databases", "Secure relational databases that are 3 to 5 times faster than popular alternatives, or non-relational databases that give you sub-millisecond latency", "With TopTech databases, you don't have to worry about database management tasks, such as server provisioning, patching, configuration, or backups"],
     small_image: ["/areas/database-small1.jpg", "/areas/database-small2.jpg", "/areas/database-small3.jpg"],
@@ -89,9 +87,8 @@ async function createData() {
   await Area.create({
     id: "2",
     name_area: "Security",
-    brief_description: ["Descrizione"],
-    initial_description: "qqq",
-    area_logo: "/Database/db-logo.png",
+    initial_description: "Security concerns dominate how we outsource computation. Emerging security technology will fundamentally change future IT systems.",
+    area_logo: "/Security/security-logo.png",
     small_description: ["Network and Application Protection Services enable you to apply granular security policy to network control points across your organization", "TopTech services help you examine and filter traffic to prevent unauthorized access beyond host, network, and application level boundaries", "TopTech identifies threats by continuously monitoring network activity and account behavior within the cloud environment"],
     small_image: ["/areas/security-small1.jpg", "/areas/security-small2.jpg", "/areas/security-small3.jpg"],
     large_description: ["Using TopTech, you get the control and security you need to securely manage your business with the most flexible and secure cloud computing environment available today. As a TopTech customer, you will benefit from TopTech data centers and a network designed to protect information, identity, applications and devices. With TopTech, you can improve your ability to meet critical security and compliance requirements, such as data localization, security, and privacy, with our comprehensive services and features", "TopTech protects your privacy. TopTech customers can build solutions on the most secure global infrastructure, knowing that their data remains their property, and they also have the ability to encrypt, move and manage its retention. All data passing through the TopTech global network connecting our data centers and regions is automatically encrypted physically before leaving our secure facilities. There are also additional layers of encryption: for example, all VPC transregional peer traffic and TLS connections for customers or service-to-service", "Extend the benefits of TopTech by using security technology and consulting services from familiar solution providers you already know and trust. We have carefully selected providers with deep expertise and proven success ensuring every stage of cloud adoption, from initial migration to ongoing day-to-day management. To meet your compliance efforts, TopTech regularly obtains third-party validation for thousands of global compliance requirements that we continuously monitor to help you meet security and compliance standards"],
@@ -101,9 +98,8 @@ async function createData() {
   await Area.create({
     id: "3",
     name_area: "IoT",
-    brief_description: ["Descrizione"],
-    initial_description: "qqq",
-    area_logo: "/Database/db-logo.png",
+    initial_description: "With the proliferation of devices, you increasingly need solutions to connect them, and collect, store, and analyze device data.",
+    area_logo: "/IoT/IOT.png",
     small_description: ["TopTech IoT is built on a reliable, secure, and scalable cloud infrastructure for billions of different devices and trillions of messages", "TopTech IoT is the only vendor that can bring together data management and rich analytics into services that are easy to use and specifically designed for disturbed IoT data", "TopTech IoT customers build industrial IoT applications for quality and preventative maintenance and to monitor operations remotely"],
     small_image: ["/areas/IoT-small1.jpg", "/areas/IoT-small2.jpg", "/areas/IoT-small3.jpg"],
     large_description: ["The technological evolution of the Internet of Things can be declined in very transversal areas. Companies in any sector, for example, can now collect a lot of information on the functioning of devices and on the people who use them through the multiplication and evolution of connected devices. But how to enhance this great information \"child\" of connected objects? The definition of appropriate strategies to enhance the data collected by IoT devices, both in the consumer and business sectors, is an increasingly important issue for companies. Let's talk about Big Data, a real value commodity", "The intersection between the Internet of Things and the Blockchain world is characterized by great potential. The Blockchain can act as a guarantor of the identity of the different nodes of the network (for example through the use of certificates or digital keys) and as a certifier of the origin and integrity of the data collected by the connected objects thanks to the affixing of a digital stamp and to the recording of the temporal instance. While it is true that the Blockchain can make significant contributions in terms of security and data integrity of smart objects, it is also true that it can only be managed externally with respect to such devices", "The interest on the part of companies in Internet of Things startups is growing exponentially, helping to fuel a virtuous cycle of collaborations and innovation. Worldwide, funding for new business initiatives is increasing in the various application areas (Smart Car, Smart Home, Smart City and Smart Agriculture in particular) and there is great excitement in Italy as well. Particularly fertile, in this IoT-startup binomial, is the terrain of Smart Energy with many innovative solutions that promise to improve the energy efficiency of homes, buildings and industrial plants"],
@@ -113,9 +109,8 @@ async function createData() {
   await Area.create({
     id: "4",
     name_area: "Machine Learning",
-    brief_description: ["Descrizione"],
-    initial_description: "qqq",
-    area_logo: "/Database/db-logo.png",
+    initial_description: "Explore machine learning services that fit your business needs, and learn how to get started.",
+    area_logo: "/MachineLearning/ml-logo.png",
     small_description: ["TopTech offers the broadest and most complete set of machine learning services, supports cloud infrastructure, and puts machine learning in the hands of all professionals", "TopTech helps more than 100,000 customers accelerate their journey to machine learning based on their business needs", "Enhance the customer service experience and reduce costs by integrating machine learning into the contact center"],
     small_image: ["/areas/machinelearning-small1.jpg", "/areas/machinelearning-small2.jpg", "/areas/machinelearning-small3.jpg"],
     large_description: ["Not long ago, marketers relied on intuition to segment customers, breaking them into groups for targeted campaigns. Today, machine learning enables data scientists to use clustering and classification algorithms to divide customers into groups based on specific characteristics. These groups consider customer differences based on multiple dimensions, such as demographics, browsing behavior, and affinity. Linking these characteristics to purchasing behavior patterns allows data savvy companies to launch personalized marketing campaigns that are more effective than generic sales incentive campaigns", "Machine learning has enormous application potential in the science, healthcare, construction and energy sectors. For example, image classification uses machine learning algorithms to label a predefined group of categories or any input image. It allows companies to create 3D construction plan templates based on 2D designs, facilitate photo tagging in social media, communicate clinical diagnoses and much more. Deep learning methods such as neural networks are often used for image classification because they can more effectively identify the most relevant features in the presence of potential complications", "Machine learning is a subset of artificial intelligence (AI) that is concerned with creating systems that learn or improve performance based on the data they use. Artificial intelligence is a generic term and refers to systems or machines that mimic human intelligence. The terms machine learning and artificial intelligence are often used together and interchangeably, but they don't mean the same thing. An important distinction is that although everything related to machine learning falls under artificial intelligence, artificial intelligence doesn't just include machine learning"],
@@ -514,7 +509,7 @@ async function createData() {
 async function createDB() {
   return new Promise(async (res, rej) => {
     await db.sync()
-    //await createData()
+   // await createData()
     res(db)
   })
   return db

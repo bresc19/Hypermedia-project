@@ -3,7 +3,7 @@
 
     <div id="text">
       <p>Test for the Text</p>
-      <img src="~/assets/img/areas11.jpg" width=100% height=100%>
+      <img src="~/assets/img/areas11.jpg" width=100% height=100% >
 
     </div>
 
@@ -30,7 +30,6 @@ export default {
   async asyncData({$axios}) {
     const {data} = await $axios.get('/api/areas')
     const info_area = data.areaInfo
-    const carousel1 = data.descriptions[0]
     console.log(data.descriptions)
     //const carousel2 = data.descriptions[1]
     //const carousel3 = data.descriptions[2]
@@ -38,7 +37,6 @@ export default {
 
     return {
       info_area,
-      carousel1
     }
   },
 

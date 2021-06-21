@@ -2,50 +2,53 @@
 
   <div class="wrapper">
     <Breadcumb
-      :group = "groupTopic"
-      :topic="singleTopic"></Breadcumb>
+      :topic="product_data.product.name"></Breadcumb>
+    <br>
+    <br>
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col-sm-8">Description Description Description Description Description Description Description</div>
+        <div class="col-sm-8">{{product_data.product.large_description}}</div>
         <div class="col-sm-4">
-          <img style="margin: 0 auto; padding: 10px; width: 100%;" src="../../assets/img/areas11.jpg">
+          <img style="margin: 0 auto; padding: 10px; width: 100%;" :src="require(`~/assets/img${product_data.product.large_image}`)">
         </div>
       </div>
+      <br>
       <hr class="featurette-divider">
+      <br>
       <div class="row">
         <div class="col-sm">
-          <h2>Functionality</h2>
-          <p>Description Description Description Description Description Description Description</p>
+        <h2>Functionalities</h2>
         </div>
         <div class="col-sm">
-          <h2>Functionality</h2>
-          <p>Description Description Description Description Description Description Description</p>
+          <p>{{product_data.product.functionalities[0]}}</p>
         </div>
         <div class="col-sm">
-          <h2>Functionality</h2>
-          <p>Description Description Description Description Description Description Description</p>
+          <p>{{product_data.product.functionalities[1]}}</p>
+        </div>
+        <div class="col-sm">
+          <p>{{product_data.product.functionalities[2]}}</p>
         </div>
       </div>
       <div>
       </div>
+      <br>
       <hr class="featurette-divider">
-      <div class="row">
-        <div class="col-9">
-          <h2>Collaboration</h2>
+      <br>
+      <h2>Collaborations</h2>
+      <div class="row justify-content-between">
+        <div class="col-sm ml-5">
+          <ItemPerson
+            :name="product_data.manager.name"
+            :surname="product_data.manager.surname"
+            :role="product_data.manager.role"
+            :url="product_data.manager.id_image"
+          />
         </div>
-        <div class="col-6">
-          CARD HERE
-        </div>
-        <div class="col-6">
-          <div class="card">
-            <div class="card-body" style="text-align: right;">
-              <h5 class="card-title">Card title</h5>
-              <ul>
-                <p class="card-text"><i>1</i></p>
-                <p class="card-text"><i>1</i></p>
-                <p class="card-text"><i>1</i></p>
-              </ul>
-            </div>
+        <div class="col-sm">
+          <h4>Team Members</h4>
+          <hr class="featurette-divider">
+          <div class="col-sm" style="">
+              <p v-for="item in product_data.manager.team_members" :key="item">{{item}}</p>
           </div>
         </div>
       </div>
@@ -56,12 +59,11 @@
 
 <script>
 /* eslint-disable */
+
+import ItemPerson from "../../components/ItemPerson";
 export default {
   name: "Product",
-  props: {
-    groupTopic: 'Products',
-    singleTopic: '',
-  },
+  components: "ItemPerson",
 
 
 
@@ -70,10 +72,17 @@ export default {
     console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(`/api/products/${id}`)
     const product_data = data
+    console.log(product_data.manager)
+
+
     return {
-      product_data
+      product_data,
     }
-  }
+  },
+
+
+
+
 
 }
 </script>

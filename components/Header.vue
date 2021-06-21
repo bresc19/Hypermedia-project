@@ -21,7 +21,7 @@
             <a class="menu-item" href="/areas">Areas</a>
           </div>
           <div class="col-sm container-menu-item">
-            <a class="menu-item" href="people">People</a>
+            <a class="menu-item" href="/people">People</a>
           </div>
           <div class="col-sm container-menu-item">
             <a class="menu-item" href="/aboutus">About Us</a>

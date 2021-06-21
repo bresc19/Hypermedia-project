@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-4 person-container">
+  <div class="person-container">
     <div class="bg-white rounded shadow-sm py-5 px-4"><img :src="require(`~/assets/img${url}`)" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
       <h5 class="mb-0">{{ name }} {{ surname }}</h5><span class="small text-uppercase text-muted">{{role}}</span>
     </div>
@@ -21,7 +21,7 @@ export default {
 <style scoped>
 /* eslint-disable */
 .person-container {
-  width: 250px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }

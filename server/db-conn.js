@@ -509,7 +509,7 @@ async function createData() {
 async function createDB() {
   return new Promise(async (res, rej) => {
     await db.sync()
-  //  await createData()
+   // await createData()
     res(db)
   })
   return db

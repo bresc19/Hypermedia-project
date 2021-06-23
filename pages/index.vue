@@ -5,7 +5,7 @@
     <hr>
     <br>
     <div class="jumbotron text-center"  :style="{
-      'backgroundImage': 'url(' + require(`../assets/img${product_data.large_image}`) + ')'
+      'backgroundImage': 'url(' + require(`~/assets/img${product_data.large_image}`) + ')'
   }">
       <div class="container">
         <h1 class="text-center">{{ product_data.name }}</h1>

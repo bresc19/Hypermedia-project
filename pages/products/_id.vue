@@ -74,7 +74,6 @@ export default {
     const product_data = data
     console.log(product_data.manager)
 
-
     return {
       product_data,
     }

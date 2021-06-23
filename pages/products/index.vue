@@ -1,16 +1,20 @@
 <template>
   <!-- parole orfane -->
-  <div>
+  <div class="container">
+    <br>
+    <h1 class="h2">Products</h1>
+    <hr>
     <div class="row container-products">
-      <div class="col-sm-4 prod-item" >
-        <ItemProduct v-for="item in productItems"
-                     v-bind:key="item.name"
+      <div class="col-lg-4 col-sm-12"  v-for="item in productItems"
+           v-bind:key="item.name" >
+        <ItemProduct
                      :product_name="item.name" :description="item.brief_description"
                      :url = "item.image_product"
                      :id = "item.id"
         />
       </div>
     </div>
+
     <div class="row" id="cont-products-descriptions">
       <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
         <h4 style="text-align: center;">Agile transformation</h4>
@@ -46,8 +50,11 @@ export default {
   layout: 'default',
   async asyncData({ $axios }) {
     const {data} = await $axios.get(`/api/products`)
+
     const productItems = data
+
     console.log(productItems)
+
     return{
       productItems,
     }
@@ -62,7 +69,7 @@ export default {
 .container-products{
   margin: 0 auto;
   width: 80%;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .prod-item {
@@ -70,10 +77,24 @@ export default {
 
 }
 
+div{
+  vertical-align:middle;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+  width: auto;
+
+  display: block;
+  margin: 0 auto;
+}
 .item-cont-description-products{
   padding: 20px;
   border: none;
 }
+.card {
+  max-height:400px;
+  overflow:auto;}
 
 #cont-products-descriptions{
   width: 70%;

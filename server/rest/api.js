@@ -30,8 +30,8 @@ async function init() {
 
     app.get('/people', async (req, res) => {
         const people_info = await People.findAll({
-            attributes: ['id','name', 'surname','role', 'id_image'],
-            order: ['id'],
+            attributes: ['id','name', 'surname', 'role', 'id_image', 'area'],
+            order: ['id', 'area'],
         })
         return res.json(people_info)
     })
@@ -67,7 +67,8 @@ async function init() {
         id: req.params.id
       },
     })
-    console.log(res.json(area))
+    //console.log(area.dataValues)
+    //console.log(res.json(area))
     return res.json(area)
   })
 

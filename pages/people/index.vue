@@ -1,76 +1,44 @@
 <template>
-<!--
+  <!--
 
-  people (3x1)x4
-  product 3x3
-  -->
-<div class="container">
+    people (3x1)x4
+    product 3x3
+    -->
+  <div class="container">
+    <h1 class="h2">People</h1>
+    <hr>
+    <div class="grid-container">
+      <div>
+        <img src="../../assets/img/team-leasing-1024x700.jpg">
+      </div>
+      <div class="grid-cell-right">
+        <a class="people-text"> We believe our strength lies in the diversity of our employees.
+          TopTech encourages creative pursuits and passions outside of work, because when they can explore their curiosity.
+          It gives all of us a new outlook on the world and its possibilities for emerging tech.</a>
+      </div>
+    </div>
 
-  <h1 class="title-topic-single">People</h1>
-  <hr>
-  <div class="grid-container">
-    <div>
-    <img src="../../assets/img/team-leasing-1024x700.jpg">
-    </div>
-    <div class="grid-cell-right">
-    <a class="people-text"> We believe our strength lies in the diversity of our employees.
-      TopTech encourages creative pursuits and passions outside of work, because when they can explore their curiosity.
-      It gives all of us a new outlook on the world and its possibilities for emerging tech.</a>
-    </div>
-  </div>
-  <p class="secondary-title">Database</p>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        aa
+    <div class="container" v-for="(items, index) in peopleItems"
+         v-bind:key="items.area_name">
+      <p class="h4" >{{area_names[index]}}</p>
+      <hr>
+      <br>
+      <div class="row" >
+        <div class="col-lg-4 col-sm-12"  v-for="item in items"
+             v-bind:key="item.id">
+          <ItemPerson
+                      :name="item.name"
+                      :surname="item.surname"
+                      :role="item.role"
+                      :url = "item.id_image"
+                      :id="item.id"
+          />
+        </div>
       </div>
+      <br>
+      <br>
     </div>
   </div>
-  <br>
-  <br>
-  <p class="secondary-title">Security</p>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        aa
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-  <p class="secondary-title">IoT</p>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        aa
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-  <p class="secondary-title">Machine Learning</p>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        aa
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-<ItemPerson v-for="item in peopleItems"
-            v-bind:key="item.id"
-            :name="item.name"
-            :surname="item.surname"
-            :role="item.role"
-            :url = "item.id_image"
-            :id="item.id"
-/>
-</div>
 </template>
 
 <script>
@@ -87,10 +55,26 @@ export default {
 
   async asyncData({ $axios }) {
     const {data} = await $axios.get(`/api/people`)
-    const peopleItems = data
+    // const peopleItems = data
     console.log(peopleItems)
+
+    var peopleItems = new Array(5); // create an empty array of length n
+    for (var i = 0; i < 5; i++) {
+      peopleItems[i] = new Array(3); // make each element an array
+    }
+    var k=0
+    for(i = 0; i<5; i++ ){
+      for(var j = 0; j < 3; j++){
+        peopleItems[i][j]=data[k]
+        k++;
+      }
+    }
+   const  area_names = ['Database', 'Security', 'IoT', 'Machine Learning', 'Leaders']
+
     return{
       peopleItems,
+      area_names
+
     }
   },
 

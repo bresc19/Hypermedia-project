@@ -39,7 +39,8 @@ export default {
 
 <style scoped>
 .card-custom {
-  min-width: 300px;
+  max-width: 300px;
+  min-width: 100px;
   overflow: hidden;
   min-height: 450px;
   box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
@@ -87,5 +88,8 @@ export default {
   height: 400px;
   width: 250px;
   padding: 10px;
+}
+p{
+  font-size: 14px;
 }
 </style>

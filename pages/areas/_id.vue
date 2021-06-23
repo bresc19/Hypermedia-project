@@ -2,28 +2,25 @@
   <div>
     <Breadcumb
     :group="groupTopic"
-    :topic="singleTopic">
+    :topic="area_data.name_area">
     </Breadcumb>
     <br>
     <br>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <img src="~/assets/img/setting.png" width="50" height="50">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <div  class="col-lg-4 col-sm-12">
+          <img :src="require(`~/assets/img${area_data.small_image[0]}`)" width="50" height="50">
+          <p>{{area_data.small_description[0]}}</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-4">
-          <img src="~/assets/img/setting.png" width="50" height="50">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <div class="col-lg-4 col-sm-12">
+          <img :src="require(`~/assets/img${area_data.small_image[1]}`)" width="50" height="50">
+          <p>{{area_data.small_description[1]}}</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-4">
-          <img src="~/assets/img/setting.png" width="50" height="50">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <div class="col-lg-4 col-sm-12">
+          <img :src="require(`~/assets/img${area_data.small_image[2]}`)" width="50" height="50">
+          <p>{{area_data.small_description[2]}}</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
@@ -32,11 +29,10 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">{{area_data.large_description[0]}}</p>
         </div>
         <div class="col-md-5">
-          <img src="~/assets/img/setting.png" width="50" height="50">
+          <img :src="require(`~/assets/img${area_data.large_image[0]}`)" >
         </div>
       </div>
 
@@ -44,11 +40,10 @@
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">{{area_data.large_description[1]}}</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="~/assets/img/setting.png" width="50" height="50">
+          <img :src="require(`~/assets/img${area_data.large_image[1]}`)" >
         </div>
       </div>
 
@@ -56,11 +51,10 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">{{area_data.large_description[2]}}</p>
         </div>
         <div class="col-md-5">
-          <img src="~/assets/img/setting.png" width="50" height="50">
+          <img :src="require(`~/assets/img${area_data.large_image[2]}`)" >
         </div>
       </div>
 
@@ -98,7 +92,7 @@ export default {
 
 
 .image-area img {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 .btn{
@@ -161,14 +155,9 @@ body {
     line-height: 1.4;
   }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 

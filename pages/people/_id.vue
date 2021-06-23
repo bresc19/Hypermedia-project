@@ -17,7 +17,7 @@
           <li>Name: {{person_data.name}}</li>
           <li>Surname: {{person_data.surname}}</li>
           <li>Role: {{person_data.role}}</li>
-          <li>Area: {{person_data.area}}</li>
+          <li @click="goT">Area: {{person_data.area}}</li>
           <li>Years of collaboration: {{person_data.contribution_years}}</li>
         </ul>
       </div>

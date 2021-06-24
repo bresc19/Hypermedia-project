@@ -36,6 +36,10 @@ export default {
   transition: all 1s ease;
 }
 
+.card{
+  max-width: 300px;
+  min-height: 300px;
+}
 .profile-card-5{
   margin-top:20px;
 }

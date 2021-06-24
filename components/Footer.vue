@@ -38,16 +38,16 @@
               Areas
             </h6>
             <p>
-              <a href="#!" >Data Base</a>
+              <a @click="goToArea(`/areas/${1}`)" style="cursor:pointer;" class="text-reset" >Data Base</a>
             </p>
             <p>
-              <a href="#!" >IoT</a>
+              <a @click="goToArea(`/areas/${2}`)" style="cursor:pointer;" class="text-reset" >IoT</a>
             </p>
             <p>
-              <a href="#!" >Security</a>
+              <a @click="goToArea(`/areas/${3}`)" style="cursor:pointer;" class="text-reset" >Security</a>
             </p>
             <p>
-              <a href="#!" >Machine Learning</a>
+              <a @click="goToArea(`/areas/${4}`)" style="cursor:pointer;" class="text-reset" >Machine Learning</a>
             </p>
           </div>
         </div>
@@ -64,7 +64,12 @@
 <script>
 /* eslint-disable */
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  methods: {
+    goToArea(path) {
+      this.$router.push({ path })
+    },
+  },
 }
 </script>
 

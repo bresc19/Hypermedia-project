@@ -14,7 +14,6 @@ const People = db.define("people",{
       primaryKey: true
     },
     name: DataTypes.STRING,
-    surname: DataTypes.STRING,
     role: DataTypes.STRING,
     area: DataTypes.STRING,
     id_image: DataTypes.STRING,
@@ -276,8 +275,7 @@ async function createData() {
 
   await People.create({
     id: "1",
-    name: "Dario",
-    surname: "Fracassetti",
+    name: "Dario Fracassetti",
     role: "Data scientist",
     area: "Database",
     id_image: "/people/dario-fracassetti.jpg",
@@ -291,8 +289,7 @@ async function createData() {
   await People.create(
     {
       id: "2",
-      name: "Martin",
-      surname: "Atoche",
+      name: "Martin Atoche",
       role: "Project manager",
       area: "Database",
       id_image: "/people/martin-atoche.jpg",
@@ -307,8 +304,7 @@ async function createData() {
   await People.create(
     {
       id: "3",
-      name: "Jonathan",
-      surname: "Mancilla",
+      name: "Jonathan Mancilla",
       role: "Senior software engineer",
       area: "Database",
       id_image: "/people/jonathan-mancilla.jpg",
@@ -322,8 +318,7 @@ async function createData() {
   await People.create(
     {
       id: "4",
-      name: "Osmani",
-      surname: "Martinez",
+      name: "Osmani Martinez",
       role: "Project manager",
       area: "Security",
       id_image: "/people/osmany-martinez.jpg",
@@ -337,8 +332,8 @@ async function createData() {
   await People.create(
     {
       id: "5",
-      name: "Camilla",
-      surname: "Stefani",
+      name: "Camilla Stefani",
+      surname: "",
       role: "IT Security specialist",
       area: "Security",
       id_image: "/people/Camilla-Stefani-1.jpg",
@@ -352,8 +347,7 @@ async function createData() {
   await People.create(
     {
       id: "6",
-      name: "Ilenia",
-      surname: "Panicucci",
+      name: "Ilenia Panicucci",
       role: "Senior software engineer",
       area: "Security",
       id_image: "/people/ilenia-panicucci.jpg",
@@ -367,8 +361,7 @@ async function createData() {
   await People.create(
     {
       id: "7",
-      name: "Paolo",
-      surname: "Bozzola",
+      name: "Paolo Bozzola",
       role: "Project manager",
       area: "IoT",
       id_image: "/people/Paolo-Bozzola-1.jpg",
@@ -382,8 +375,7 @@ async function createData() {
   await People.create(
     {
       id: "8",
-      name: "Luca",
-      surname: "Valentini",
+      name: "Luca Valentini",
       role: "Computer scientist",
       area: "IoT",
       id_image: "/people/Luca Valentini.jpg",
@@ -397,8 +389,7 @@ async function createData() {
   await People.create(
     {
       id: "9",
-      name: "Giancarlo",
-      surname: "Vitali",
+      name: "Giancarlo Vitali",
       role: "Senior software engineer",
       area: "IoT",
       id_image: "/people/Giancarlo Vitali.png",
@@ -412,8 +403,7 @@ async function createData() {
   await People.create(
     {
       id: "10",
-      name: "Roberto",
-      surname: "Clemente",
+      name: "Roberto Clemente",
       role: "Project manager",
       area: "Machine Learning",
       id_image: "/people/roberto-clemente.jpg",
@@ -427,8 +417,7 @@ async function createData() {
   await People.create(
     {
       id: "11",
-      name: "Luisa",
-      surname: "Bianchi",
+      name: "Luisa Bianchi",
       role: "Support specialist",
       area: "Machine Learning",
       id_image: "/people/Luisa Bianchi.jpg",
@@ -442,8 +431,7 @@ async function createData() {
   await People.create(
     {
       id: "12",
-      name: "Bruno",
-      surname: "De Luca",
+      name: "Bruno De Luca",
       role: "Senior software engineer",
       area: "Machine Learning",
       id_image: "/people/Bruno De Luca.jpg",
@@ -457,8 +445,7 @@ async function createData() {
   await People.create(
     {
       id: "13",
-      name: "Fabrizio",
-      surname: "Venditti",
+      name: "Fabrizio Venditti",
       role: "CEO",
       area: "leaders",
       id_image: "/people/CEOfabrizio-venditti.jpg",
@@ -472,8 +459,7 @@ async function createData() {
   await People.create(
     {
       id: "14",
-      name: "Paola",
-      surname: "Falcone",
+      name: "Paola Falcone",
       role: "General manager",
       area: "leaders",
       id_image: "/people/paola-falcone.jpg",
@@ -487,8 +473,7 @@ async function createData() {
   await People.create(
     {
       id: "15",
-      name: "Antonella",
-      surname: "Barberis",
+      name: "Antonella Barberis",
       role: "HR manager",
       area: "leaders",
       id_image: "/people/antonella-barberisHR.jpg",
@@ -509,7 +494,7 @@ async function createData() {
 async function createDB() {
   return new Promise(async (res, rej) => {
     await db.sync()
-   // await createData()
+   //await createData()
     res(db)
   })
   return db

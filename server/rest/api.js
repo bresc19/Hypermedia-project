@@ -30,7 +30,7 @@ async function init() {
 
     app.get('/people', async (req, res) => {
         const people_info = await People.findAll({
-            attributes: ['id','name', 'surname', 'role', 'id_image', 'area'],
+            attributes: ['id','name', 'role', 'id_image', 'area'],
             order: ['id', 'area'],
         })
         return res.json(people_info)

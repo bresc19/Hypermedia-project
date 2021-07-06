@@ -1,36 +1,53 @@
 
 <template>
-<div>
-<Breadcumb
+  <div>
+    <Breadcumb
 
-:topic="person_data.surname+' '+person_data.name">
-</Breadcumb>
-  <p class="secondary-title">Anagafic</p>
-  <hr>
-  <div class="container people-card ">
-    <div class="row w-75" style="margin: 0 auto;">
-      <div class="col-md-6 justify-content-center align-self-center" style="text-align: center; vertical-align: middle;">
-        <img :src="require(`~/assets/img${person_data.id_image}`)" width="50%" height="50%">
-      </div>
-      <div class="col-md-6 ">
-        <ul>
-          <li>Name: {{person_data.name}}</li>
-          <li>Surname: {{person_data.surname}}</li>
-          <li>Role: {{person_data.role}}</li>
-          <li @click="goT">Area: {{person_data.area}}</li>
-          <li>Years of collaboration: {{person_data.contribution_years}}</li>
-        </ul>
-      </div>
-    </div>
+      :topic="person_data.name">
+    </Breadcumb>
+    <p class="secondary-title">Anagafic</p>
     <hr>
-    <div class="row p-5">
-      <p class="blockquote text-center display-4">{{ person_data.cit }} </p>
+    <div class="container people-card ">
+      <div class="row w-75" style="margin: 0 auto;">
+        <div class="col-md-6 justify-content-center align-self-center" style="text-align: center; vertical-align: middle;">
+          <img :src="require(`~/assets/img${person_data.id_image}`)" width="50%" height="50%">
+        </div>
+        <div class="col-md-6 ">
+          <ul>
+            <li>Name: {{person_data.name}}</li>
+            <li>Role: {{person_data.role}}</li>
+            <li @click="goT">Area: {{person_data.area}}</li>
+            <li>Years of collaboration: {{person_data.contribution_years}}</li>
+          </ul>
+        </div>
+      </div>
       <hr>
-      <p class="display-6">{{ person_data.contribution_description }}</p>
+      <div class="row p-5">
+        <p class="blockquote text-center display-4">{{ person_data.cit }} </p>
+        <hr>
+        <p class="display-6">{{ person_data.contribution_description }}</p>
+      </div>
     </div>
-  </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+      <img src="~/assets/img/products.png">
+        </div>
+        <div class="col-8 text-lg-right">
+          <h4>Products Contribution</h4>
+          <hr>
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              QQQ
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
+  </div>
 
 </template>
 

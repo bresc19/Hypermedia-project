@@ -94,10 +94,11 @@ img {
 }
 .card {
   max-height:400px;
-  overflow:auto;}
+  overflow: no-display;
+}
 
 #cont-products-descriptions{
-  width: 70%;
+  width: 100%;
   padding: 20px;
   margin: 0 auto;
 }

@@ -16,7 +16,7 @@
           <ul>
             <li>Name: {{person_data.name}}</li>
             <li>Role: {{person_data.role}}</li>
-            <li @click="goT">Area: {{person_data.area}}</li>
+            <li @click="goToArea(`/areas/${id_area.id}`)">Area: {{person_data.area}}</li>
             <li>Years of collaboration: {{person_data.contribution_years}}</li>
           </ul>
         </div>
@@ -63,16 +63,22 @@ export default {
     const { data } = await $axios.get(`/api/people/${id}`)
     //eslint-disable-next-line camelcase
     const person_data = data.person
-
-
+    const id_area = data.areaID
     let products_data = data.products
     products_data = [].concat.apply([], products_data)
     console.log(data.products)
     return {
       person_data,
-      products_data
+      products_data,
+      id_area
     }
-  }
+  },
+  methods: {
+    goToArea(path) {
+      this.$router.push({ path })
+    },
+  },
+
 
 }
 </script>

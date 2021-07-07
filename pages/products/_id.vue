@@ -17,7 +17,7 @@
       <br>
       <div class="row">
         <div class="col-sm">
-        <h2>Functionalities</h2>
+          <h2>Functionalities</h2>
         </div>
         <div class="col-sm">
           <p>{{product_data.functionalities[0]}}</p>
@@ -44,10 +44,16 @@
           />
         </div>
         <div class="col-sm">
-          <h4>Team Members</h4>
-          <hr class="featurette-divider">
-          <div class="col-sm" style="">
-              <p v-for="item in manager.team_members" :key="item">{{item}}</p>
+          <div class="row">
+          <div class="col-sm " style="">
+            <h4>Team Members</h4>
+            <hr class="featurette-divider">
+
+            <p v-for="item in manager.team_members" :key="item">{{item}}</p>
+          </div>
+          <div class="col-sm">
+            <img width = "100%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
+          </div>
           </div>
         </div>
       </div>
@@ -73,14 +79,19 @@ export default {
 
     const product_data = data.product
     const manager = data.manager
-  console.log("ciao")
-
+    const area_data = data.areaImage
+console.log(area_data)
     return {
       product_data,
-      manager
+      manager,
+      area_data
     }
   },
-
+  methods: {
+    goToArea(path) {
+      this.$router.push({ path })
+    },
+  },
 
 
 }

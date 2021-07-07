@@ -51,7 +51,13 @@ async function init() {
         products.push(p)
       }
 
-      const data= {person, products}
+      const areaID = await Area.findOne({
+        where:{
+          name_area: person.area
+        }
+      })
+
+      const data= {person, products, areaID}
         return res.json(data)
     })
 
@@ -68,8 +74,17 @@ async function init() {
         name: product.manager },
     })
 
-    const data = {product, manager}
+    const areaImage = await Area.findOne({
+      where: {
+        name_area: product.area
+      }
+    })
+  console.log(areaImage)
+    const data = {product, manager, areaImage}
     return res.json(data)
+
+
+
   })
 
   app.get('/areas/:id', async (req, res) => {
@@ -86,7 +101,13 @@ async function init() {
       }
 
     })
-    const data = {area, manager}
+
+    const topProduct = await Product.findOne({
+      where:{
+        area: area.name_area
+      }
+    })
+    const data = {area, manager, topProduct}
 
     //console.log(area.dataValues)
     //console.log(res.json(area))

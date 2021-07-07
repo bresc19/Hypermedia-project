@@ -78,9 +78,19 @@ async function init() {
         id: req.params.id
       },
     })
+
+    const manager = await People.findOne({
+      where: {
+        area: area.name_area,
+        role: 'Project manager'
+      }
+
+    })
+    const data = {area, manager}
+
     //console.log(area.dataValues)
     //console.log(res.json(area))
-    return res.json(area)
+    return res.json(data)
   })
 
   app.post('/contact', (req, res) => {

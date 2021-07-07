@@ -1,8 +1,8 @@
 <template>
   <div>
     <Breadcumb
-    :group="groupTopic"
-    :topic="area_data.name_area">
+      :group="groupTopic"
+      :topic="area_data.name_area">
     </Breadcumb>
     <br>
     <br>
@@ -57,21 +57,37 @@
           <img :src="require(`~/assets/img${area_data.large_image[2]}`)" >
         </div>
       </div>
-
-      <hr>
     </div>
-
+    <br>
+    <br>
+    <br>
     <div class="text-right container">
-      <h5>Supervisor</h5>
-      <!-- Item Person project manager + area-->
+      <h2>Supervisor</h2>
+      <hr>
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+      <ItemPerson
+        :name="supervisor_data.name"
+        :surname="supervisor_data.surname"
+        :role="supervisor_data.role"
+        :url = "supervisor_data.id_image"
+        :id="supervisor_data.id"
+      />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
 /*eslint-disable*/
+
+import ItemPerson from '../../components/ItemPerson';
+
 export default {
   name: 'Area',
-  components: {},
+  components: {ItemPerson},
   template: 'default',
   props: {
     groupTopic: 'Areas',
@@ -81,10 +97,12 @@ export default {
   async asyncData ({ $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(`/api/areas/${id}`)
-    const area_data = data
+    const area_data = data.area
+    const supervisor_data= data.manager
     console.log(area_data)
     return {
-      area_data
+      area_data,
+      supervisor_data
     }
   },
 

@@ -22,9 +22,7 @@ async function init() {
             order: ['id'],
 
         })
-
-      console.log(res.json(product_info))
-        return res.json(product_info)
+       return res.json(product_info)
     })
 
 
@@ -39,10 +37,24 @@ async function init() {
     app.get('/people/:id_person', async (req, res) => {
         const person = await People.findOne({
             where: {
-                id: req.params.id_person },
+                id: req.params.id_person,
+            },
+             })
+
+      var products= new Array();
+      for(let i = 0; i < person.dataValues.products_contribution.length; i++) {
+        const p = await Product.findAll({
+          where: {
+            name: person.products_contribution[i]
+          }
         })
-        return res.json(person)
+        products.push(p)
+      }
+
+      const data= {person, products}
+        return res.json(data)
     })
+
 
 
   app.get('/products/:id', async (req, res) => {
@@ -51,14 +63,13 @@ async function init() {
         id: req.params.id },
     })
 
-    var words = Object(product.dataValues).manager.split(' ')
     const manager = await People.findOne({
       where: {
-        surname: words[1] },
+        name: product.manager },
     })
 
-    var result = {product, manager}
-    return res.json(result)
+    const data = {product, manager}
+    return res.json(data)
   })
 
   app.get('/areas/:id', async (req, res) => {

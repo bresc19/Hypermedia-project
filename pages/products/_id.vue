@@ -2,14 +2,14 @@
 
   <div class="wrapper">
     <Breadcumb
-      :topic="product_data.product.name"></Breadcumb>
+      :topic="product_data.name"></Breadcumb>
     <br>
     <br>
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col-sm-8">{{product_data.product.large_description}}</div>
+        <div class="col-sm-8">{{product_data.large_description}}</div>
         <div class="col-sm-4">
-          <img style="margin: 0 auto; padding: 10px; width: 100%;" :src="require(`~/assets/img${product_data.product.large_image}`)">
+          <img style="margin: 0 auto; padding: 10px; width: 100%;" :src="require(`~/assets/img${product_data.large_image}`)">
         </div>
       </div>
       <br>
@@ -20,13 +20,13 @@
         <h2>Functionalities</h2>
         </div>
         <div class="col-sm">
-          <p>{{product_data.product.functionalities[0]}}</p>
+          <p>{{product_data.functionalities[0]}}</p>
         </div>
         <div class="col-sm">
-          <p>{{product_data.product.functionalities[1]}}</p>
+          <p>{{product_data.functionalities[1]}}</p>
         </div>
         <div class="col-sm">
-          <p>{{product_data.product.functionalities[2]}}</p>
+          <p>{{product_data.functionalities[2]}}</p>
         </div>
       </div>
       <div>
@@ -38,17 +38,16 @@
       <div class="row justify-content-between">
         <div class="col-sm ml-5">
           <ItemPerson
-            :name="product_data.manager.name"
-            :surname="product_data.manager.surname"
-            :role="product_data.manager.role"
-            :url="product_data.manager.id_image"
+            :name="manager.name"
+            :role="manager.role"
+            :url="manager.id_image"
           />
         </div>
         <div class="col-sm">
           <h4>Team Members</h4>
           <hr class="featurette-divider">
           <div class="col-sm" style="">
-              <p v-for="item in product_data.manager.team_members" :key="item">{{item}}</p>
+              <p v-for="item in manager.team_members" :key="item">{{item}}</p>
           </div>
         </div>
       </div>
@@ -71,15 +70,16 @@ export default {
     const { id } = route.params
     console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(`/api/products/${id}`)
-    const product_data = data
-    console.log(product_data.manager)
+
+    const product_data = data.product
+    const manager = data.manager
+  console.log("ciao")
 
     return {
       product_data,
+      manager
     }
   },
-
-
 
 
 

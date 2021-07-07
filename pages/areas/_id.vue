@@ -49,7 +49,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row ">
         <div class="col-md-7">
           <p class="lead">{{area_data.large_description[2]}}</p>
         </div>
@@ -58,8 +58,12 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <hr>
+    </div>
 
+    <div class="text-right container">
+      <h5>Supervisor</h5>
+      <!-- Item Person project manager + area-->
     </div>
   </div>
 </template>

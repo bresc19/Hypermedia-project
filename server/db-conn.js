@@ -20,7 +20,9 @@ const People = db.define("people",{
     contribution_years: DataTypes.INTEGER,
     contribution_description: DataTypes.TEXT,
     cit: DataTypes.TEXT,
+    products_contribution: DataTypes.ARRAY(DataTypes.STRING),
     team_members: DataTypes.ARRAY(DataTypes.STRING)
+
 
   },
   {
@@ -282,6 +284,7 @@ async function createData() {
     contribution_years: 5,
     contribution_description: "Contribution in the company: with a foundation in Statistics, Analytics and modelling, coupled with a strong business sense, Dario helps the company interpret and manage data and solve complex problems using expertise in a variety of data niches.",
     cit: "Today I have a lot of challenges, as create a powerful and united team, in which everyone is capable of having the personal and professional development he wants.",
+    products_contribution: ["TopTech db2-warehouse"],
     team_members: ["Martin Atoche", "Jonathan Mancilla"]
 
   })
@@ -296,6 +299,7 @@ async function createData() {
       contribution_years: 9,
       contribution_description: "Project managers play as coordinators among stakeholders in completing product handover and accumulating knowledge asset, thus indirectly enhancing organizational strategic value integration in project ending.",
       cit: "“Project management is like juggling three balls – time, cost and quality. Program management is like a troupe of circus performers standing in a circle, each juggling three balls and swapping balls from time to time.”",
+      products_contribution: ["TopTech db2-warehouse", "TopTech Elasticache","TopTech Cloudant"],
       team_members: ["Dario Fracassetti", "Jonathan Mancilla"]
 
     }
@@ -311,6 +315,7 @@ async function createData() {
       contribution_years: 7,
       contribution_description: "In the role of Senior Software Engineer, Jonathan develops information systems by studying operations; designing, developing and installing software solutions; support and develop software team. Jonathan leads a team of developers responsible for building new and support existing websites.",
       cit: "“It is better to lead from behind and to put others in front, especially when you celebrate victory when nice things occur. You take the front line when there is danger. Then people will appreciate your leadership.”",
+      products_contribution: ["TopTech db2-warehouse"],
       team_members: ["Martin Atoche", "Dario Fracassetti"]
 
     })
@@ -325,6 +330,7 @@ async function createData() {
       contribution_years: 10,
       contribution_description: "Project managers play as coordinators among stakeholders in completing product handover and accumulating knowledge asset, thus indirectly enhancing organizational strategic value integration in project ending",
       cit: "“Know when to cut your losses if necessary. Don’t let your desire to succeed be the enemy of good judgment. If Napoleon had left Moscow immediately, he may have returned with a salvageable army.”",
+      products_contribution: ["TopTech Cognito", "TopTech Macie", "TopTech DataRiskManager"],
       team_members: ["Camilla Stefani", "Ilenia Panicucci"]
 
     })
@@ -333,13 +339,13 @@ async function createData() {
     {
       id: "5",
       name: "Camilla Stefani",
-      surname: "",
       role: "IT Security specialist",
       area: "Security",
       id_image: "/people/Camilla-Stefani-1.jpg",
       contribution_years: 8,
       contribution_description: "The role of Camilla is to develop plans to safeguard computer files against unauthorized modification, destruction or disclosure. Choose, implement, monitor and upgrade computer anti-virus and malware protection systems. Encrypt data transmissions and erect firewalls to conceal confidential information during transmit",
       cit: "“As you navigate through the rest of your life, be open to collaboration. Other people and other people’s ideas are often better than your own. Find a group of people who challenge and inspire you, spend a lot of time with them, and it will change your life.”",
+      products_contribution: ["TopTech Cognito", "TopTech Macie"],
       team_members: ["Osmani Martinez", "Ilenia Panicucci"]
 
     })
@@ -354,6 +360,7 @@ async function createData() {
       contribution_years: 9,
       contribution_description: "In the role of Senior Software Engineer, Ilenia develops information systems by studying operations; designing, developing and installing software solutions; support and develop software team. Ilenia leads a team of developers responsible for building new and support existing websites",
       cit: "“People are more inclined to be drawn in if their leader has a compelling vision. Great leaders help people get in touch with their own aspirations and then will help them forge those aspirations into a personal vision.”",
+      products_contribution: ["TopTech DataRiskManager", ],
       team_members: ["Osmani Martinez", "Camilla Stefani"]
 
     })
@@ -368,6 +375,7 @@ async function createData() {
       contribution_years: 9,
       contribution_description: "Project managers play as coordinators among stakeholders in completing product handover and accumulating knowledge asset, thus indirectly enhancing organizational strategic value integration in project ending",
       cit: "“To effectively communicate, we must realize that we are all different in the way we perceive the world and use this understanding as a guide to our communication with others.”",
+      products_contribution: ["TopTech Maximo", "TopTech GreenGrass", "TopTech IoT-analytics"],
       team_members: ["Luca Valentini", "Giancarlo Vitali"]
 
     })
@@ -382,6 +390,7 @@ async function createData() {
       contribution_years: 5,
       contribution_description: "Luca uses technology to solve problems and prepare for the future. They also write and program software to create applications. Their primary focus, however, is to validate and develop models for interaction between people and computers or software and devices",
       cit: "“In poorly run projects, problems can go undetected until the project fails. It’s like the drip … drip … drip of a leaky underground pipe. Money is being lost, but you don’t see it until there is an explosion.” ",
+      products_contribution: ["TopTech IoT-analytics"],
       team_members: ["Paolo Bozzola", "Giancarlo Vitali"]
 
     })
@@ -396,6 +405,7 @@ async function createData() {
       contribution_years: 7,
       contribution_description: "In the role of Senior Software Engineer, Giancarlo develops information systems by studying operations; designing, developing and installing software solutions; support and develop software team. Giancarlo leads a team of developers responsible for building new and support existing websites",
       cit: "“Know when to cut your losses if necessary. Don’t let your desire to succeed be the enemy of good judgment. If Napoleon had left Moscow immediately, he may have returned with a salvageable army.”",
+      products_contribution: ["TopTech GreenGrass"],
       team_members: ["Paolo Bozzola", "Luca Valentini"]
 
     })
@@ -410,6 +420,7 @@ async function createData() {
       contribution_years: 10,
       contribution_description: "Project managers play as coordinators among stakeholders in completing product handover and accumulating knowledge asset, thus indirectly enhancing organizational strategic value integration in project ending",
       cit: "“The challenge of leadership is to be strong, but not rude; be kind, but not weak; be bold, but not bully; be thoughtful, but not lazy; be humble, but not timid; be proud, but not arrogant; have humor, but without folly.”",
+      products_contribution: ["TopTech Watson-Konwledge Catalog", "TopTech SageMaker-Debugger", "TopTech Pipelines"],
       team_members: ["Luisa Bianchi", "Bruno De Luca"]
 
     })
@@ -424,6 +435,7 @@ async function createData() {
       contribution_years: 6,
       contribution_description: "Inside the company Luisa provides assistance and maintenance to all computer systems and hardware. Her work includes installing, configuring, and updating hardware and software, as well as fixing any issue related to the equipment that may come up on a daily basis",
       cit: "“The very essence of leadership is that you have to have a vision. It’s got to be a vision you articulate clearly and forcefully on every occasion. You can’t blow an uncertain trumpet.”",
+      products_contribution: ["TopTech Pipelines"],
       team_members: ["Roberto Clemente", "Bruno De Luca"]
 
     })
@@ -438,6 +450,7 @@ async function createData() {
       contribution_years: 7,
       contribution_description: "In the role of Senior Software Engineer, Bruno develops information systems by studying operations; designing, developing and installing software solutions; support and develop software team. Bruno leads a team of developers responsible for building new and support existing websites",
       cit: "“First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end.”",
+      products_contribution: ["TopTech SageMaker-Debugger", "TopTech Pipelines"],
       team_members: ["Roberto Clemente", "Luisa Bianchi"]
 
     })
@@ -452,6 +465,7 @@ async function createData() {
       contribution_years: 10,
       contribution_description: "Dr. Venditti, in the role of chief executive officer, is the highest-ranking executive in the company, whose primary responsibilities include making major corporate decisions, managing the overall operations and resources of a company, acting as the main point of communication between the board of directors (the board) and corporate operations and being the public face of the company",
       cit: "“A true leader has the confidence to stand alone, the courage to make tough decisions, and the compassion to listen to the needs of others. He does not set out to be a leader, but becomes one by the equality of his actions and the integrity of his intent.”",
+      products_contribution: ["TopTech SageMaker-Debugger"],
       team_members: ["Paola Falcone", "Antonella Barberis"]
 
     })
@@ -466,6 +480,7 @@ async function createData() {
       contribution_years: 10,
       contribution_description: "The general manager is expected to improve efficiency and increase profits while managing the overall operations of a company or division. Paola’s duties include managing staff, overseeing the budget, employing marketing strategies, and many other facets of the business",
       cit: "“Inspire your people to think like entrepreneurs, and whatever you do, treat them like adults. The hardest taskmaster of all is a person’s own conscience, so the more responsibility you give people, the better they will work for you.”",
+      products_contribution: ["TopTech Watson-Konwledge Catalog"],
       team_members: ["Fabrizio Venditti", "Antonella Barberis"]
 
     })
@@ -480,6 +495,7 @@ async function createData() {
       contribution_years: 9,
       contribution_description: "The Antonella’s role is to manage strategies to ensure the organisation reaches its business goals, as well as contributing significantly to the corporate decision-making process, which includes assessments for current employees and predictions for future ones based on business demands",
       cit: "“True leadership lies in guiding others to success. In ensuring that everyone is performing at their best, doing the work they are pledged to do and doing it well.”",
+      products_contribution: ["TopTech IoT-analytics"],
       team_members: ["Fabrizio Venditti", "Paola Falcone"]
 
     }
@@ -494,7 +510,7 @@ async function createData() {
 async function createDB() {
   return new Promise(async (res, rej) => {
     await db.sync()
-   //await createData()
+  //await createData()
     res(db)
   })
   return db

@@ -68,7 +68,6 @@ export default {
 async asyncData ({ $axios }){
   const {data} = await $axios.get(`/api/products/8`)
   const product_data = data.product
- console.log(product_data.large_image)
   return {
     product_data,
   }

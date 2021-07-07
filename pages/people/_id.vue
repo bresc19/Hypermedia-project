@@ -31,22 +31,19 @@
     <br>
     <br>
     <div class="container">
+      <h2>Contributions</h2>
+      <hr>
       <div class="row">
-        <div class="col-4">
-      <img src="~/assets/img/products.png">
-        </div>
-        <div class="col-8 text-lg-right">
-          <h4>Products Contribution</h4>
-          <hr>
-          <div class="row">
-            <div class="col-sm-12 col-lg-6">
-              QQQ
-            </div>
-          </div>
+        <div class="col" v-for="item in products_data"
+             v-bind:key="item.name" >
+          <ItemProduct
+            :product_name="item.name" :description="item.brief_description"
+            :url = "item.image_product"
+            :id = "item.id">
+          </ItemProduct>
         </div>
       </div>
     </div>
-
   </div>
 
 </template>
@@ -54,20 +51,26 @@
 <script>
 /* eslint-disable */
 import Breadcumb from "../../components/Breadcumb";
+import ItemProduct from "../../components/ItemProduct";
 export default {
   name: 'Person',
-  components: {Breadcumb},
+  components: {ItemProduct, Breadcumb},
   layout: 'default',
 
   async asyncData ({ $axios, route }) {
     const { id } = route.params
     console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(`/api/people/${id}`)
-    // eslint-disable-next-line camelcase
-    const person_data = data
-    console.log(person_data)
+    //eslint-disable-next-line camelcase
+    const person_data = data.person
+
+
+    let products_data = data.products
+    products_data = [].concat.apply([], products_data)
+    console.log(data.products)
     return {
-      person_data
+      person_data,
+      products_data
     }
   }
 

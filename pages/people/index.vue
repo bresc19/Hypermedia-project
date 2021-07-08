@@ -5,11 +5,12 @@
     product 3x3
     -->
   <div class="container">
+    <br>
     <h1 class="h2">People</h1>
     <hr>
     <div class="grid-container">
       <div>
-        <img src="../../assets/img/team-leasing-1024x700.jpg">
+        <img class="rounded img-fluid border-4" src="../../assets/img/team-leasing-1024x700.jpg">
       </div>
       <div class="grid-cell-right">
         <a class="people-text"> We believe our strength lies in the diversity of our employees.
@@ -90,7 +91,7 @@ export default {
   grid-template-columns: auto auto ;
   grid-gap: 50px;
   background-color: white;
-  padding: 120px;
+  padding: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -99,18 +100,7 @@ img{
   max-width: 100%;
 }
 
-.title-topic-single {
-  padding: 10px;
-  margin-left: 50px;
-  font-size: 24px;
-  text-align: left;
-}
 
-.secondary-title{
-  padding: 15px;
-  text-align: left;
-  font-size: 18px;
-}
 
 a{
   color: black;

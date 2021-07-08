@@ -5,7 +5,7 @@
       <img class="card-img-top" :src="require(`~/assets/img${url}`)" alt="Card image cap">
     </div>
       <div class="card-body pt-0">
-      <h5 class="card-title">{{ product_name }}</h5>
+      <h5 class="card-title text-left">{{ product_name }}</h5>
       <p class="card-text text-left">{{ description }}</p>
     </div>
   </div></a>

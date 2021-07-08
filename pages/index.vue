@@ -45,9 +45,9 @@
       <br>
       <br>
       <div class="row">
-        <div class="col text-center">
+        <div class="col-sm text-center">
           <div class="card">
-            <img  class="rounded mx-auto d-block" src="~/assets/img/contact-us.png" width="80%">
+            <img  class="rounded mx-auto d-block" src="~/assets/img/contact-us.png" width="50%">
             <a href="/contact">
               <button type="button" class="btn btn-primary btn-lg btn-block">Contact Us</button>
             </a>
@@ -88,4 +88,5 @@ async asyncData ({ $axios }){
 #jumbotron-img{
   back: 50%;
 }
+
 </style>

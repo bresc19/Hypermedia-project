@@ -12,7 +12,7 @@
       <p>{{description}} </p>
     </div>
     <div class="card-footer" style="background: inherit; border-color: inherit;">
-      <a class=btn" role="button" @click="goToArea(`/areas/${id}`)">Visit</a>
+      <a  class="btn" role="button" @click="goToArea(`/areas/${id}`)">Visit</a>
     </div>
   </div>
 </div>
@@ -90,5 +90,8 @@ export default {
 }
 p{
   font-size: 14px;
+}
+.btn:hover{
+  color: #0a53be;
 }
 </style>

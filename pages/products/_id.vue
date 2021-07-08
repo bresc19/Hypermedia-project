@@ -1,6 +1,7 @@
 <template>
 
   <div class="wrapper">
+    <br>
     <Breadcumb
       :topic="product_data.name"></Breadcumb>
     <br>

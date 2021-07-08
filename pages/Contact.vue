@@ -4,8 +4,8 @@
     <h1 class="title-topic-single">Contact</h1>
     <hr>
     <div class="image-contact" id="text">
-      <img src="../assets/img/Contact-Us-Header.jpg" width=80% height=80%>
-      <p>Get in touch with us!</p>
+      <img class="img-class" src="../assets/img/Contact-Us-Header.jpg" width=80% height=80%>
+      <p class="font-italic" style="font-size: 28px;">Get in touch with us!</p>
     </div>
     <div class="container">
       <div class="row">
@@ -87,7 +87,6 @@
         Message sent correctly!
       </div>
     </div>
-
   </div>
 </template>
 
@@ -142,7 +141,7 @@ export default {
   padding: 40px;
 }
 
-img{
+.img-class{
   max-width: 100%;
   position: relative;
 }
@@ -156,9 +155,8 @@ img{
 .address{
   font-size: 100%;
 }
-p{
+.text-contact{
   left: 40%;
-  position: absolute;
   font-size: 100%;
   bottom: 35px;
   text-align: center;
@@ -169,13 +167,13 @@ a{
 }
 form {
   margin: 0 auto;
-  width: 500px;
+  width: 100%;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
 }
 input{
-  width: 300px;
+  width: 60%;
 }
 ul {
   list-style: none;

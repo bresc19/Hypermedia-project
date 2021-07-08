@@ -18,7 +18,9 @@
       <div class="row">
         <div class="col-sm text-center">
           <h2>Functionalities</h2>
-          <img src="~/assets/img/functionalities.png" width="50%">
+          <br>
+          <br>
+          <img src="~/assets/img/functionalities.png" width="70%">
         </div>
         <div class="col-sm">
           <br>

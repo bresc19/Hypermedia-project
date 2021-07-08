@@ -45,13 +45,13 @@
         </div>
         <div class="col-sm">
           <div class="row">
-          <div class="col-sm " style="">
+          <div class="col" style="">
             <h4>Team Members</h4>
             <hr class="featurette-divider">
 
             <p v-for="item in manager.team_members" :key="item">{{item}}</p>
           </div>
-          <div class="col-sm">
+          <div class="col align-self-end">
             <img width = "100%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
           </div>
           </div>

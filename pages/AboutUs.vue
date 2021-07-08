@@ -36,53 +36,46 @@
   </div>
   <p class="secondary-title">Leadership Team</p>
   <hr>
-  <div class="grid-people">
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="#">
-          <img src="../assets/img/people/CEOfabrizio-venditti.jpg"  width="600" height="400">
-        </a>
-        <div class="name-surname"><a class="no-signature" href="#">Fabrizio Venditti</a></div>
-        <div class="desc"><a class="no-signature" href="#" >CEO</a></div>
+  <div class="container">
+    <div class="row" >
+      <div class="col-lg-4 col-sm-12"  v-for="item in managers"
+           v-bind:key="item.id">
+        <ItemPerson
+          :name="item.name"
+          :surname="item.surname"
+          :role="item.role"
+          :url = "item.id_image"
+          :id="item.id"
+        />
       </div>
     </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="#">
-          <img src="../assets/img/people/paola-falcone.jpg"  width="600" height="400">
-        </a>
-        <div class="name-surname"> <a class="no-signature" href="#">Paola Falcone</a> </div>
-        <div class="desc"><a class="no-signature" href="#">General Manager</a></div>
-      </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="#">
-          <img src="../assets/img/people/roberto-clemente.jpg"  width="600" height="400">
-        </a>
-        <div class="name-surname"><a class="no-signature" href="#" >Roberto Clemente</a></div>
-        <div class="desc"><a class="no-signature" href="#" >Chief research officer</a></div>
-      </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="#">
-          <img src="../assets/img/people/antonella-barberisHR.jpg" width="600" height="400">
-        </a>
-        <div class="name-surname"><a class="no-signature" href="#">Antonella Barberis</a></div>
-        <div class="desc"><a class="no-signature" href="#">HR manager</a></div>
-      </div>
-    </div>
+    <br>
+    <br>
   </div>
+
 </div>
 </template>
 
 <script>
 /* eslint-disable */
 
+import ItemPerson from '../components/ItemPerson';
+//TODO  aboutus links + layout fix area id + add imagesproducts + layout general
 export default {
   name: "AboutUs",
   layout: "default",
+  async asyncData ({ $axios, route }) {
+    console.log('this url', process.env.BASE_URL)
+    const { data } = await $axios.get(`/api/aboutus`)
+
+console.log(data)
+    const managers = data
+    return {
+      managers,
+    }
+  },
+
+
 
 }
 </script>

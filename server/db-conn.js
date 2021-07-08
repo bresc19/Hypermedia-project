@@ -123,7 +123,7 @@ async function createData() {
     name: "TopTech Cloudant",
     brief_description: "The data layer for hyperscale, resilient and globally available applications, based on open source Apache CouchDB",
     large_description: "A fully managed, distributed database optimized for high workloads and fast growing web and mobile apps, IBM® Cloudant® is available as a TopTech Cloud® service with an SLA of 99.99%. Cloudant adapts flexibly to throughput and storage, and its API and replication protocols are compatible with Apache CouchDB for hybrid or multicloud architectures",
-    functionalities : ["-\tDeploy an instance, create databases and adjust the throughput independently and archive data to meet application requirements", "-\tEncrypt all data, with optional user-defined encryption key management via IBM Key Protect, and integrate with IBM Identity and Access Management", "-\tGain continuous availability with Cloudant distributing data across all Availability Zones and 6 Regions to meet app performance and disaster recovery requirements"],
+    functionalities : ["Deploy an instance, create databases and adjust the throughput independently and archive data to meet application requirements", "Encrypt all data, with optional user-defined encryption key management via IBM Key Protect, and integrate with IBM Identity and Access Management", "Gain continuous availability with Cloudant distributing data across all Availability Zones and 6 Regions to meet app performance and disaster recovery requirements"],
     area: "Database",
     image_product: "/Database/product-image1.jpg",
     large_image: "/Database/large-image1.jpg",

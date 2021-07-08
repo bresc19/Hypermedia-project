@@ -7,48 +7,45 @@
     <br>
     <br>
     <div class="container">
-      <div class="row">
-        <div  class="col-lg-4 col-sm-12">
-          <img :src="require(`~/assets/img${area_data.small_image[0]}`)" width="50" height="50">
+      <div class="row justify-content-center">
+        <div  class="col-lg-4 col-sm-12 align-middle">
+          <img class="img-thumbnail small_img img-responsive" :src="require(`~/assets/img${area_data.small_image[0]}`)" width="200" height="50" >
           <p>{{area_data.small_description[0]}}</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-4 col-sm-12">
-          <img :src="require(`~/assets/img${area_data.small_image[1]}`)" width="50" height="50">
+        <div class="col-lg-4 col-sm-12 align-middle">
+          <img class="img-thumbnail small_img img-responsive" :src="require(`~/assets/img${area_data.small_image[1]}`)" width="200" height="50">
           <p>{{area_data.small_description[1]}}</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4 col-sm-12">
-          <img :src="require(`~/assets/img${area_data.small_image[2]}`)" width="50" height="50">
+          <img class="img-thumbnail small_img img-responsive " :src="require(`~/assets/img${area_data.small_image[2]}`)" width="200" height="50">
           <p>{{area_data.small_description[2]}}</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
       <hr class="featurette-divider">
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7" style="display: flex; align-items: center;">
           <p class="lead">{{area_data.large_description[0]}}</p>
         </div>
-        <div class="col-md-5">
-          <img :src="require(`~/assets/img${area_data.large_image[0]}`)" >
+        <div class="col-md-5" style="display: flex; align-items: center;">
+          <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[0]}`)" >
         </div>
       </div>
       <hr class="featurette-divider">
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
+        <div class="col-md-7 order-md-2" style="display: flex; align-items: center;">
           <p class="lead">{{area_data.large_description[1]}}</p>
         </div>
-        <div class="col-md-5 order-md-1">
-          <img :src="require(`~/assets/img${area_data.large_image[1]}`)" >
+        <div class="col-md-5 order-md-1" style="display: flex; align-items: center;">
+          <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[1]}`)" >
         </div>
       </div>
       <hr class="featurette-divider">
       <div class="row ">
-        <div class="col-md-7">
-          <p class="lead">{{area_data.large_description[2]}}</p>
+        <div class="col-md-7" style="display: flex; align-items: center;">
+          <p  class="lead">{{area_data.large_description[2]}}</p>
         </div>
-        <div class="col-md-5">
-          <img :src="require(`~/assets/img${area_data.large_image[2]}`)" >
+        <div class="col-md-5" style="display: flex; align-items: center;">
+          <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[2]}`)" >
         </div>
       </div>
     </div>
@@ -58,7 +55,7 @@
     <hr>
     <div class="container">
       <div class="row">
-        <div class="col text-right">
+        <div class="col text-center justify-content-center">
           <h2>Bestselling</h2>
           <br><br>
           <ItemProduct
@@ -67,7 +64,7 @@
             :id = "product_data.id"
           />
         </div>
-        <div class="col text-right">
+        <div class="col text-center justify-content-center">
           <h2>Supervisor</h2>
           <br><br>
           <ItemPerson
@@ -111,6 +108,7 @@ export default {
       product_data
     }
   },
+
 
 }
 </script>
@@ -188,4 +186,12 @@ body {
   }
 }
 
+.small_img {
+  width: 250px;
+  height: 150px;
+}
+.large_img{
+  width: 400px;
+  height: 200px;
+}
 </style>

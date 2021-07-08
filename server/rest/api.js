@@ -120,6 +120,14 @@ async function init() {
   })
 
 
+  app.get('/aboutus', async (req, res) => {
+    const managers = await People.findAll({
+      where:{
+        area: 'leaders'
+      }
+    })
+    return res.json(managers)
+  })
 
 
 

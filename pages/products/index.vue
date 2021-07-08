@@ -8,33 +8,34 @@
       <div class="col-lg-4 col-sm-12"  v-for="item in productItems"
            v-bind:key="item.name" >
         <ItemProduct
-                     :product_name="item.name" :description="item.brief_description"
-                     :url = "item.image_product"
-                     :id = "item.id"
+          :product_name="item.name" :description="item.brief_description"
+          :url = "item.image_product"
+          :id = "item.id"
         />
       </div>
     </div>
-
-    <div class="row" id="cont-products-descriptions">
-      <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
-        <h4 style="text-align: center;">Agile transformation</h4>
-        <img src="../../assets/img/p1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Drive disruption by applying Lean principles to achieve substantial performance improvements, accelerating business change.</p>
+    <div class="container">
+      <div class="row" id="cont-products-descriptions">
+        <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
+          <h4 style="text-align: center;">Agile transformation</h4>
+          <img src="../../assets/img/p1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Drive disruption by applying Lean principles to achieve substantial performance improvements, accelerating business change.</p>
+          </div>
         </div>
-      </div>
-      <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
-        <br><h4 style="text-align: center;">DevOps</h4>
-        <img src="../../assets/img/p2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Streamline IT by bringing business, development and operations teams together and applying automated processes.</p>
+        <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
+          <br><h4 style="text-align: center;">DevOps</h4>
+          <img src="../../assets/img/p2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Streamline IT by bringing business, development and operations teams together and applying automated processes.</p>
+          </div>
         </div>
-      </div>
-      <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
-        <h4 style="text-align: center;">Application modernization</h4>
-        <img src="../../assets/img/p3.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Transform your legacy applications to become more agile and efficient through the power of New IT.</p>
+        <div class="card col-sm-4 item-cont-description-products" style="width: 10rem;">
+          <h4 style="text-align: center;">Application modernization</h4>
+          <img src="../../assets/img/p3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Transform your legacy applications to become more agile and efficient through the power of New IT.</p>
+          </div>
         </div>
       </div>
     </div>

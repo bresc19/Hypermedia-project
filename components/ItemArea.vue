@@ -12,10 +12,9 @@
       <p>{{description}} </p>
     </div>
     <div class="card-footer" style="background: inherit; border-color: inherit;">
-      <a  role="button" @click="goToArea(`/areas/${id}`)">Visit</a>
+      <a class=btn" role="button" @click="goToArea(`/areas/${id}`)">Visit</a>
     </div>
   </div>
-
 </div>
 </template>
 

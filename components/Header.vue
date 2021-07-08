@@ -11,24 +11,36 @@
         </div>
         <div class="col-sm">
         </div>
-          <div class="col-sm container-menu-item" >
-            <a class="menu-item" href="/">Home</a>
+        <a class="container-menu-item menu-item " href="/">
+          <div class="col-sm align-middle text-center " >
+            <p >Home</p>
           </div>
-          <div class="col-sm container-menu-item">
-            <a class="menu-item" href="/products">Products</a>
+        </a>
+        <a class="container-menu-item menu-item " href="/products">
+          <div class="col-sm align-middle text-center " >
+            <p >Products</p>
           </div>
-          <div class="col-sm container-menu-item">
-            <a class="menu-item" href="/areas">Areas</a>
+        </a>
+          <a class="container-menu-item menu-item " href="/areas">
+        <div class="col-sm align-middle text-center " >
+          <p >Areas</p>
+        </div>
+      </a>
+        <a class="container-menu-item menu-item " href="/people">
+          <div class="col-sm align-middle text-center " >
+            <p >People</p>
           </div>
-          <div class="col-sm container-menu-item">
-            <a class="menu-item" href="/people">People</a>
+        </a>
+        <a class="container-menu-item menu-item " href="/aboutus">
+          <div class="col-sm align-middle text-center " >
+            <p >About Us</p>
           </div>
-          <div class="col-sm container-menu-item">
-            <a class="menu-item" href="/aboutus">About Us</a>
+        </a>
+        <a class="container-menu-item menu-item " href="/contact">
+          <div class="col-sm align-middle text-center " >
+            <p >Contacts</p>
           </div>
-          <div class="col-sm container-menu-item">
-            <a class="menu-item" href="/contact">Contact</a>
-          </div>
+        </a>
         </div>
       </div>
 

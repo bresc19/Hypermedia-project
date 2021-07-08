@@ -1,13 +1,14 @@
 <template>
+  <a class="btn" @click="goToProduct(`/products/${id}`)" >
   <div class="card profile-card-5">
     <div class="card-img-block">
       <img class="card-img-top" :src="require(`~/assets/img${url}`)" alt="Card image cap">
     </div>
-    <div class="card-body pt-0">
-      <a @click="goToProduct(`/products/${id}`)" ><h5 class="card-title">{{ product_name }}</h5></a>
-      <p class="card-text">{{ description }}</p>
+      <div class="card-body pt-0">
+      <h5 class="card-title">{{ product_name }}</h5>
+      <p class="card-text text-left">{{ description }}</p>
     </div>
-  </div>
+  </div></a>
 </template>
 
 <script>

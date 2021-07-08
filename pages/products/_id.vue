@@ -6,9 +6,9 @@
     <br>
     <br>
     <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col-sm-8">{{product_data.large_description}}</div>
-        <div class="col-sm-4">
+      <div class="row ">
+        <div class="col-sm-8 text-left align-middle "><br>{{product_data.large_description}}</div>
+        <div class="col-sm-4 text-center justify-content-center">
           <img style="margin: 0 auto; padding: 10px; width: 100%;" :src="require(`~/assets/img${product_data.large_image}`)">
         </div>
       </div>
@@ -35,7 +35,9 @@
       <hr class="featurette-divider">
       <br>
       <h2>Collaborations</h2>
-      <div class="row justify-content-between">
+      <br>
+     <div class="container">
+      <div class="row">
         <div class="col-sm ml-5">
           <ItemPerson
             :name="manager.name"
@@ -43,20 +45,16 @@
             :url="manager.id_image"
           />
         </div>
-        <div class="col-sm">
-          <div class="row">
-          <div class="col" style="">
-            <h4>Team Members</h4>
-            <hr class="featurette-divider">
+        <div class="col  text-left justify-content-center align-middle" >
+          <h4>Team Members</h4>
+          <hr class="featurette-divider">
 
-            <p v-for="item in manager.team_members" :key="item">{{item}}</p>
-          </div>
-          <div class="col align-self-end">
-            <img width = "100%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
-          </div>
-          </div>
+          <p v-for="item in manager.team_members" :key="item">{{item}}</p>
         </div>
-      </div>
+        <div class="col align-self-start">
+          <img width = "60%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
+        </div>      </div>
+     </div>
     </div>
   </div>
 
@@ -80,7 +78,7 @@ export default {
     const product_data = data.product
     const manager = data.manager
     const area_data = data.areaImage
-console.log(area_data)
+    console.log(area_data)
     return {
       product_data,
       manager,

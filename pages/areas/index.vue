@@ -8,9 +8,9 @@
       <p class="text-info">TopTech announcing new services and tools that help clients with rapid, secure application modernization and containerization helping clients build applications once and deploy anywhere. These new IBM Services are being delivered by one of the world’s largest teams of Red Hat certified-consultants and practitioners to advise, move, build, and manage clients’ workloads to open, secure, hybrid multicloud environments.</p>
     </div>
 
-    <div class="container" style="width: 60%; margin: 0 auto;">
-      <div class="row" >
-        <div class="col-lg-6 col-sm-12" style = "padding: 50px;"  v-for="item in info_area" v-bind:key="item.id">
+    <div class="container" style="width: 100%; margin: 0 auto;">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12" style = "padding: 50px; "  v-for="item in info_area" v-bind:key="item.id">
           <ItemArea
             :id = "item.id"
             :name="item.name_area"
@@ -31,7 +31,7 @@ export default {
   components: {ItemArea},
   layout: 'default',
   async asyncData({$axios}) {
-    const {data} = await $axios.get('/api/areas')
+    const {data} = await $axios.get(process.env.BASE_URL+'/api/areas')
     const info_area = data.areaInfo
     console.log(data)
 

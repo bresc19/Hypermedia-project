@@ -38,16 +38,16 @@
               Areas
             </h6>
             <p>
-              <a @click="goToArea(`/areas/${1}`)" style="cursor:pointer;" class="text-reset" >Data Base</a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/${1}`)" style="cursor:pointer;" class="text-reset" >Data Base</a>
             </p>
             <p>
-              <a @click="goToArea(`/areas/${2}`)" style="cursor:pointer;" class="text-reset" >IoT</a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/${2}`)" style="cursor:pointer;" class="text-reset" >IoT</a>
             </p>
             <p>
-              <a @click="goToArea(`/areas/${3}`)" style="cursor:pointer;" class="text-reset" >Security</a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/${3}`)" style="cursor:pointer;" class="text-reset" >Security</a>
             </p>
             <p>
-              <a @click="goToArea(`/areas/${4}`)" style="cursor:pointer;" class="text-reset" >Machine Learning</a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/${4}`)" style="cursor:pointer;" class="text-reset" >Machine Learning</a>
             </p>
           </div>
         </div>

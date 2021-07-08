@@ -38,8 +38,9 @@ export default {
 }
 
 .card{
-  max-width: 300px;
-  min-height: 300px;
+  width: 250px;
+  height: 300px;
+  overflow: hidden
 }
 .profile-card-5{
   margin-top:20px;

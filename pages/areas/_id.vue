@@ -97,7 +97,7 @@ export default {
 
   async asyncData ({ $axios, route }) {
     const { id } = route.params
-    const { data } = await $axios.get(`/api/areas/${id}`)
+    const { data } = await $axios.get(process.env.BASE_URL+`/api/areas/${id}`)
     const area_data = data.area
     const supervisor_data= data.manager
     const product_data = data.topProduct

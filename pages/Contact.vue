@@ -113,7 +113,7 @@ export default {
   },
   methods: {
     submitForm() {
-      axios.post('/api/contact', this.formAttr)
+      axios.post(process.env.BASE_URL+'/api/contact', this.formAttr)
       .then((result)=>
         console.log("the response is: " + result.data)
       )

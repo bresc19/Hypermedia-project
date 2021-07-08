@@ -66,7 +66,7 @@ export default {
   layout: "default",
   async asyncData ({ $axios, route }) {
     console.log('this url', process.env.BASE_URL)
-    const { data } = await $axios.get(`/api/aboutus`)
+    const { data } = await $axios.get(process.env.BASE_URL+`/api/aboutus`)
 
 console.log(data)
     const managers = data

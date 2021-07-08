@@ -55,7 +55,7 @@ export default {
   components: {ItemPerson},
 
   async asyncData({ $axios }) {
-    const {data} = await $axios.get(`/api/people`)
+    const {data} = await $axios.get(process.env.BASE_URL+`/api/people`)
     // const peopleItems = data
     console.log(peopleItems)
 

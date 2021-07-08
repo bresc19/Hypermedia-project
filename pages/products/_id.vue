@@ -80,7 +80,7 @@ export default {
   async asyncData ({ $axios, route }) {
     const { id } = route.params
     console.log('this url', process.env.BASE_URL)
-    const { data } = await $axios.get(`/api/products/${id}`)
+    const { data } = await $axios.get(process.env.BASE_URL+`/api/products/${id}`)
 
     const product_data = data.product
     const manager = data.manager

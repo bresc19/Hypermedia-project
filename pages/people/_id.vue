@@ -60,7 +60,7 @@ export default {
   async asyncData ({ $axios, route }) {
     const { id } = route.params
     console.log('this url', process.env.BASE_URL)
-    const { data } = await $axios.get(`/api/people/${id}`)
+    const { data } = await $axios.get(process.env.BASE_URL+`/api/people/${id}`)
     //eslint-disable-next-line camelcase
     const person_data = data.person
     const id_area = data.areaID

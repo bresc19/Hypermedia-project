@@ -55,7 +55,7 @@ export default {
   components: {ItemProduct},
   layout: 'default',
   async asyncData({ $axios }) {
-    const {data} = await $axios.get(`/api/products`)
+    const {data} = await $axios.get(process.env.BASE_URL+`/api/products`)
 
     const productItems = data
 

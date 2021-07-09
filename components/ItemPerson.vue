@@ -1,11 +1,10 @@
 <template>
   <a class="btn" @click="goToPerson(`/people/${id}`)">
-  <div class="person-container">
-    <div class="bg-white rounded shadow-sm py-5 px-4">
-      <img :src="require(`~/assets/img${url}`)"  width="100%" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-      <h5 class="mb-0" role="button" >{{ name }} {{ surname }}</h5><span class="small text-uppercase text-muted">{{role}}</span>
+    <div class="person-container bg-white rounded shadow-sm py-5 px-4" style="background-color: #bee5eb">
+      <img :src="require(`~/assets/img${url}`)" class="align-self-start img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+      <h5 class="mb-0" role="button" >{{ name }} </h5>
+      <span class="small text-uppercase text-muted align-self-end">{{role}}</span>
     </div>
-  </div>
   </a>
 </template>
 
@@ -15,7 +14,6 @@ export default {
   name: "Person",
   props: {
     name: {type: String, default: () => ''},
-    surname: {type: String, default: () => ''},
     role: {type: String, default: () => ''},
     url: {type: String, default: () => ''},
     id: {type: Number, default: () => 0}
@@ -32,8 +30,9 @@ export default {
 <style scoped>
 /* eslint-disable */
 .person-container {
-  width: 100%;
-  height: 100%;
+  background-color: #cffcff;
+  width: 220px;
+  height: 310px;
   margin: 0 auto;
   text-align: center;
 }
@@ -41,5 +40,7 @@ export default {
   border: cornflowerblue;
   border-style: solid;
 }
+
+
 
 </style>

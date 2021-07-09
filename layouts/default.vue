@@ -24,6 +24,9 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #bee5eb;
+  overflow:hidden;
+
 }
 body{
   background-color: #9bb3b0;

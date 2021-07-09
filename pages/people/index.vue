@@ -1,24 +1,22 @@
 <template>
-  <!--
-
-    people (3x1)x4
-    product 3x3
-    -->
   <div class="container">
     <br>
     <h1 class="h2">People</h1>
     <hr>
-    <div class="grid-container">
-      <div>
-        <img class="rounded img-fluid border-4" src="../../assets/img/team-leasing-1024x700.jpg">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col">
+        <img width="80%" class="rounded img-fluid border-4" src="../../assets/img/team-leasing-1024x700.jpg">
       </div>
-      <div class="grid-cell-right">
-        <a class="people-text"> We believe our strength lies in the diversity of our employees.
+      <div class="col align-self-center" >
+        <p> We believe our strength lies in the diversity of our employees.
           TopTech encourages creative pursuits and passions outside of work, because when they can explore their curiosity.
-          It gives all of us a new outlook on the world and its possibilities for emerging tech.</a>
+          It gives all of us a new outlook on the world and its possibilities for emerging tech.</p>
       </div>
     </div>
-
+<br>
+    <br>
     <div class="container" v-for="(items, index) in peopleItems"
          v-bind:key="items.area_name">
       <p class="h4" >{{area_names[index]}}</p>
@@ -86,15 +84,6 @@ export default {
 <style scoped>
 /*eslint-disable*/
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto ;
-  grid-gap: 50px;
-  background-color: white;
-  padding: 50px;
-  align-items: center;
-  justify-content: center;
-}
 
 img{
   max-width: 100%;

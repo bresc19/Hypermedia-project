@@ -2,7 +2,6 @@
 <template>
   <div>
     <Breadcumb
-
       :topic="person_data.name">
     </Breadcumb>
     <p class="secondary-title">Anagafic</p>

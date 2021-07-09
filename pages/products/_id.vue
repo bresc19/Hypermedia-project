@@ -3,7 +3,8 @@
   <div class="wrapper">
     <br>
     <Breadcumb
-      :topic="product_data.name"></Breadcumb>
+      :topic="product_data.name"
+    ></Breadcumb>
     <br>
     <br>
     <div class="container">
@@ -50,6 +51,7 @@
       <div class="row">
         <div class="col-sm ml-5">
           <ItemPerson
+            :id="manager.id"
             :name="manager.name"
             :role="manager.role"
             :url="manager.id_image"
@@ -77,7 +79,10 @@ import ItemPerson from "../../components/ItemPerson";
 export default {
   name: "Product",
   components: "ItemPerson",
-
+  props: {
+    groupTopic: 'Products',
+    singleTopic: '',
+  },
 
 
   async asyncData ({ $axios, route }) {

@@ -74,7 +74,7 @@ export default {
 
 .container-products{
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   padding-bottom: 20px;
 }
 

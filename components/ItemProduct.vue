@@ -1,14 +1,15 @@
 <template>
-  <a class="btn" @click="goToProduct(`/products/${id}`)" >
-  <div class="card profile-card-5">
-    <div class="card-img-block">
-      <img class="card-img-top" :src="require(`~/assets/img${url}`)" alt="Card image cap">
+  <a class="btn " @click="goToProduct(`/products/${id}`)" >
+  <div class="card profile-card-5 " >
+    <div class="">
+      <img width="80%" class="card-img-block rounded"  id="scaleEvent" :src="require(`~/assets/img${url}`)" alt="Card image cap">
     </div>
       <div class="card-body pt-0">
       <h5 class="card-title text-left">{{ product_name }}</h5>
       <p class="card-text text-left">{{ description }}</p>
     </div>
-  </div></a>
+  </div>
+  </a>
 </template>
 
 <script>
@@ -25,8 +26,24 @@ export default {
 
     goToProduct(path) {
       this.$router.push({path})
-    }
-}
+    },
+/*    mouseEnter: function(){
+      var img = document.getElementById("scaleEvent");
+        img.style.width = '113%'
+        img.style.height = '113%'
+      console.log("in")
+    },
+    mouseOver: function(){
+      var img=document.getElementById("scaleEvent");
+      img.style.width = '100%'
+      img.style.height = '100%'
+      console.log("out")
+
+    }*/
+
+
+},
+
 }
 </script>
 
@@ -74,5 +91,16 @@ export default {
   background-color: #dcded8;
   border-color: #b7b8b4;
 }
+img{
 
+  margin: 0 auto;
+  width: 90%;
+  top: 5px;
+  height:140px;
+}
+/*
+.card:hover{
+  border-style: inset ;
+  border-width:1px;}
+*/
 </style>

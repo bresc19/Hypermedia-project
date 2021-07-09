@@ -1,22 +1,22 @@
 <template>
   <div>
     <Breadcumb
-      :group="groupTopic"
       :topic="area_data.name_area">
     </Breadcumb>
     <br>
     <br>
     <div class="container">
       <div class="row justify-content-center">
-        <div  class="col-lg-4 col-sm-12 align-middle">
+        <div  class="col-lg-4 col-sm-12 align-self-center">
+          <br>
           <img class="img-thumbnail small_img img-responsive" :src="require(`~/assets/img${area_data.small_image[0]}`)" width="200" height="50" >
           <p>{{area_data.small_description[0]}}</p>
         </div>
-        <div class="col-lg-4 col-sm-12 align-middle">
+        <div class="col-lg-4 col-sm-12 align-self-center">
           <img class="img-thumbnail small_img img-responsive" :src="require(`~/assets/img${area_data.small_image[1]}`)" width="200" height="50">
           <p>{{area_data.small_description[1]}}</p>
         </div>
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-4 col-sm-12 align-self-center">
           <img class="img-thumbnail small_img img-responsive " :src="require(`~/assets/img${area_data.small_image[2]}`)" width="200" height="50">
           <p>{{area_data.small_description[2]}}</p>
         </div>

@@ -62,19 +62,19 @@
             <ul>
               <li>
                 <label>Name:</label>
-                <input type="text" v-model="formAttr.name" placeholder="name">
+                <input type="text" required="required" v-model="formAttr.name" placeholder="name">
               </li>
               <li>
                 <label>Surname:</label>
-                <input type="text" v-model="formAttr.surname" placeholder="surname">
+                <input type="text" required="required" v-model="formAttr.surname" placeholder="surname">
               </li>
               <li>
                 <label>E-mail:</label>
-                <input type="email" v-model="formAttr.email" placeholder="e-mail">
+                <input type="email" required="required" v-model="formAttr.email" placeholder="e-mail">
               </li>
               <li>
                 <label>Message:</label>
-                <input type="text" v-model="formAttr.message" placeholder="message">
+                <textarea type="text" required="required" placeholder="message" rows="4"></textarea>
               </li>
               <li class="button">
                 <button  class="btn btn-primary">Submit</button>
@@ -112,6 +112,7 @@ export default {
   },
   methods: {
     submitForm() {
+
       axios.post(process.env.BASE_URL+'/api/contact', this.formAttr)
       .then((result)=>
         console.log("the response is: " + result.data)
@@ -175,6 +176,10 @@ form {
 input{
   width: 60%;
 }
+textarea{
+  width: 60%;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -185,6 +190,7 @@ label {
   display: inline-block;
   width: 90px;
   text-align: right;
+  vertical-align: top;
 }
 .button {
   padding-left: 90px;

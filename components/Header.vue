@@ -21,8 +21,8 @@
             <p >Products</p>
           </div>
         </a>
-          <a class="container-menu-item menu-item " href="/areas">
-        <div class="col-sm align-middle text-center " >
+          <a class="container-menu-item align-middle menu-item " href="/areas">
+        <div class="col-sm  text-center " >
           <p >Areas</p>
         </div>
       </a>

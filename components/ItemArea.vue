@@ -1,20 +1,19 @@
 <template>
 <div>
+  <a class="btn" role="button" @click="goToArea(`/areas/${id}`)">
   <div class="card card-custom bg-white border-white border-0 card-container">
     <div class="card-custom-img" style="background: #b2d6d9;" >
-
     </div>
-    <div class="card-custom-avatar">
-      <img class="img-fluid" :src="require(`~/assets/img${url}`)" />
+    <div class="card-custom-avatar" >
+      <img class="img-fluid" style="background-color: white;" :src="require(`~/assets/img${url}`)" />
     </div>
-    <div class="card-body">
+    <div class="card-body text-left">
       <h4 class="card-title">{{name}}</h4>
       <p>{{description}} </p>
     </div>
     <div class="card-footer" style="background: inherit; border-color: inherit;">
-      <a  class="btn" role="button" @click="goToArea(`/areas/${id}`)">Visit</a>
     </div>
-  </div>
+  </div></a>
 </div>
 </template>
 
@@ -41,7 +40,7 @@ export default {
   max-width: 300px;
   min-width: 100px;
   overflow: hidden;
-  min-height: 450px;
+  min-height: 430px;
   box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
 }
 
@@ -90,8 +89,9 @@ export default {
 }
 p{
   font-size: 14px;
+
 }
 .btn:hover{
-  color: #0a53be;
+border: solid #9fcdff;
 }
 </style>

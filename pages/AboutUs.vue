@@ -64,7 +64,7 @@ import ItemPerson from '../components/ItemPerson';
 export default {
   name: "AboutUs",
   layout: "default",
-  async asyncData ({ $axios, route }) {
+  async asyncData ({ $axios }) {
     console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(process.env.BASE_URL+`/api/aboutus`)
 
@@ -93,14 +93,6 @@ console.log(data)
   justify-content: center;
 }
 
-.grid-people{
-  padding: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
 .grid-people > div{
   horiz-align: center;
   align-items: center;
@@ -121,7 +113,6 @@ console.log(data)
   vertical-align: middle;
 }
 
-
 img{
   max-width: 100%;
 }
@@ -140,50 +131,14 @@ div.gallery img {
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
 * {
   box-sizing: border-box;
 }
-
-.responsive {
-  horiz-align: center;
-  padding: 0 6px;
-  float: left;
-  width: 54.99999%;
-  max-width: 100%;
-  display: inline-block;
-}
-
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 div.grid-cell-right {
   vertical-align: middle;
   text-align: right;
 }
-
 
 div.grid-cell-left{
   vertical-align: middle;
@@ -207,143 +162,9 @@ div.grid-cell-left{
   font-size: 24px;
 }
 
-.desc{
-  font-size: 18px;
-  text-align: center;
-  font-style: italic;
-  text-decoration: none;
-  outline: none;
-}
-
-.name-surname{
-  font-size: 24px;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-}
-
-.no-signature{
-  text-decoration: none;
-  outline: none;
-  color: black;
-}
-
-.wrapper {
-  position: relative;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
-  grid-auto-rows: 200px;
-}
-
-.cell-product{
-  text-align: center;
-  width: 150px;
-  height: 150px;
-}
-
-.cell-product:hover{
-  border: solid black;
-
-}
-
-
-.product-title{
-  float: bottom;
-  clear: left;
-  padding: 4px;
-}
-
-.product-image{
-  float:top;
-  padding: 3px;
-}
-
 a{
   color: black;
   text-decoration: none;
-}
-
-.scroll-container {
-  height: 100vh;
-  min-height: 450px;
-  padding: 2rem 1rem;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.scroll-container:nth-of-type(1) {
-  background-color: #bdd0c4;
-}
-.scroll-container:nth-of-type(2) {
-  background-color: #f5d2d3;
-}
-.scroll-container:nth-of-type(3) {
-  background-color: #9ab7d3;
-}
-.scroll-container:nth-of-type(4) {
-  background-color: #dfccf1;
-}
-
-.scroll-container:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-
-.scroll-element,
-.scroll-caption {
-}
-
-.scroll-element {
-  min-height: 300px;
-  height: 100%;
-}
-
-.scroll-caption {
-  margin: 1rem;
-}
-@media screen and (max-width: 650px) {
-  .scroll-container,
-  .scroll-container:nth-of-type(even) {
-    flex-direction: column;
-    align-content: inherit;
-  }
-
-  .scroll-element {
-    height: 100%;
-  }
-
-  .scroll-element,
-  .scroll-caption {
-    width: 100%;
-  }
-}
-/**Styling scrollable elements*/
-
-.js-scroll {
-  opacity: 0;
-  transition: opacity 500ms;
-}
-
-.js-scroll.scrolled {
-  opacity: 1;
-}
-
-.scrolled.fade-in {
-  animation: fade-in 1s ease-in-out both;
-}
-
-.scrolled.fade-in-bottom {
-  animation: fade-in-bottom 1s ease-in-out both;
-}
-
-.scrolled.slide-left {
-  animation: slide-in-left 1s ease-in-out both;
-}
-
-.scrolled.slide-right {
-  animation: slide-in-right 1s ease-in-out both;
 }
 
 </style>

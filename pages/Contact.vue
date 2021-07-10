@@ -170,8 +170,9 @@ form {
   margin: 0 auto;
   width: 100%;
   padding: 1em;
-  border: 1px solid #CCC;
+  border: 3px solid #CCC;
   border-radius: 1em;
+  background-color: #bee5eb;
 }
 input{
   width: 60%;

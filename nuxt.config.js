@@ -24,7 +24,7 @@ export default {
       {hid: 'description', name: 'description', content: 'Website implementation for Hypermedia Project, 2021'},
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: 'icon', type: 'image/png', href: '/favicon.png'},
       {
         rel: "stylesheet",
         href: '/css/bootstrap.4.6.min.css'

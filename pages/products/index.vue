@@ -5,6 +5,8 @@
       <br>
       <h1 class="h2">Products</h1>
       <hr>
+      <br>
+      <br>
       <div class="row container-products">
         <div class="col-lg-4 col-sm-12"  v-for="item in productItems"
              v-bind:key="item.name" >

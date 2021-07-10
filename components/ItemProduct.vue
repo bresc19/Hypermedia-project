@@ -1,5 +1,5 @@
 <template>
-  <a class="btn " @click="goToProduct(`/products/${id}`)" >
+  <a class="btn" @click="goToProduct(`/products/${id}`)" >
   <div class="card profile-card-5 " >
     <div class="">
       <img width="80%" class="card-img-block rounded"  id="scaleEvent" :src="require(`~/assets/img${url}`)" alt="Card image cap">
@@ -97,6 +97,15 @@ img{
   width: 90%;
   top: 5px;
   height:140px;
+}
+
+.btn{
+  opacity: 0.8;
+}
+
+.btn:hover{
+  opacity: 1.0;
+  transform: scale(1.1);
 }
 /*
 .card:hover{

@@ -45,11 +45,13 @@
       <br>
       <br>
       <div class="row">
-        <div class="col-sm text-center">
-          <div class="card">
+        <div class="col-sm justify-content-md-center">
+          <div class="card align-self-md-center" style="width: 80%;">
             <img  class="rounded mx-auto d-block" src="~/assets/img/contact-us.png" width="50%">
             <a href="/contact">
-              <button type="button" class="btn btn-primary btn-lg btn-block">Contact Us</button>
+              <button type="button" style="text-decoration: none;" class="btn btn-primary btn-block">
+                Contact Us
+              </button>
             </a>
           </div>
         </div>

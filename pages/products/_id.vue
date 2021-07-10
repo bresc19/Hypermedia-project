@@ -8,8 +8,10 @@
     <br>
     <div class="container">
       <div class="row ">
-        <div class="col-sm-8 text-left align-middle "><br>{{product_data.large_description}}</div>
-        <div class="col-sm-4 text-center  align-self-md-center">
+        <div class="col-sm-8 text-left align-middle ">
+          <br>{{product_data.large_description}}
+        </div>
+        <div class="col-sm-4 align-self-md-center">
           <img id="image-product" :src="require(`~/assets/img${product_data.large_image}`)">
         </div>
       </div>
@@ -44,11 +46,11 @@
       <br>
       <hr class="featurette-divider">
       <br>
-      <h2>Collaborations</h2>
       <br>
      <div class="container">
-      <div class="row">
-        <div class="col-sm ml-5">
+       <h2>Collaborations</h2>
+       <div class="row">
+        <div class="col ">
           <ItemPerson
             :id="manager.id"
             :name="manager.name"
@@ -56,15 +58,16 @@
             :url="manager.id_image"
           />
         </div>
-        <div class="col  text-left justify-content-center align-middle" >
+        <div class="col  text-left align-self-md-center" >
           <h4>Team Members</h4>
           <hr class="featurette-divider">
 
           <p v-for="item in manager.team_members" :key="item">{{item}}</p>
+          <h4>Area</h4>
+          <hr>
+          <img class="area_logo" width = "40%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
         </div>
-        <div class="col align-self-start">
-          <img width = "60%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
-        </div>      </div>
+         </div>
      </div>
     </div>
   </div>
@@ -127,8 +130,17 @@ export default {
 #image-product{
   margin: 0 auto;
   padding: 10px;
-  width: 300px;
-  height: 150px;
+  width: 350px;
+  height: 180px;
+}
+
+.area_logo{
+  opacity: 0.8;
+}
+
+.area_logo:hover{
+  opacity: 1.0;
+  transform: scale(1.1);
 }
 
 </style>

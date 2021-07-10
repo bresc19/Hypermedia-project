@@ -9,9 +9,9 @@
     <div class="container people-card ">
       <div class="row w-75" style="margin: 0 auto;">
         <div class="col-md-6 justify-content-center align-self-center" style="text-align: center; vertical-align: middle;">
-          <img :src="require(`~/assets/img${person_data.id_image}`)" width="50%" height="50%">
+          <img class="img-thumbnail rounded" :src="require(`~/assets/img${person_data.id_image}`)" width="50%" height="50%">
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6 align-self-md-center top-50">
           <ul>
             <li>Name: {{person_data.name}}</li>
             <li>Role: {{person_data.role}}</li>

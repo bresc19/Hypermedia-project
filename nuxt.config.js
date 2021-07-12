@@ -29,7 +29,10 @@ export default {
         rel: "stylesheet",
         href: '/css/bootstrap.4.6.min.css'
       },
-
+      {
+        rel:"stylesheet",
+        src: "/css/style.css"
+      },
 
       {
         rel: "stylesheet",

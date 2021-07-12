@@ -1,7 +1,7 @@
 <template>
   <div class="container bg-light">
     <br>
-    <h1 class="h2">Areas</h1>
+    <h2>Areas</h2>
     <hr>
     <br>
     <br>
@@ -12,8 +12,8 @@
     <hr>
     <br>
     <div class="container" style="width: 100%; margin: 0 auto;">
-      <div class="row align-self-center">
-        <div class="col-lg-6 col-sm-12 mx-auto" style = "padding: 20px; "  v-for="item in info_area" v-bind:key="item.id">
+      <div class="row justify-content-md-center align-self-center">
+        <div class="col-lg-6 align-self-center col-sm-12 mx-auto" style = "padding: 20px; "  v-for="item in info_area" v-bind:key="item.id">
           <ItemArea
             :id = "item.id"
             :name="item.name_area"

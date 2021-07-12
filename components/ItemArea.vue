@@ -2,14 +2,14 @@
 <div>
   <a class="btn" role="button" @click="goToArea(`/areas/${id}`)">
   <div class="card card-custom bg-white border-white border-0 card-container">
-    <div class="card-custom-img" style="background: #b2d6d9;" >
+    <div class="card-custom-img" style="background: #b2d6d9;">
     </div>
     <div class="card-custom-avatar" >
       <img class="img-fluid" style="background-color: white;" :src="require(`~/assets/img${url}`)" />
     </div>
     <div class="card-body text-left">
       <h4 class="card-title">{{name}}</h4>
-      <p>{{description}} </p>
+      <p>{{description}}</p>
     </div>
     <div class="card-footer" style="background: inherit; border-color: inherit;">
     </div>

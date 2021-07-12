@@ -28,7 +28,4 @@ html, body {
   overflow:hidden;
 
 }
-body{
-  background-color: #9bb3b0;
-}
 </style>

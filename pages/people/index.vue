@@ -51,7 +51,7 @@ export default {
   name: 'People',
   layout: 'default',
   components: {ItemPerson},
-
+  //method used to retrieve information regarding each person with an axios request and to place them ordered by areas
   async asyncData({ $axios }) {
     const {data} = await $axios.get(process.env.BASE_URL+`/api/people`)
     // const peopleItems = data

@@ -111,22 +111,32 @@ export default {
     }
   },
   methods: {
+    //method used to send with a POST request form data to the server. if it reply 'ok'
     submitForm() {
 
-      axios.post(process.env.BASE_URL+'/api/contact', this.formAttr)
-      .then((result)=>
-        console.log("the response is: " + result.data)
-      )
-        var report = document.getElementById("alert_message")
-        report.style.visibility= 'visible'
+      axios.post('/api/contact', this.formAttr)
+        .then((response) => {
+          console.log("the response is: " + response.data);
+        }, (error) => {
+          console.log(error);
+        })
+      var report = document.getElementById("alert_message")
+      report.style.visibility= 'visible'
+      this.formAttr.email = ''
+      this.formAttr.name = ''
+      this.formAttr.message = ''
+      this.formAttr.surname = ''
       setTimeout(function() {
         report.style.visibility = 'hidden'
-        location.reload()
 
       }, 3000)
 
 
-}
+
+
+
+
+    }
 
 }
 
@@ -156,12 +166,7 @@ export default {
 .address{
   font-size: 100%;
 }
-.text-contact{
-  left: 40%;
-  font-size: 100%;
-  bottom: 35px;
-  text-align: center;
-}
+
 a{
   color: black;
   text-decoration: none;

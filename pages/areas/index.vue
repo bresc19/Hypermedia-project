@@ -33,6 +33,7 @@ export default {
   name: 'Areas',
   components: {ItemArea},
   layout: 'default',
+  //method used to retrieve information regarding each area with an axios request
   async asyncData({$axios}) {
     const {data} = await $axios.get(process.env.BASE_URL+'/api/areas')
     const info_area = data.areaInfo

@@ -91,7 +91,6 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #bee5eb;
-  overflow:hidden;
 }
 #jumbotron-img{
   back: 50%;

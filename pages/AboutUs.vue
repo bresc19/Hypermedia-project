@@ -83,6 +83,8 @@ import ItemPerson from '../components/ItemPerson';
 export default {
   name: "AboutUs",
   layout: "default",
+  //method used to retrieve information regarding each person that are the company leaders'. These are retrieved through an axios request
+
   async asyncData ({ $axios }) {
     console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(process.env.BASE_URL+`/api/aboutus`)

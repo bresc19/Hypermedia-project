@@ -1,3 +1,5 @@
+import {json} from "sequelize";
+
 const express = require('express')
 const app = express()
 app.use(express.json())
@@ -115,8 +117,8 @@ async function init() {
   })
 
   app.post('/contact', (req, res) => {
-    console.log("Data received: " + req.body.data())
-    res.send('ok')
+    console.log("Data received: " + JSON.stringify(req.body))
+    res.end('ok')
   })
 
 

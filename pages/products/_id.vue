@@ -86,6 +86,7 @@ export default {
     singleTopic: '',
   },
 
+//Method used to retrieve data regarding a product, its related area and manager.
 
   async asyncData ({ $axios, route }) {
     const { id } = route.params

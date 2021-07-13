@@ -94,7 +94,7 @@ export default {
     groupTopic: 'Areas',
     singleTopic: '',
   },
-
+//Method used to retrieve data regarding an area, and its related supervisor and product best selling through an axios request
   async asyncData ({ $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(process.env.BASE_URL+`/api/areas/${id}`)
@@ -120,28 +120,8 @@ export default {
   width: auto;
   height: auto;
 }
-.btn{
-  bottom: 0px;
-  right: 0px;
-}
 
-.image-area .btn {
-  position: absolute;
-  padding: 5px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
 
-.image-area .btn:hover {
-  background-color: black;
-}
 
 body {
   padding-top: 3rem;
@@ -149,10 +129,6 @@ body {
   color: #5a5a5a;
 }
 
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
 .marketing h2 {
   font-weight: 400;
 }
@@ -162,29 +138,14 @@ body {
 }
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0;
 }
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
 
   img {
     max-width: 100%;
     max-height: 100%;
   }
-}
+
 
 .small_img {
   width: 250px;

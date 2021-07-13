@@ -48,19 +48,18 @@
 </template>
 
 <script>
+
 /* eslint-disable */
 import ItemProduct from "../../components/ItemProduct";
 export default {
   name: "Products",
   components: {ItemProduct},
   layout: 'default',
+  //method used to retrieve information regarding a single product
+
   async asyncData({ $axios }) {
     const {data} = await $axios.get(process.env.BASE_URL+`/api/products`)
-
     const productItems = data
-
-    console.log(productItems)
-
     return{
       productItems,
     }

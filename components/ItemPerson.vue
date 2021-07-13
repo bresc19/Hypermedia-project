@@ -1,4 +1,6 @@
 <template>
+  <!-- card of the single person: This component is used in the page of group of people  -->
+
   <a class="btn" @click="goToPerson(`/people/${id}`)">
     <div class="person-container bg-white rounded shadow-sm py-5 px-4" style="background-color: #bee5eb">
       <img :src="require(`~/assets/img${url}`)" class="align-self-start img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
@@ -19,6 +21,7 @@ export default {
     id: {type: Number, default: () => 0}
   },
   methods: {
+    //The following methods is used to rederict user to the page of the single topic (single person) of each through this card. the path pushed correspond to the id number of each product. Id corresponds to the primary key in the DB.
     goToPerson(path) {
       this.$router.push({ path })
     },
@@ -37,8 +40,7 @@ export default {
   text-align: center;
 }
 .person-container:hover{
-  border: cornflowerblue;
-  border-style: solid;
+  border: solid cornflowerblue;
 }
 
 

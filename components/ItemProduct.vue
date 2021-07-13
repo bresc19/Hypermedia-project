@@ -1,4 +1,5 @@
 <template>
+  <!-- card of the single product: This component is used in the page of group of products  -->
   <a class="btn" @click="goToProduct(`/products/${id}`)" >
   <div class="card profile-card-5 " >
     <div class="">
@@ -23,25 +24,10 @@ export default {
     id: { type: Number, default: () => 0}
   },
   methods: {
-
+    //The method is used in order to redirect the navigation on click to each product. Each product is associated to an id number (from 1 to 12). The id number is the primary key of each product in the DB.
     goToProduct(path) {
       this.$router.push({path})
     },
-/*    mouseEnter: function(){
-      var img = document.getElementById("scaleEvent");
-        img.style.width = '113%'
-        img.style.height = '113%'
-      console.log("in")
-    },
-    mouseOver: function(){
-      var img=document.getElementById("scaleEvent");
-      img.style.width = '100%'
-      img.style.height = '100%'
-      console.log("out")
-
-    }*/
-
-
 },
 
 }

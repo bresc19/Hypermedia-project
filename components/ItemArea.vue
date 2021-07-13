@@ -1,4 +1,5 @@
 <template>
+  <!-- card of the single area: This component is used in the page of group of areas  -->
 <div>
   <a class="btn" role="button" @click="goToArea(`/areas/${id}`)">
   <div class="card card-custom bg-white border-white border-0 card-container">
@@ -27,7 +28,7 @@ export default {
     url: { type: String, default: () => '' },
     id: {type: Number, default: ()=> 1 }
   },
-  //the method is used in order to redirect the navigation on click to each area. Each area is associated to an id number (1-2-3-4). The id number is the primary key of each area in the DB.
+  //The method is used in order to redirect the navigation on click to each area. Each area is associated to an id number (1-2-3-4). The id number is the primary key of each area in the DB.
   methods: {
     goToArea(path) {
       this.$router.push({ path })

@@ -1,4 +1,6 @@
 import { Sequelize, DataTypes } from "sequelize";
+
+//connection to the postgres db on heroku
 const db = new Sequelize('postgres://lnjtjbzjogupnb:3347350d1c81eaa341f905fc7e436ef53053e45c73aa4542a00dc0f225692086@ec2-34-250-16-127.eu-west-1.compute.amazonaws.com:5432/d5kfvb6ra7u04b',
   {
     dialect: 'postgres',
@@ -7,6 +9,7 @@ const db = new Sequelize('postgres://lnjtjbzjogupnb:3347350d1c81eaa341f905fc7e43
       ssl: { rejectUnauthorized: false }        }
   })
 
+//definition of each entity of the DB
 
 const People = db.define("people",{
     id: {
@@ -72,6 +75,7 @@ const Area = db.define("areas",{
 
 db._tables = {People, Product, Area}
 
+//method used to insert data in the db
 async function createData() {
 
   await Area.create({

@@ -29,7 +29,7 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <img class="rounded mx-auto d-block" src="~/assets/img/areas11.jpg" width="100%">
+              <img class="rounded mx-auto d-block" alt="allareas"  src="~/assets/img/areas11.jpg" width="100%">
               <div class="d-flex justify-content-between align-items-center">
                 <br>
                 <br>
@@ -47,7 +47,7 @@
       <div class="row">
         <div class="col-sm justify-content-md-center">
           <div class="card align-self-md-center" style="width: 80%;">
-            <img  class="rounded mx-auto d-block" src="~/assets/img/contact-us.png" width="50%">
+            <img  class="rounded mx-auto d-block" alt="contactuspage" src="~/assets/img/contact-us.png" width="50%">
             <a href="/contact">
               <button type="button" style="text-decoration: none;" class="btn btn-primary btn-block">
                 Contact Us
@@ -66,7 +66,7 @@ export default {
   name: 'HomePage',
   layout: 'default',
 
-
+//method used to retrieve from db the 8th product which is the latest arrival
 async asyncData ({ $axios }){
   const {data} = await $axios.get(`/api/products/8`)
   const product_data = data.product
@@ -74,6 +74,7 @@ async asyncData ({ $axios }){
     product_data,
   }
 },
+  //method used to redirect the page to the page of the product, given the id number
   methods: {
     goToProduct(path) {
       this.$router.push({path})

@@ -9,6 +9,9 @@ o Server and DB technologies used (just few lines)
 o Components developed, their functionalities and structure o Plugins (if used) e.g., routing, store, ...
 • Comments about how your usage of the framework was compliant to the best practices for the specific application domain of your website (discussed during the course).
 
+ssr 
+routing
+nuxt
 
 
 Name Group: TopTech

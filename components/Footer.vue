@@ -54,8 +54,8 @@
       </div>
     </section>
     <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
-      <a style="text-decoration: none;"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
-        Politecnico of Milan</a>
+      <p style="text-decoration: none;"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
+        Politecnico of Milan</p>
     </div>
   </footer>
 

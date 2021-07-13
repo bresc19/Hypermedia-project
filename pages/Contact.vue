@@ -56,7 +56,7 @@
       <div class="row">
         <div class="col"></div>
         <div class="col">
-          <form v-on:submit.prevent="submitForm" method="post">
+          <form id="contactform" v-on:submit.prevent="submitForm" method="post">
             <h3 style="text-align: center">Contact Us!</h3>
 
             <ul>
@@ -74,7 +74,7 @@
               </li>
               <li>
                 <label>Message:</label>
-                <textarea type="text" required="required" placeholder="message" rows="4"></textarea>
+                <textarea form="contactform" type="text" required="required" v-model="formAttr.message"  placeholder="message" rows="4"></textarea>
               </li>
               <li class="button">
                 <button  class="btn btn-primary">Submit</button>
@@ -85,6 +85,9 @@
       </div>
       <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
         Message sent correctly!
+      </div>
+      <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+        Error. Message not sent!
       </div>
     </div>
   </div>
@@ -111,25 +114,32 @@ export default {
     }
   },
   methods: {
-    //method used to send with a POST request form data to the server. if it reply 'ok'
+    //method used to send with a POST request form data to the server. if the server replies ok a banner is displayed with a successful message. Otherwise the banner will have an error message
     submitForm() {
 
       axios.post('/api/contact', this.formAttr)
         .then((response) => {
           console.log("the response is: " + response.data);
+          var report = document.getElementById("alert_message")
+          report.style.visibility= 'visible'
+          this.formAttr.email = ''
+          this.formAttr.name = ''
+          this.formAttr.message = ''
+          this.formAttr.surname = ''
+          setTimeout(function() {
+            report.style.visibility = 'hidden'
+
+          }, 3000)
         }, (error) => {
           console.log(error);
-        })
-      var report = document.getElementById("alert_message")
-      report.style.visibility= 'visible'
-      this.formAttr.email = ''
-      this.formAttr.name = ''
-      this.formAttr.message = ''
-      this.formAttr.surname = ''
-      setTimeout(function() {
-        report.style.visibility = 'hidden'
+          var report = document.getElementById("alert_message_error")
+          report.style.visibility= 'visible'
+          setTimeout(function() {
+            report.style.visibility = 'hidden'
 
-      }, 3000)
+          }, 3000)
+
+        })
 
 
 

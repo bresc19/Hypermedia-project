@@ -5,10 +5,11 @@ const app = express()
 app.use(express.json())
 const createDB = require('../db-conn')
 
+//definition of the DB
 async function init() {
     const Database = await createDB()
     const {People, Product, Area} = Database._tables
-
+  //these are all get and post request that the server process from the clients.
     app.get('/areas', async (req, res) =>{
         const areaInfo = await Area.findAll({
           attributes: ['id', 'name_area', 'initial_description', 'area_logo'],

@@ -4,7 +4,7 @@
     <p class="h2">Latest updates</p>
     <hr>
     <br>
-    <div class="jumbotron text-center" id="jumbotron-img" :style="{
+    <div class="jumbotron text-center div-border" id="jumbotron-img" :style="{
       'backgroundImage': 'url(' + require(`~/assets/img${product_data.large_image}`) + ')'
   }">
       <div class="container">
@@ -27,14 +27,14 @@
             <p>Discover how businesses embrace change to drive value in each areas.</p>
         </div>
         <div class="col-lg-6">
-          <div class="card">
+          <div class="card div-border">
             <div class="card-body">
               <img class="rounded mx-auto d-block" alt="allareas"  src="~/assets/img/areas11.jpg" width="100%">
               <div class="d-flex justify-content-between align-items-center">
                 <br>
                 <br>
                 <a href="/areas">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Go to our Areas</button>
+                <button type="button" class="btn btn-primary ">Go to our Areas</button>
                 </a>
               </div>
             </div>
@@ -45,11 +45,11 @@
       <br>
       <br>
       <div class="row">
-        <div class="col-sm justify-content-md-center">
-          <div class="card align-self-md-center" style="width: 80%;">
+        <div class="col align-self-center">
+          <div class="card div-border" style="width: 50%;">
             <img  class="rounded mx-auto d-block" alt="contactuspage" src="~/assets/img/contact-us.png" width="50%">
             <a href="/contact">
-              <button type="button" style="text-decoration: none;" class="btn btn-primary btn-block">
+              <button type="button" style="text-decoration: none; user-select: none;" class="btn no-highlighted btn-primary btn-block">
                 Contact Us
               </button>
             </a>
@@ -97,4 +97,12 @@ html, body {
   back: 50%;
 }
 
+.div-border{
+  border: 2px solid #00dbf8;
+}
+
+a:hover
+{
+  text-decoration: none;
+}
 </style>

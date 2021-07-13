@@ -13,7 +13,7 @@
 export default {
   name: "Breadcumb",
   props: {
-    group: 'qq' ,
+    group: '' ,
     topic:  '' ,
   },
 

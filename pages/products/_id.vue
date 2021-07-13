@@ -47,28 +47,30 @@
       <hr class="featurette-divider">
       <br>
       <br>
-     <div class="container">
-       <h2>Collaborations</h2>
-       <div class="row">
-        <div class="col ">
-          <ItemPerson
-            :id="manager.id"
-            :name="manager.name"
-            :role="manager.role"
-            :url="manager.id_image"
-          />
-        </div>
-        <div class="col  text-left align-self-md-center" >
-          <h4>Team Members</h4>
-          <hr class="featurette-divider">
+      <div class="container">
+        <h2>Collaborations</h2>
+        <div class="row">
+          <div class="col ">
+            <ItemPerson
+              :id="manager.id"
+              :name="manager.name"
+              :role="manager.role"
+              :url="manager.id_image"
+            />
+          </div>
+          <div class="col  text-left align-self-md-center" >
+            <h4>Team Members</h4>
+            <hr class="featurette-divider">
 
-          <p v-for="item in manager.team_members" :key="item">{{item}}</p>
-          <h4>Area</h4>
-          <hr>
-          <img class="area_logo" width = "40%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
+            <p v-for="item in manager.team_members" :key="item">{{item}}</p>
+            <h4>Area</h4>
+            <hr>
+            <div class="">
+              <img style="background: #9fcdff; border: 3px ridge #4f5050;" class="area_logo" width = "40%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
+            </div>
+          </div>
         </div>
-         </div>
-     </div>
+      </div>
     </div>
   </div>
 
@@ -143,5 +145,7 @@ export default {
   opacity: 1.0;
   transform: scale(1.1);
 }
+
+
 
 </style>

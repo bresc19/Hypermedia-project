@@ -1,4 +1,5 @@
 <template>
+<!--Structure of Breadcumb component -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a id="groupOfTopic" href="#"  >{{ group }}</a></li>
@@ -15,6 +16,8 @@ export default {
     group: 'qq' ,
     topic:  '' ,
   },
+
+  //The name of the group/single topic is set. In the case of group of topics page, also the href is set in order to provide the group link
   mounted() {
     this.group= window.location.pathname
     const path = this.group.split('/')

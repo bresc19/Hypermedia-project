@@ -75,7 +75,6 @@ async asyncData ({ $axios }){
   }
 },
   methods: {
-
     goToProduct(path) {
       this.$router.push({path})
     }
@@ -86,7 +85,14 @@ async asyncData ({ $axios }){
 
 <style>
 /*eslint-disable*/
-
+html, body {
+  min-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #bee5eb;
+  overflow:hidden;
+}
 #jumbotron-img{
   back: 50%;
 }

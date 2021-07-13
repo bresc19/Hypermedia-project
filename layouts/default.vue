@@ -26,6 +26,5 @@ html, body {
   padding: 0;
   background-color: #bee5eb;
   overflow:hidden;
-
 }
 </style>

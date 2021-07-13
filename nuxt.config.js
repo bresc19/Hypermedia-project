@@ -61,8 +61,7 @@ export default {
 
 
     script: [
-
-    ]
+    ],
   },
 
 

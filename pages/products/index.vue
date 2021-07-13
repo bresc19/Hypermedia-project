@@ -1,13 +1,12 @@
 <template>
   <!-- parole orfane -->
-  <div style="background-color: #e3fdff">
-    <div class="container">
+    <div class="container trasparent-background">
       <br>
       <h1 class="h2">Products</h1>
       <hr>
       <br>
       <br>
-      <div class="row container-products">
+      <div class="trasparent-background row container-products">
         <div class="col-lg-4 col-sm-12"  v-for="item in productItems"
              v-bind:key="item.name" >
           <ItemProduct
@@ -20,7 +19,7 @@
       <br>
       <hr>
       <br>
-        <div class="row" id="cont-products-descriptions">
+        <div class="row trasparent-background" id="cont-products-descriptions">
           <div class="card col-lg-4 col-sm-12 item-cont-description-products" >
             <h4 style="text-align: center; vertical-align: top">Agile transformation</h4>
             <img src="../../assets/img/p1.png" class="card-img-top" width="80%">
@@ -46,7 +45,6 @@
         <br>
         <br>
     </div>
-  </div>
 </template>
 
 <script>
@@ -73,10 +71,15 @@ export default {
 
 <style scoped>
 /* eslint-disable */
-.container{
-  background-image: url('assets/img/bg-11-full.jpeg');
-  background-size: cover;
+html, body, template {
+  min-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #bee5eb;
+  overflow:hidden;
 }
+
 
 .container-products{
   margin: 0 auto;

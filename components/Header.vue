@@ -1,6 +1,6 @@
 <template>
-  <div class="container-header">
-    <div class="container container-menu">
+  <header class="container-header">
+    <nav class="container container-menu">
       <div class="row no-gutters" >
         <div class="col-sm container-menu-item" >
           <a href="/">
@@ -42,9 +42,9 @@
           </div>
         </a>
         </div>
-      </div>
+      </nav>
 
-    </div>
+    </header>
 </template>
 
 <script>

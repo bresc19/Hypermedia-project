@@ -1,6 +1,9 @@
 <template>
   <!-- parole orfane -->
     <div class="container trasparent-background">
+      <Breadcumb
+        :group="'Products'"
+      ></Breadcumb>
       <br>
       <h1 class="h2">Products</h1>
       <hr>
@@ -75,7 +78,7 @@ html, body, template {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #bee5eb;
+  //background-color: #bee5eb;
   overflow:hidden;
 }
 

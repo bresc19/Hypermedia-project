@@ -1,8 +1,8 @@
 <template>
-<!--Structure of Breadcumb component -->
+  <!--Structure of Breadcumb component -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a id="groupOfTopic" href="#"  >{{ group }}</a></li>
+      <li class="breadcrumb-item"><a id="groupOfTopic"   >{{ group }}</a></li>
       <li class="breadcrumb-item active"  aria-current="page">{{ topic }}</li>
     </ol>
   </nav>
@@ -23,9 +23,13 @@ export default {
     const path = this.group.split('/')
     this.group = path[1].charAt(0).toUpperCase() + path[1].slice(1);
     const id = document.getElementById("groupOfTopic")
-    id.setAttribute("href", "/" + this.group)
+    if(path.length >= 3) {
+      id.setAttribute("href", "/" + this.group.toLowerCase())
+      console.log("ok")
     }
+
   }
+}
 </script>
 
 <style scoped>

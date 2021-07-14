@@ -1,9 +1,11 @@
 <template>
+  <div>
   <!-- parole orfane -->
+  <Breadcumb
+    :group="'Products'"
+  ></Breadcumb>
     <div class="container trasparent-background">
-      <Breadcumb
-        :group="'Products'"
-      ></Breadcumb>
+
       <br>
       <h1 class="h2">Products</h1>
       <hr>
@@ -48,6 +50,7 @@
         <br>
         <br>
     </div>
+  </div>
 </template>
 
 <script>
@@ -102,4 +105,5 @@ p{
 .card {
   max-height: 400px;
 }
+
 </style>

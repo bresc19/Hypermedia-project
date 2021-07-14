@@ -122,6 +122,11 @@ async function init() {
     res.end('ok')
   })
 
+  app.post('/message', (req, res) => {
+    console.log("Data received: " + JSON.stringify(req.body))
+    res.end('ok')
+  })
+
 
   app.get('/aboutus', async (req, res) => {
     const managers = await People.findAll({

@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <Breadcumb
+      :group="'About Us'"
+    ></Breadcumb>
   <div class="container">
     <br>
     <h2 class="title-topic-single">About Us</h2>
@@ -72,6 +76,7 @@
       <br>
     </div>
 
+  </div>
   </div>
 </template>
 

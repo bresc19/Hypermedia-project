@@ -12,7 +12,7 @@
           <br>{{product_data.large_description}}
         </div>
         <div class="col-sm-4 align-self-md-center">
-          <img id="image-product" :src="require(`~/assets/img${product_data.large_image}`)">
+          <img class="img-thumbnail small_img img-responsive" id="image-product" :src="require(`~/assets/img${product_data.large_image}`)">
         </div>
       </div>
       <br>
@@ -23,7 +23,7 @@
           <h2>Functionalities</h2>
           <br>
           <br>
-          <img src="~/assets/img/functionalities.png" width="70%">
+          <img  src="~/assets/img/functionalities.png" width="70%">
         </div>
         <div class="col-sm">
           <br>
@@ -145,7 +145,9 @@ export default {
   opacity: 1.0;
   transform: scale(1.1);
 }
-
+p{
+  font: Helvetica;
+}
 
 
 </style>

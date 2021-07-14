@@ -30,17 +30,49 @@
     <br>
     <br>
     <div class="container">
-      <h2>Contributions</h2>
-      <hr>
+
       <div class="row">
-        <div class="col" v-for="item in products_data"
-             v-bind:key="item.name" >
-          <ItemProduct
-            :product_name="item.name" :description="item.brief_description"
-            :url = "item.image_product"
-            :id = "item.id">
-          </ItemProduct>
+        <div class="col">
+          <h3>Contributions</h3>
+          <hr>
+          <div class="col" v-for="item in products_data"
+               v-bind:key="item.name" >
+            <ItemProduct
+              :product_name="item.name" :description="item.brief_description"
+              :url = "item.image_product"
+              :id = "item.id">
+            </ItemProduct>
+          </div>
         </div>
+        <div class="col">
+          <h3 style="text-align: right">Send a message</h3>
+          <hr>
+          <form id="messageForm" v-on:submit.prevent="sendMessage" method="post">
+            <h3 style="text-align: center">Contact Us!</h3>
+
+            <ul>
+              <li>
+                <label>E-mail:</label>
+                <input type="email" required="required" v-model="formAttr.email" placeholder="e-mail">
+              </li>
+              <li>
+                <label>Message:</label>
+                <textarea form="messageForm" type="text" required="required" v-model="formAttr.message"  placeholder="message" rows="4"></textarea>
+              </li>
+              <li class="button">
+                <button  class="btn btn-primary">Submit</button>
+              </li>
+            </ul>
+          </form>
+          <br>
+          <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+            Message sent correctly!
+          </div>
+          <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+            Error. Message not sent!
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -51,15 +83,26 @@
 /* eslint-disable */
 import Breadcumb from "../../components/Breadcumb";
 import ItemProduct from "../../components/ItemProduct";
+import axios from "axios";
 export default {
   name: 'Person',
   components: {ItemProduct, Breadcumb},
   layout: 'default',
+  data() {
+    return {
+      formSent:'',
+      formAttr: {
+
+        email: '',
+        message: ''
+      }
+    }
+  },
 //Method used to retrieve data regarding a person, its related products and the id of the area that belongs to (to allow its transition link)
-  async asyncData ({ $axios, route }) {
-    const { id } = route.params
+  async asyncData({$axios, route}) {
+    const {id} = route.params
     console.log('this url', process.env.BASE_URL)
-    const { data } = await $axios.get(process.env.BASE_URL+`/api/people/${id}`)
+    const {data} = await $axios.get(process.env.BASE_URL + `/api/people/${id}`)
     //eslint-disable-next-line camelcase
     const person_data = data.person
     const id_area = data.areaID
@@ -74,10 +117,32 @@ export default {
   },
   methods: {
     goToArea(path) {
-      this.$router.push({ path })
+      this.$router.push({path})
     },
-  },
 
+    sendMessage() {
+      axios.post('/api/message', this.formAttr)
+        .then((response) => {
+          console.log("the response is: " + response.data);
+          var report = document.getElementById("alert_message")
+          report.style.visibility = 'visible'
+          this.formAttr.email = ''
+          this.formAttr.message = ''
+          setTimeout(function () {
+            report.style.visibility = 'hidden'
+
+          }, 3000)
+        }, (error) => {
+          console.log(error);
+          var report = document.getElementById("alert_message_error")
+          report.style.visibility = 'visible'
+          setTimeout(function () {
+            report.style.visibility = 'hidden'
+
+          }, 3000)
+        })
+    }
+  },
 
 }
 </script>
@@ -113,5 +178,39 @@ ul {
 .people-card {
   background-color: #bee5eb;
   padding: 10px;
+}
+form {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+  border: 3px solid #CCC;
+  border-radius: 1em;
+  background-color: #bee5eb;
+}
+input{
+  width: 60%;
+}
+textarea{
+  width: 60%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  vertical-align: top;
+}
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
 }
 </style>

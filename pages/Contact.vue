@@ -1,93 +1,98 @@
 <template>
-  <div class="container">
-    <br>
-    <h1 class="title-topic-single">Contact</h1>
-    <hr>
-    <div class="image-contact" id="text">
-      <img class="img-class" src="../assets/img/Contact-Us-Header.jpg" width=80% height=80%>
-      <p class="font-italic" style="font-size: 28px;">Get in touch with us!</p>
-    </div>
+  <div>
+    <Breadcumb
+      :group="'Contact'"
+    ></Breadcumb>
     <div class="container">
-      <div class="row">
-        <div class="col-8">
-          <div class="container">
-            <div class="row margin-grid">
-              <div class="col-md-6 px-2"><a class="title-city">Italy - Milan</a>
-                <br>
-                <a class="address">
-                  Via Schiaffino, 11 <br>
-                  20158 MILANO <br>
-                  T: +39 02 4951 7001</a></div>
-              <div class="col-md-6 px-2 ">
-                <a class="title-city">USA - Boston</a>
-                <br>
-                <a class="address">
-                  211 Congress Street <br>
-                  Boston, MA 02110 <br>
-                  T: +1 617 936 0212</a>
+      <br>
+      <h1 class="title-topic-single">Contact</h1>
+      <hr>
+      <div class="image-contact" id="text">
+        <img class="img-thumbnail img-class small_img img-responsive" src="../assets/img/Contact-Us-Header.jpg" width=80% height=80%>
+        <p class="font-italic" style="font-size: 28px;">Get in touch with us!</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="container">
+              <div class="row margin-grid">
+                <div class="col-md-6 px-2"><a class="title-city">Italy - Milan</a>
+                  <br>
+                  <a class="address">
+                    Via Schiaffino, 11 <br>
+                    20158 MILANO <br>
+                    T: +39 02 4951 7001</a></div>
+                <div class="col-md-6 px-2 ">
+                  <a class="title-city">USA - Boston</a>
+                  <br>
+                  <a class="address">
+                    211 Congress Street <br>
+                    Boston, MA 02110 <br>
+                    T: +1 617 936 0212</a>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 px-2 "><a class="title-city">
-                USA - Los Angeles
-              </a>
-                <br>
-                <a class="address">
-                  12130 Millennium Drive <br>
-                  Los Angeles, CA 90094 <br>
-                  T: +1 323 524 0524
-                </a></div>
-              <div class="col-md-6 px-2 "><a class="title-city">
-                Singapore
-              </a>
-                <br>
-                <a class="address">5 Temasek Blvd,<br>
-                  Singapore 03898</a>
+              <div class="row">
+                <div class="col-md-6 px-2 "><a class="title-city">
+                  USA - Los Angeles
+                </a>
+                  <br>
+                  <a class="address">
+                    12130 Millennium Drive <br>
+                    Los Angeles, CA 90094 <br>
+                    T: +1 323 524 0524
+                  </a></div>
+                <div class="col-md-6 px-2 "><a class="title-city">
+                  Singapore
+                </a>
+                  <br>
+                  <a class="address">5 Temasek Blvd,<br>
+                    Singapore 03898</a>
+                </div>
               </div>
             </div>
           </div>
+          <div class="col-4"></div>
         </div>
-        <div class="col-4"></div>
       </div>
-    </div>
-    <br>
-    <br>
-    <div class="container">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col">
-          <form id="contactform" v-on:submit.prevent="submitForm" method="post">
-            <h3 style="text-align: center">Contact Us!</h3>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <form id="contactform" v-on:submit.prevent="submitForm" method="post">
+              <h3 style="text-align: center">Contact Us!</h3>
 
-            <ul>
-              <li>
-                <label>Name:</label>
-                <input type="text" required="required" v-model="formAttr.name" placeholder="name">
-              </li>
-              <li>
-                <label>Surname:</label>
-                <input type="text" required="required" v-model="formAttr.surname" placeholder="surname">
-              </li>
-              <li>
-                <label>E-mail:</label>
-                <input type="email" required="required" v-model="formAttr.email" placeholder="e-mail">
-              </li>
-              <li>
-                <label>Message:</label>
-                <textarea form="contactform" type="text" required="required" v-model="formAttr.message"  placeholder="message" rows="4"></textarea>
-              </li>
-              <li class="button">
-                <button  class="btn btn-primary">Submit</button>
-              </li>
-            </ul>
-          </form>
+              <ul>
+                <li>
+                  <label>Name:</label>
+                  <input type="text" required="required" v-model="formAttr.name" placeholder="name">
+                </li>
+                <li>
+                  <label>Surname:</label>
+                  <input type="text" required="required" v-model="formAttr.surname" placeholder="surname">
+                </li>
+                <li>
+                  <label>E-mail:</label>
+                  <input type="email" required="required" v-model="formAttr.email" placeholder="e-mail">
+                </li>
+                <li>
+                  <label>Message:</label>
+                  <textarea form="contactform" type="text" required="required" v-model="formAttr.message"  placeholder="message" rows="4"></textarea>
+                </li>
+                <li class="button">
+                  <button  class="btn btn-primary">Submit</button>
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
-      </div>
-      <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-        Message sent correctly!
-      </div>
-      <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-        Error. Message not sent!
+        <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+          Message sent correctly!
+        </div>
+        <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+          Error. Message not sent!
+        </div>
       </div>
     </div>
   </div>
@@ -140,16 +145,8 @@ export default {
           }, 3000)
 
         })
-
-
-
-
-
-
     }
-
-}
-
+  }
 }
 </script>
 

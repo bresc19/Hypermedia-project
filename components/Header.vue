@@ -1,19 +1,19 @@
 <template>
   <header class="container-header">
     <nav class="container container-menu">
-      <div class="row no-gutters" >
+      <div class="row align-self-md-center no-gutters" >
         <div class="col-sm container-menu-item" >
           <a href="/">
-          <img href="/" src="~/assets/img/toptech_logo.png" width="140" height="40">
+          <img href="/" src="~/assets/img/toptech_logo.png" width="139" height="35">
           </a>
         </div>
         <div class="col-sm">
         </div>
         <div class="col-sm">
         </div>
-        <a class=" menu-item " href="/">
-          <div class="col-sm align-middle text-center " >
-            <p >Home</p>
+        <a class="menu-item align-self-md-center " href="/">
+          <div class="col-sm text-center">
+            <p>Home</p>
           </div>
         </a>
         <a class=" menu-item " href="/products">
@@ -48,6 +48,7 @@
 </template>
 
 <script>
+/*eslint-disable*/
 export default {
   name: 'Header'
 }
@@ -55,39 +56,33 @@ export default {
 </script>
 
 <style scoped>
-
+/*eslint-disable*/
 .no-gutters{
   margin-right: 0;
   margin-left: 0;
 }
 
 .container-header {
-  background-color: rgba(0, 128, 128, 0.46);
+  background-color: #0071CE;
   border: 0.5px solid black;
-}
-
-.row {
-  margin: 0 auto;
 }
 
 .menu-item{
   vertical-align: middle;
   text-decoration: none;
-  color: rgba(55, 59, 62, 0.74);
+  color: white;
 }
 
 .menu-item:hover{
 color: black;
 }
-.menu-item:hover{
-  color: black;
-}
 
 .container-menu-item{
   text-align: center;
+  border: 1px solid white;
 }
 .container-menu-item:hover {
-  background-color: #9bb3b0;
+  border: solid 2px #ffffff;
 }
 
 </style>

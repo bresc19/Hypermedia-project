@@ -1,13 +1,13 @@
 <template>
 
-  <footer class="text-center text-lg-start bg-light text-muted footer">
+  <footer class="text-center text-lg-start text-muted footer" style="background: #0071CE">
     <section class="">
       <div class="container text-center text-md-start mt-5">
         <br>
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4" style="text-align: left;">
-              TopTech
+              <p>TopTech</p>
             </h6>
             <p style="text-align: left;">
               Via Schiaffino 11
@@ -17,7 +17,7 @@
           </div>
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
             <h6 class="text-uppercase fw-bold mb-4">
-              Explore
+              <p>Explore</p>
             </h6>
             <p>
               <a href="/products" class="text-reset">Products</a>
@@ -35,7 +35,7 @@
 
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
             <h6 class="text-uppercase fw-bold mb-4">
-              Areas
+              <p>Areas</p>
             </h6>
             <p>
               <a @click="goToArea(process.env.BASE_URL+`/areas/${1}`)" style="cursor:pointer;" class="text-reset" >Data Base</a>
@@ -53,8 +53,8 @@
         </div>
       </div>
     </section>
-    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
-      <p style="text-decoration: none;"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
+    <div class="text-center" style="background-color: white;">
+      <p style="text-decoration: none; color: black"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
         Politecnico of Milan</p>
     </div>
   </footer>
@@ -78,6 +78,9 @@ export default {
 /* eslint-disable */
 * {
   box-sizing: border-box;
+}
+p{
+  color: white;
 }
 
 </style>

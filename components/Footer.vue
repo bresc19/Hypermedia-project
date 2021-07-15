@@ -72,6 +72,9 @@ p{
 .text-footer:hover{
   text-decoration: underline white;
   text-underline-offset: 2px;
+}
+.text-center{
+  transform: translate(0, 15%);
 
 }
 

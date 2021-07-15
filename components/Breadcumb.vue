@@ -1,6 +1,6 @@
 <template>
-  <div >
-    <ol class="breadcrumb" style="height: 100%;">
+  <div>
+    <ol class="breadcrumb" style="background-color: white; height: 100%;">
       <li class="breadcrumb-item"><a id="groupOfTopic">{{ group }}</a></li>
       <li class="breadcrumb-item active">{{ topic }}</li>
     </ol>
@@ -38,5 +38,11 @@ export default {
 </script>
 
 <style scoped>
+.div{
+  position: relative;
+  height: 120px;}
+ol{
+  transform: translate(0, 15%);
 
+}
 </style>

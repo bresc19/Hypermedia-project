@@ -3,13 +3,19 @@
     <Breadcumb
       :group="'Areas'"
     ></Breadcumb>
-  <div class="container bg-light">
-    <h2>Areas</h2>
-    <hr>
-    <div class="justify-content-md-center d-flex" id="text">
-      <p class="text-info">TopTech announcing new services and tools that help clients with rapid, secure application modernization and containerization helping clients build applications once and deploy anywhere. These new TopTech Services are being delivered by one of the world’s largest teams of Red Hat certified-consultants and practitioners to advise, move, build, and manage clients’ workloads to open, secure, hybrid multicloud environments.</p>
+    <div class="container-fluid" style="background-color: #0071CE">
+      <br>
+      <div class="row">
+        <div class="col align-self-md-center"><h1 class="text-right text-light">OUR AREAS OF INTEREST</h1></div>
+        <div class="col align-self-md-center">
+          <h6 class="text-left text-light">TopTech announcing new services and tools that help clients with rapid, secure application modernization and containerization helping clients build applications once and deploy anywhere.
+        </h6></div>
+      </div>
+      <br>
     </div>
-    <hr>
+    <div class="justify-content-md-center d-flex" id="text">
+    </div>
+  <div class="container">
     <br>
     <div class="container" style="width: 100%;">
       <div class="row  text-center">

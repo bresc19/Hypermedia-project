@@ -14,32 +14,32 @@
         <div class="col-sm">
         </div>
         <a class="menu-item col-sm align-self-md-center " href="/">
-          <div class=" text-center">
+          <div class="text-center">
             <p>Home</p>
           </div>
         </a>
         <a class=" menu-item col-sm " href="/products">
-          <div class=" align-middle text-center " >
+          <div class="text-center" >
             <p >Products</p>
           </div>
         </a>
         <a class=" col-sm menu-item " href="/areas">
-          <div class="  text-center " >
+          <div class="text-center" >
             <p >Areas</p>
           </div>
         </a>
         <a class=" menu-item col-sm " href="/people">
-          <div class=" align-middle text-center " >
+          <div class="text-center" >
             <p >People</p>
           </div>
         </a>
         <a class=" menu-item col-sm" href="/aboutus">
-          <div class=" align-middle text-center " >
+          <div class="text-center" >
             <p >About Us</p>
           </div>
         </a>
         <a class=" menu-item col-sm" href="/contact">
-          <div class=" align-middle text-center " >
+          <div class="text-center" >
             <p >Contacts</p>
           </div>
         </a>

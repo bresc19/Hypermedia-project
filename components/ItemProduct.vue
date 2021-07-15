@@ -39,7 +39,9 @@ export default {
 .card{
   width: 250px;
   height: 300px;
-  overflow: hidden
+  overflow: hidden;
+  box-shadow: 0 0 10px white;
+
 }
 .profile-card-5{
   margin-top:20px;
@@ -86,7 +88,7 @@ img{
 }
 
 .card:hover{
-  border: solid #9fcdff;
+  border: solid #000000;
 
 }
 

@@ -4,7 +4,7 @@
     <a class="btn" role="button" @click="goToArea(`/areas/${id}`)">
       <div class="cont">
         <div class="card card-custom bg-white border-white border-1 card-container">
-          <div class="card-custom-img" style="background: #b2d6d9;">
+          <div class="card-custom-img" style="background: #0071CE;">
           </div>
           <div class="card-custom-avatar" >
             <img class="img-fluid" style="background-color: white;" :src="require(`~/assets/img${url}`)" />

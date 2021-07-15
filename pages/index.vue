@@ -60,6 +60,7 @@
         <div>
         </div>
         <br>
+        <br>
         <p class="h2 text-center">Latest updates</p>
         <hr>
         <br>
@@ -76,9 +77,7 @@
             </p>
           </div>
         </div>
-        <br>
-        <br>
-      </div>
+        </div>
     </div>
   </div>
 </template>

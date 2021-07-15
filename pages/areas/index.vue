@@ -4,7 +4,6 @@
       :group="'Areas'"
     ></Breadcumb>
     <div class="container-fluid" style="background-color: #0071CE">
-      <br>
       <div class="row">
         <div class="col align-self-md-center"><h1 class="text-right text-light">OUR AREAS OF INTEREST</h1></div>
         <div class="col align-self-md-center">

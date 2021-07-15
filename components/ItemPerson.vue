@@ -1,6 +1,5 @@
 <template>
   <!-- card of the single person: This component is used in the page of group of people  -->
-
   <a class="btn" @click="goToPerson(`/people/${id}`)">
     <div class="person-container bg-white rounded shadow-sm py-5 px-4" style="background-color: #bee5eb">
       <img :src="require(`~/assets/img${url}`)" class="align-self-start img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">

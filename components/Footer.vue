@@ -1,9 +1,7 @@
 <template>
 
   <footer class="text-center text-lg-start text-muted footer" style="background: #0071CE">
-    <section class="">
       <div class="container text-center text-md-start mt-5">
-        <br>
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4" style="text-align: left;">
@@ -35,7 +33,6 @@
           </div>
         </div>
       </div>
-    </section>
     <div class="text-center" style="background-color: white;">
       <p class="text-footer" style="text-decoration: none; color: black"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
         Politecnico of Milan</p>

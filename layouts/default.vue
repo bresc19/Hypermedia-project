@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <main>
     <Header />
     <Nuxt />
     <Footer />
-  </div>
+  </main>
 </template>
 <script>
 /* eslint-disable */
@@ -24,9 +24,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color:#95999c;
   overflow:hidden;
 }
-
-
 </style>

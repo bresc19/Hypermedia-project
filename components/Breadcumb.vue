@@ -1,7 +1,7 @@
 <template>
   <div>
     <ol class="breadcrumb" style="background-color: white; height: 100%;">
-      <li class="breadcrumb-item"><a id="groupOfTopic">{{ group }}</a></li>
+      <li class="breadcrumb-item "><a id="groupOfTopic">{{ group }}</a></li>
       <li class="breadcrumb-item active">{{ topic }}</li>
     </ol>
   </div>
@@ -24,6 +24,7 @@ export default {
     const id = document.getElementById("groupOfTopic")
     if(path.length >= 3) {
       id.setAttribute("href", "/" + this.group.toLowerCase())
+      id.style.color = 'black';
       console.log("ok")
     }
 
@@ -45,4 +46,6 @@ ol{
   transform: translate(0, 15%);
 
 }
+
+
 </style>

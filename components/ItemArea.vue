@@ -1,21 +1,24 @@
 <template>
   <!-- card of the single area: This component is used in the page of group of areas  -->
-<div>
-  <a class="btn" role="button" @click="goToArea(`/areas/${id}`)">
-  <div class="card card-custom bg-white border-white border-0 card-container">
-    <div class="card-custom-img" style="background: #b2d6d9;">
-    </div>
-    <div class="card-custom-avatar" >
-      <img class="img-fluid" style="background-color: white;" :src="require(`~/assets/img${url}`)" />
-    </div>
-    <div class="card-body text-left">
-      <h4 class="card-title">{{name}}</h4>
-      <p>{{description}}</p>
-    </div>
-    <div class="card-footer" style="background: inherit; border-color: inherit;">
-    </div>
-  </div></a>
-</div>
+  <div>
+    <a class="btn" role="button" @click="goToArea(`/areas/${id}`)">
+      <div class="cont">
+        <div class="card card-custom bg-white border-white border-1 card-container">
+          <div class="card-custom-img" style="background: #b2d6d9;">
+          </div>
+          <div class="card-custom-avatar" >
+            <img class="img-fluid" style="background-color: white;" :src="require(`~/assets/img${url}`)" />
+          </div>
+          <div class="card-body text-left">
+            <h4 class="card-title">{{name}}</h4>
+            <p>{{description}}</p>
+          </div>
+          <div class="card-footer" style="background: inherit; border-color: inherit;">
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
 </template>
 
 <script>
@@ -87,13 +90,18 @@ export default {
 .card-container{
   height: 400px;
   width: 250px;
-  padding: 10px;
 }
+
 p{
   font-size: 14px;
 
 }
-.btn:hover{
-border: solid #9fcdff;
+
+.cont:hover{
+  border: solid 2px #0b0b0c;
+}
+
+.card{
+  background-color: #0071CE;
 }
 </style>

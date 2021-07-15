@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Breadcumb   :group="'Products'"/>
+    <Breadcumb :group="'Products'"/>
     <div class="container-fluid" style="background-color: white">
       <div class="row">
         <div class="col"><h1 class="text-right">POWERFUL TECHNOLOGY PRODUCTS</h1></div>
@@ -11,7 +11,7 @@
     <div style="background-color: #0071CE;">
       <br>
       <div class="container trasparent-background" >
-        <div class="trasparent-background row container-products">
+        <div class="trasparent-background row container-products justify-content-md-center">
           <div class="col-lg-4 col-sm-12"  v-for="item in productItems"
                v-bind:key="item.name" >
             <ItemProduct
@@ -24,34 +24,32 @@
         <br>
       </div>
     </div>
-<div class="container">
-  <br>
-    <div class="row trasparent-background" id="cont-products-descriptions">
-      <div class="card col-lg-4 col-sm-12 item-cont-description-products" >
-        <h4 style="text-align: center; vertical-align: top">Agile transformation</h4>
-        <img src="../../assets/img/p1.png" class="card-img-top" width="80%">
-        <div class="card-body">
-          <p class="card-text ml-4">Drive disruption by applying Lean principles to achieve substantial performance improvements, accelerating business change.</p>
+    <div class="container">
+      <br>
+      <div class="row trasparent-background" id="cont-products-descriptions">
+        <div class="card col-lg-4 col-sm-12 item-cont-description-products" >
+          <h4 style="text-align: center; vertical-align: top">Agile transformation</h4>
+          <img src="../../assets/img/p1.png" class="card-img-top" width="80%">
+          <div class="card-body">
+            <p class="card-text ml-4">Drive disruption by applying Lean principles to achieve substantial performance improvements, accelerating business change.</p>
+          </div>
         </div>
-      </div>
-      <div class="card col-lg-4 col-sm-12 item-cont-description-products">
-        <h4 style="text-align: center; vertical-align: top">DevOps</h4>
-        <img src="../../assets/img/p2.png" class="card-img-top" width="80%" >
-        <div class="card-body">
-          <p class="card-text ml-4">Streamline IT by bringing business, development and operations teams together and applying automated processes.</p>
+        <div class="card col-lg-4 col-sm-12 item-cont-description-products">
+          <h4 style="text-align: center; vertical-align: top">DevOps</h4>
+          <img src="../../assets/img/p2.png" class="card-img-top" width="80%" >
+          <div class="card-body">
+            <p class="card-text ml-4">Streamline IT by bringing business, development and operations teams together and applying automated processes.</p>
+          </div>
         </div>
-      </div>
-      <div class="card col-lg-4 col-sm-12 item-cont-description-products">
-        <h4 style="text-align: center; vertical-align: top">Application modernization</h4>
-        <img src="../../assets/img/p3.png" class="card-img-top" width="80%">
-        <div class="card-body">
-          <p class="card-text ml-4">Transform your legacy applications to become more agile and efficient through the power of New IT.</p>
+        <div class="card col-lg-4 col-sm-12 item-cont-description-products">
+          <h4 style="text-align: center; vertical-align: top">Application modernization</h4>
+          <img src="../../assets/img/p3.png" class="card-img-top" width="80%">
+          <div class="card-body">
+            <p class="card-text ml-4">Transform your legacy applications to become more agile and efficient through the power of New IT.</p>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    <br>
-    <br>
   </div>
 </template>
 
@@ -86,7 +84,6 @@ html, body, template {
 //background-color: #bee5eb;
   overflow:hidden;
 }
-
 
 .container-products{
   margin: 0 auto;

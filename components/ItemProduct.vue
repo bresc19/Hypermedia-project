@@ -35,10 +35,6 @@ export default {
 
 <style scoped>
 /*eslint-disable*/
-*:hover{
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
 
 .card{
   width: 250px;
@@ -89,13 +85,9 @@ img{
   opacity: 1.0;
 }
 
-.btn:hover{
-  opacity: 1.0;
-  transform: scale(1.1);
-}
-/*
 .card:hover{
-  border-style: inset ;
-  border-width:1px;}
-*/
+  border: solid #9fcdff;
+
+}
+
 </style>

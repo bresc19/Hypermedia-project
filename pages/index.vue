@@ -41,7 +41,7 @@
         <div class="row">
           <div class="col align-self-center">
             <div class="text-center card div-border" style="width: 50%; margin: 0 auto;">
-              <img  class="rounded mx-auto d-block" alt="contactuspage" src="~/assets/img/contact-us.png" width="50%">
+              <img  class="rounded mx-auto d-block" alt="contactuspage" src="~/assets/img/contact-us.png" width="80%">
               <a href="/contact">
                 <button type="button" style="text-decoration: none; user-select: none;" class="btn square_btn">
                   Contact Us
@@ -134,22 +134,6 @@ a:hover
 }
 
 
-.square_btn {
-  font-weight: bold;
-  padding: 8px 10px 5px 10px;
-  text-decoration: none;
-  color: #0071CE;
-  background: #ffffff;
-  border-bottom: solid 2px #0071CE;
-  border-radius: 15px 15px 0 0;
-  transition: .4s;
-  border: 2px #0071CE solid;
-}
-
-.square_btn:hover {
-  background: #0071CE;
-  color: #FFF;
-}
 
 html, body {
   min-width: 100%;

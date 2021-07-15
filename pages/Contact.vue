@@ -81,7 +81,7 @@
                   <textarea form="contactform" type="text" required="required" v-model="formAttr.message"  placeholder="message" rows="4"></textarea>
                 </li>
                 <li class="button">
-                  <button  class="btn btn-primary">Submit</button>
+                  <button  class="square_btn btn-primary">Submit</button>
                 </li>
               </ul>
             </form>

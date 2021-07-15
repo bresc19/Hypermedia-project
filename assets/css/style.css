@@ -1,0 +1,17 @@
+
+.square_btn {
+  font-weight: bold;
+  padding: 8px 10px 5px 10px;
+  text-decoration: none;
+  color: #0071CE;
+  background: #ffffff;
+  border-bottom: solid 2px #0071CE;
+  border-radius: 15px 15px 0 0;
+  transition: .4s;
+  border: 2px #0071CE solid;
+}
+
+.square_btn:hover {
+  background: #0071CE;
+  color: #FFF;
+}

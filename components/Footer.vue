@@ -19,42 +19,25 @@
             <h6 class="text-uppercase fw-bold mb-4">
               <p>Explore</p>
             </h6>
-            <p>
-              <a href="/products" class="text-reset">Products</a>
-            </p>
-            <p>
-              <a href="/people" class="text-reset">People</a>
-            </p>
-            <p>
-              <a href="/aboutus" class="text-reset">About Us</a>
-            </p>
-            <p>
-              <a href="/contact" class="text-reset">Contact</a>
-            </p>
+              <a href="/products" class=""><p class="text-footer">Products</p></a>
+              <a href="/people" class=""><p class="text-footer">People</p></a>
+              <a href="/aboutus" class=""><p class="text-footer">About Us</p></a>
+              <a href="/contact" class=""><p class="text-footer">Contact</p></a>
           </div>
-
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
             <h6 class="text-uppercase fw-bold mb-4">
               <p>Areas</p>
             </h6>
-            <p>
-              <a @click="goToArea(process.env.BASE_URL+`/areas/${1}`)" style="cursor:pointer;" class="text-reset" >Data Base</a>
-            </p>
-            <p>
-              <a @click="goToArea(process.env.BASE_URL+`/areas/${2}`)" style="cursor:pointer;" class="text-reset" >IoT</a>
-            </p>
-            <p>
-              <a @click="goToArea(process.env.BASE_URL+`/areas/${3}`)" style="cursor:pointer;" class="text-reset" >Security</a>
-            </p>
-            <p>
-              <a @click="goToArea(process.env.BASE_URL+`/areas/${4}`)" style="cursor:pointer;" class="text-reset" >Machine Learning</a>
-            </p>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/${1}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Data Base</p></a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/${2}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">IoT</p></a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/${3}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Security</p></a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/${4}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Machine Learning</p></a>
           </div>
         </div>
       </div>
     </section>
     <div class="text-center" style="background-color: white;">
-      <p style="text-decoration: none; color: black"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
+      <p class="text-footer" style="text-decoration: none; color: black"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
         Politecnico of Milan</p>
     </div>
   </footer>
@@ -79,8 +62,17 @@ export default {
 * {
   box-sizing: border-box;
 }
+
 p{
   color: white;
+}
+.text-footer{
+  color: white;
+}
+.text-footer:hover{
+  text-decoration: underline white;
+  text-underline-offset: 2px;
+
 }
 
 </style>

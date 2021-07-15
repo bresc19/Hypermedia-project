@@ -74,8 +74,8 @@ export default {
   font-weight:300;
 }
 .profile-card-5 {
-  background-color: #dcded8;
-  border-color: #b7b8b4;
+  background-color: white;
+  border-color: white;
 }
 img{
 
@@ -86,7 +86,7 @@ img{
 }
 
 .btn{
-  opacity: 0.8;
+  opacity: 1.0;
 }
 
 .btn:hover{

@@ -57,6 +57,7 @@ export default {
 
 
 
+
     ],
 
 
@@ -81,6 +82,9 @@ export default {
   modules: [
     '@nuxtjs/axios',
 
+  ],
+  css: [
+    '@/assets/css/style.css'
   ],
 
 // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -4,53 +4,58 @@
       <div class="row align-self-md-center no-gutters" >
         <div class="col-sm container-menu-item" >
           <a href="/">
-          <img href="/" src="~/assets/img/toptech_logo.png" width="139" height="35">
+            <img href="/" src="~/assets/img/toptech_logo.png" width="139" height="35">
           </a>
         </div>
         <div class="col-sm">
         </div>
         <div class="col-sm">
         </div>
-        <a class="menu-item align-self-md-center " href="/">
-          <div class="col-sm text-center">
+        <div class="col-sm">
+        </div>
+        <a class="menu-item col-sm align-self-md-center " href="/">
+          <div class=" text-center">
             <p>Home</p>
           </div>
         </a>
-        <a class=" menu-item " href="/products">
-          <div class="col-sm align-middle text-center " >
+        <a class=" menu-item col-sm " href="/products">
+          <div class=" align-middle text-center " >
             <p >Products</p>
           </div>
         </a>
-          <a class=" align-middle menu-item " href="/areas">
-        <div class="col-sm  text-center " >
-          <p >Areas</p>
-        </div>
-      </a>
-        <a class=" menu-item " href="/people">
-          <div class="col-sm align-middle text-center " >
+        <a class=" col-sm menu-item " href="/areas">
+          <div class="  text-center " >
+            <p >Areas</p>
+          </div>
+        </a>
+        <a class=" menu-item col-sm " href="/people">
+          <div class=" align-middle text-center " >
             <p >People</p>
           </div>
         </a>
-        <a class=" menu-item " href="/aboutus">
-          <div class="col-sm align-middle text-center " >
+        <a class=" menu-item col-sm" href="/aboutus">
+          <div class=" align-middle text-center " >
             <p >About Us</p>
           </div>
         </a>
-        <a class=" menu-item " href="/contact">
-          <div class="col-sm align-middle text-center " >
+        <a class=" menu-item col-sm" href="/contact">
+          <div class=" align-middle text-center " >
             <p >Contacts</p>
           </div>
         </a>
-        </div>
-      </nav>
+      </div>
+    </nav>
 
-    </header>
+  </header>
 </template>
 
 <script>
 /*eslint-disable*/
 export default {
-  name: 'Header'
+  name: 'Header',
+  mounted() {
+    console.log(window.location.pathname)
+  }
 }
 
 </script>
@@ -71,10 +76,13 @@ export default {
   vertical-align: middle;
   text-decoration: none;
   color: white;
+  transform: translate(0, 15%);
 }
 
 .menu-item:hover{
-color: black;
+  text-decoration: underline white;
+  text-underline-offset: 2px;
+
 }
 
 .container-menu-item{

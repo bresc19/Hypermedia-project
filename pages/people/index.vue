@@ -1,33 +1,26 @@
 <template>
   <div>
-    <div>
-
-    </div>
     <Breadcumb
       :group="'People'"
     ></Breadcumb>
-    <div class="container">
-      <br>
-      <h1 class="h2">People</h1>
-      <hr>
-      <br>
+    <div class="container" >
       <br>
       <div class="row">
-        <div class="col">
-          <img width="80%" class="rounded img-fluid border-4" src="../../assets/img/team-leasing-1024x700.jpg">
-        </div>
-        <div class="col align-self-center" >
-          <p> We believe our strength lies in the diversity of our employees.
-            TopTech encourages creative pursuits and passions outside of work, because when they can explore their curiosity.
-            It gives all of us a new outlook on the world and its possibilities for emerging tech.</p>
-        </div>
+        <div class="col align-self-md-center"><h1 class="text-right">DIVERSITY EMPLOYEES GUARANTEES COMPETITIVENESS</h1></div>
+        <div class="col align-self-md-center">
+          <h6 class="text-left">Our Group reflects the diversity of our employees. At TotalEnergies, the wide variety of talents drives our competitiveness, our ability to innovate and our attractiveness.
+          </h6></div>
+        <br>
       </div>
+      <br>
+    </div>
+    <div style="background: #0071CE">
       <br>
       <br>
       <div class="container" v-for="(items, index) in peopleItems"
            v-bind:key="items.area_name">
-        <p class="h4" >{{area_names[index]}}</p>
-        <hr>
+        <p class="h4 text-light" >{{area_names[index]}}</p>
+        <hr style="border: 1px solid white;">
         <br>
         <div class="row">
           <div class="col-lg-4 col-sm-12"  v-for="item in items"
@@ -43,6 +36,20 @@
         </div>
         <br>
         <br>
+      </div>
+    </div>
+    <div class="container">
+      <br>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img width="80%" class="rounded img-fluid border-4" src="../../assets/img/team-leasing-1024x700.jpg">
+        </div>
+        <div class="col align-self-center" >
+          <p> We believe our strength lies in the diversity of our employees.
+            TopTech encourages creative pursuits and passions outside of work, because when they can explore their curiosity.
+            It gives all of us a new outlook on the world and its possibilities for emerging tech.</p>
+        </div>
       </div>
     </div>
   </div>

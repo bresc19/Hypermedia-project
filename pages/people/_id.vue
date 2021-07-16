@@ -4,8 +4,7 @@
     <Breadcumb
       :topic="person_data.name">
     </Breadcumb>
-    <p class="secondary-title">Anagafic</p>
-    <hr>
+    <br>
     <div class="container people-card ">
       <div class="row w-75" style="margin: 0 auto;">
         <div class="col-md-6 justify-content-center align-self-center" style="text-align: center; vertical-align: middle;">
@@ -13,43 +12,46 @@
         </div>
         <div class="col-md-6 align-self-md-center top-50">
           <ul>
-            <li>Name: {{person_data.name}}</li>
-            <li>Role: {{person_data.role}}</li>
-            <li @click="goToArea(`/areas/${id_area.id}`)">Area: {{person_data.area}}</li>
-            <li>Years of collaboration: {{person_data.contribution_years}}</li>
+            <li><p class="text-light">Name: {{person_data.name}}</p></li>
+            <li><p class="text-light">Role: {{person_data.role}}</p></li>
+            <li @click="goToArea(`/areas/${id_area.id}`)"><p class="text-light">Area: {{person_data.area}}</p></li>
+            <li><p class="text-light">Years of collaboration: {{person_data.contribution_years}}</p></li>
           </ul>
         </div>
       </div>
-      <hr>
+      <hr style="border: 1px solid white;">
       <div class="row p-5">
-        <p class="blockquote text-center display-4">{{ person_data.cit }} </p>
-        <hr>
-        <p class="display-6">{{ person_data.contribution_description }}</p>
+        <p class="blockquote text-light text-center display-4">"{{ person_data.cit }}" </p>
+      </div>
+      <h2  class="text-light" style="text-align: center;">Contribution</h2>
+      <hr style="border: 1px solid white;">
+      <div class="row align-self-center">
+        <div class="col-lg-6 col-sm-12" style="text-align: center;" v-for="item in products_data"
+             v-bind:key="item.name" >
+          <ItemProduct
+            :product_name="item.name" :description="item.brief_description"
+            :url = "item.image_product"
+            :id = "item.id">
+          </ItemProduct>
+        </div>
       </div>
     </div>
     <br>
-    <br>
     <div class="container">
-
       <div class="row">
         <div class="col">
-          <h3>Contributions</h3>
-          <hr>
-          <div class="col" v-for="item in products_data"
-               v-bind:key="item.name" >
-            <ItemProduct
-              :product_name="item.name" :description="item.brief_description"
-              :url = "item.image_product"
-              :id = "item.id">
-            </ItemProduct>
+          <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+            Message sent correctly!
+          </div>
+          <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+            Error. Message not sent!
           </div>
         </div>
         <div class="col">
-          <h3 style="text-align: right">Send a message</h3>
           <hr>
           <form id="messageForm" v-on:submit.prevent="sendMessage" method="post">
-            <h3 style="text-align: center">Contact Us!</h3>
-
+            <h3 class="text-light" style="text-align: center">Send a Message!</h3>
+            <br>
             <ul>
               <li>
                 <label>E-mail:</label>
@@ -65,14 +67,7 @@
             </ul>
           </form>
           <br>
-          <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-            Message sent correctly!
-          </div>
-          <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-            Error. Message not sent!
-          </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -176,7 +171,7 @@ ul {
   list-style-type: none;
 }
 .people-card {
-  background-color: #bee5eb;
+  background-color: #0071CE;
   padding: 10px;
 }
 form {
@@ -185,7 +180,7 @@ form {
   padding: 1em;
   border: 3px solid #CCC;
   border-radius: 1em;
-  background-color: #bee5eb;
+  background-color: #0071CE;
 }
 input{
   width: 60%;

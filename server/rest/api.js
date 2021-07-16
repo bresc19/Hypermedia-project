@@ -54,6 +54,7 @@ async function init() {
         products.push(p)
       }
 
+      console.log(person)
       const areaID = await Area.findOne({
         where:{
           name_area: person.area
@@ -82,11 +83,9 @@ async function init() {
         name_area: product.area
       }
     })
-  console.log(areaImage)
+
     const data = {product, manager, areaImage}
     return res.json(data)
-
-
 
   })
 

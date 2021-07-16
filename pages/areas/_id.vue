@@ -3,6 +3,18 @@
     <Breadcumb
       :topic="area_data.name_area">
     </Breadcumb>
+    <br>
+    <div class="container">
+      <div class="row featurette">
+        <div class="col-md-7" style="display: flex; align-items: center;">
+          <p class="lead">{{area_data.large_description[0]}}</p>
+        </div>
+        <div class="col-md-5" style="display: flex; align-items: center;">
+          <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[0]}`)" >
+        </div>
+      </div>
+    </div>
+    <br>
     <div style="background-color: #0071CE;">
       <br>
       <br>
@@ -25,43 +37,19 @@
       </div>
     </div>
     <div class="container">
-      <br>
-      <br>
-      <div class="row featurette">
-        <div class="col-md-7" style="display: flex; align-items: center;">
-          <p class="lead">{{area_data.large_description[0]}}</p>
-        </div>
-        <div class="col-md-5" style="display: flex; align-items: center;">
-          <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[0]}`)" >
-        </div>
+      <br><br>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2" style="display: flex; align-items: center;">
+        <p class="lead">{{area_data.large_description[1]}}</p>
       </div>
-      <br>
-      <hr>
-      <br>
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2" style="display: flex; align-items: center;">
-          <p class="lead">{{area_data.large_description[1]}}</p>
-        </div>
-        <div class="col-md-5 order-md-1" style="display: flex; align-items: center;">
-          <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[1]}`)" >
-        </div>
+      <div class="col-md-5 order-md-1" style="display: flex; align-items: center;">
+        <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[1]}`)" >
       </div>
-      <br>
-      <hr>
-      <br>
-      <div class="row ">
-        <div class="col-md-7" style="display: flex; align-items: center;">
-          <p  class="lead">{{area_data.large_description[2]}}</p>
-        </div>
-        <div class="col-md-5" style="display: flex; align-items: center;">
-          <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[2]}`)" >
-        </div>
-      </div>
-      <br>
     </div>
-    <br>
+      <br><br>
+    </div>
     <div style="background-color: #0071CE;">
-      <br>
+      <br><br>
       <div class="container">
         <div class="row align-self-md-center">
           <div class="col text-center justify-content-center">
@@ -84,7 +72,21 @@
           </div>
         </div>
       </div>
+      <br><br>
     </div>
+    <div class="container">
+      <br><br>
+      <div class="row ">
+        <div class="col-md-7" style="display: flex; align-items: center;">
+          <p  class="lead">{{area_data.large_description[2]}}</p>
+        </div>
+        <div class="col-md-5" style="display: flex; align-items: center;">
+          <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[2]}`)" >
+        </div>
+      </div>
+      <br>
+    </div>
+    <br>
   </div>
 </template>
 <script>

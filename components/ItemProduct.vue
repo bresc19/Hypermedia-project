@@ -3,9 +3,9 @@
   <a class="btn" @click="goToProduct(`/products/${id}`)" >
   <div class="card profile-card-5 " >
     <div class="">
-      <img width="80%" class="card-img-block rounded"  id="scaleEvent" :src="require(`~/assets/img${url}`)" alt="Card image cap">
+      <img width="50%" height="50%" class="card-img-block rounded"  id="scaleEvent" :src="require(`~/assets/img${url}`)" alt="Card image cap">
     </div>
-      <div class="card-body pt-0">
+      <div class="card-body pt-3">
       <h5 class="card-title text-left">{{ product_name }}</h5>
       <p class="card-text text-left">{{ description }}</p>
     </div>
@@ -56,7 +56,7 @@ export default {
   width: 91%;
   margin: 0 auto;
   position: relative;
-  top: -20px;
+  top: 10px;
 
 }
 .profile-card-5 .card-img-block img{
@@ -83,12 +83,12 @@ img{
   height:140px;
 }
 
-.btn{
-  opacity: 1.0;
+.card-text{
+  font-size: 12px;
 }
 
 .card:hover{
-  border: solid #000000;
+  border: 0.5px solid #000000;
 
 }
 

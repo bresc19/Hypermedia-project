@@ -12,44 +12,18 @@
           <br>{{product_data.large_description}}
         </div>
         <div class="col-sm-4 align-self-md-center">
-          <img class="img-thumbnail small_img img-responsive" id="image-product" :src="require(`~/assets/img${product_data.large_image}`)">
+          <img id="image-product" :src="require(`~/assets/img${product_data.large_image}`)">
         </div>
       </div>
       <br>
-      <hr class="featurette-divider">
-      <br>
-      <div class="row">
-        <div class="col-sm text-center">
-          <h2>Functionalities</h2>
-          <br>
-          <br>
-          <img  src="~/assets/img/functionalities.png" width="70%">
-        </div>
-        <div class="col-sm">
-          <br>
-          <br>
-          <p>{{product_data.functionalities[0]}}</p>
-        </div>
-        <div class="col-sm">
-          <br>
-          <br>
-          <p>{{product_data.functionalities[1]}}</p>
-        </div>
-        <div class="col-sm">
-          <br>
-          <br>
-          <p>{{product_data.functionalities[2]}}</p>
-        </div>
-      </div>
-      <div>
-      </div>
-      <br>
-      <hr class="featurette-divider">
-      <br>
-      <br>
+    </div>
+    <div style="background: #0071CE;">
       <div class="container">
-        <h2>Collaborations</h2>
-        <div class="row">
+        <br>
+        <h2 class="text-light">Collaborations</h2>
+        <hr style="border: 1px solid white;">
+        <br>
+        <div class="row align-middle">
           <div class="col ">
             <ItemPerson
               :id="manager.id"
@@ -59,17 +33,41 @@
             />
           </div>
           <div class="col  text-left align-self-md-center" >
-            <h4>Team Members</h4>
-            <hr class="featurette-divider">
-
-            <p v-for="item in manager.team_members" :key="item">{{item}}</p>
-            <h4>Area</h4>
-            <hr>
+            <h4 class="text-light">Team Members</h4>
+            <hr style="border: 1px solid white;">
+              <p class="text-light" v-for="item in manager.team_members" :key="item">{{item}}</p>
+            <br>
+            <h4 class="text-light">Area</h4>
+            <hr style="border: 1px solid white;">
             <div class="">
-              <img style="background: #9fcdff; border: 3px ridge #4f5050;" class="area_logo" width = "40%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
+              <img style="background: white;" class="area_logo" width = "40%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
             </div>
           </div>
         </div>
+        <br>
+      </div>
+    </div>
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row d-flex align-self-md-center">
+        <div class="col-lg justify-content-end">
+          <h2>Functionalities</h2>
+          <img src="~/assets/img/functionalities.png" width="70%">
+        </div>
+        <div class="col-lg justify-content-center">
+          <p>{{product_data.functionalities[0]}}</p>
+        </div>
+        <div class="col-lg justify-content-center">
+          <p>{{product_data.functionalities[1]}}</p>
+        </div>
+        <div class="col-lg justify-content-center">
+          <p>{{product_data.functionalities[2]}}</p>
+        </div>
+      </div>
+      <div>
       </div>
     </div>
   </div>
@@ -98,15 +96,18 @@ export default {
     const product_data = data.product
     const manager = data.manager
     const area_data = data.areaImage
-    console.log(area_data)
+    console.log(data)
     return {
       product_data,
       manager,
-      area_data
+      area_data,
     }
   },
   methods: {
     goToArea(path) {
+      this.$router.push({ path })
+    },
+    goToPerson(path) {
       this.$router.push({ path })
     },
   },
@@ -138,13 +139,11 @@ export default {
 }
 
 .area_logo{
-  opacity: 0.8;
+
 }
 
 .area_logo:hover{
-  opacity: 1.0;
-  transform: scale(1.1);
-}
+border: 2px solid black;}
 p{
   font: Helvetica;
 }

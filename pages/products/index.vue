@@ -2,10 +2,12 @@
   <div>
     <Breadcumb :group="'Products'"/>
     <div class="container-fluid" style="background-color: white">
+      <br><br>
       <div class="row">
         <div class="col"><h1 class="text-right">POWERFUL TECHNOLOGY PRODUCTS</h1></div>
         <div class="col align-self-md-center"><h6 class="text-left" >Comprehensive suite of terminal solutions for increased efficiency, better information visibility, and improved service for your customers.</h6></div>
       </div>
+      <br><br>
     </div>
     <br>
     <div style="background-color: #0071CE;">

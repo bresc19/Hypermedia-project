@@ -2,8 +2,8 @@
   <div>
     <div>
       <div class>
-          <div class="text-center">
-            <img class="img-fluid  mx-auto d-block" width="100%" height="auto"  src="~/assets/img/toptech_homepage.png" alt="Responsive image" >
+          <div class>
+            <img class="img-fluid" width="100%" src="~/assets/img/toptech_homepage.png" alt="Responsive image" >
           </div>
         </div>
     </div>

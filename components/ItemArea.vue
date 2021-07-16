@@ -2,8 +2,8 @@
   <!-- card of the single area: This component is used in the page of group of areas  -->
   <div>
     <a class="btn" role="button" @click="goToArea(`/areas/${id}`)">
-      <div class="cont">
-        <div class="card card-custom bg-white border-white border-1 card-container">
+      <div class="cont" >
+        <div class="card card-custom border-white bg-white card-container">
           <div class="card-custom-img" style="background: #0071CE;">
           </div>
           <div class="card-custom-avatar" >
@@ -79,7 +79,6 @@ export default {
 
 .card-custom-avatar img {
   border-radius: 50%;
-  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
   position: absolute;
   top: 100px;
   left: 1.25rem;
@@ -96,9 +95,12 @@ p{
   font-size: 14px;
 
 }
+.cont{
+  border: 1px solid white;
+}
 
 .cont:hover{
-  border: solid 2px #0b0b0c;
+  border: solid 2px black;
 }
 
 .card{

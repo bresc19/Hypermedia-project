@@ -33,6 +33,8 @@
           </div>
         </div>
       </div>
+    <br>
+    <br>
     <div class="text-center" style="background-color: white;">
       <p class="text-footer" style="text-decoration: none; color: black"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
         Politecnico of Milan</p>

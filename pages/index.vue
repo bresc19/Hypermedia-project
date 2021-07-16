@@ -1,24 +1,16 @@
 <template>
   <div>
     <div>
-      <br>
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <img class="img-fluid rounded mx-auto d-block"  src="~/assets/img/toptech_homepage.png" alt="Responsive image" >
+      <div class>
+          <div class="text-center">
+            <img class="img-fluid  mx-auto d-block" width="100%" height="auto"  src="~/assets/img/toptech_homepage.png" alt="Responsive image" >
           </div>
         </div>
-      </div>
     </div>
-    <br>
     <div style="background-color: #0071CE; ">
       <br>
       <div class="container">
         <div class="row" style="display: flex; align-items: center;" >
-          <div class="col-lg-6">
-            <p class="h3 text-light">Built for Change</p>
-            <p class="h5 text-light"> Discover how businesses embrace change to drive value in each areas.</p>
-          </div>
           <div class="col-lg-6 text-center">
             <div class="card div-border " style="width: 50%; margin: 0 auto;">
               <div class="card-body">
@@ -32,16 +24,20 @@
                   </a>
                 </div>
               </div>
-            </div>
-
           </div>
+          </div>
+          <div class="col-lg-6 ">
+            <p class="h3 text-light">Built for Change</p>
+            <p class="h5 text-light"> Discover how businesses embrace change to drive value in each areas.</p>
+          </div>
+
         </div>
         <br>
         <br>
         <div class="row">
           <div class="col align-self-center">
-            <div class="text-center card div-border" style="width: 50%; margin: 0 auto;">
-              <img  class="rounded mx-auto d-block" alt="contactuspage" src="~/assets/img/contact-us.png" width="80%">
+            <div class="text-center card div-border" style="width: 200px; margin: 0 auto;">
+              <img  class="rounded mx-auto d-block" alt="contactuspage" src="~/assets/img/contact-us.png" width="100%">
               <a href="/contact">
                 <button type="button" style="text-decoration: none; user-select: none;" class="btn square_btn">
                   Contact Us
@@ -131,7 +127,6 @@ a:hover
   border-bottom: solid 2px #fd9535;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
-
 
 
 html, body {

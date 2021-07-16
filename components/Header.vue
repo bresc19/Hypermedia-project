@@ -1,10 +1,10 @@
 <template>
-  <header class="container-header">
+  <div class="container-header">
     <nav class="container container-menu">
       <div class="row align-self-md-center no-gutters" >
-        <div class="col-sm container-menu-item" >
-          <a href="/">
-            <img href="/" src="~/assets/img/toptech_logo.png" width="139" height="35">
+        <div class="col-sm container-menu-item " >
+          <a class="align-self-md-center" href="/">
+            <img style="  transform: translate(0, 50%);"  src="~/assets/img/toptech_logo.png" width="135" height="30">
           </a>
         </div>
         <div class="col-sm">
@@ -46,7 +46,7 @@
       </div>
     </nav>
 
-  </header>
+  </div>
 </template>
 
 <script>
@@ -69,14 +69,15 @@ export default {
 
 .container-header {
   background-color: #0071CE;
-  border: 0.5px solid black;
+  border: 1px solid black;
+  height: 60px;
 }
 
 .menu-item{
   vertical-align: middle;
   text-decoration: none;
   color: white;
-  transform: translate(0, 15%);
+  transform: translate(0, 32%);
 }
 
 .menu-item:hover{
@@ -87,10 +88,8 @@ export default {
 
 .container-menu-item{
   text-align: center;
-  border: 1px solid white;
 }
-.container-menu-item:hover {
-  border: solid 2px #ffffff;
+img:hover {
+  border: solid 1px #ffffff;
 }
-
 </style>

@@ -8,7 +8,7 @@
               <p>TopTech</p>
             </h6>
             <p style="text-align: left;">
-              Via Schiaffino 11
+              Via Schiaffino 11<br>
               20158 Milano, Italy <br>
               P. IVA IT13187610152
             </p>
@@ -36,6 +36,7 @@
     <div class="text-center" style="background-color: white;">
       <p class="text-footer" style="text-decoration: none; color: black"> Developed by <b>Bresciani Matteo & D'Ascoli Gabriele </b><br>
         Politecnico of Milan</p>
+      <br>
     </div>
   </footer>
 

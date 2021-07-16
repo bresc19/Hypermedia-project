@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <ol class="breadcrumb" style="background-color: white; height: 100%;">
+  <div style="background-color: #d3d9df">
+    <ol class="breadcrumb" style="background-color: #d3d9df">
       <li class="breadcrumb-item "><a id="groupOfTopic">{{ group }}</a></li>
       <li class="breadcrumb-item active">{{ topic }}</li>
     </ol>

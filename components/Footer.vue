@@ -26,10 +26,10 @@
             <h6 class="text-uppercase fw-bold mb-4">
               <p>Areas</p>
             </h6>
-              <a @click="goToArea(process.env.BASE_URL+`/areas/${1}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Data Base</p></a>
-              <a @click="goToArea(process.env.BASE_URL+`/areas/${2}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">IoT</p></a>
-              <a @click="goToArea(process.env.BASE_URL+`/areas/${3}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Security</p></a>
-              <a @click="goToArea(process.env.BASE_URL+`/areas/${4}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Machine Learning</p></a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/1`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Data Base</p></a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/2`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">IoT</p></a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/3}`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Security</p></a>
+              <a @click="goToArea(process.env.BASE_URL+`/areas/4`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Machine Learning</p></a>
           </div>
         </div>
       </div>

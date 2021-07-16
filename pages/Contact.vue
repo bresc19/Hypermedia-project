@@ -4,18 +4,14 @@
       :group="'Contact'"
     ></Breadcumb>
     <div class="container">
-      <br>
-      <h1 class="title-topic-single">Contact</h1>
-      <hr>
       <div class="image-contact" id="text">
         <img class="img-thumbnail img-class small_img img-responsive" src="../assets/img/Contact-Us-Header.jpg" width=80% height=80%>
-        <p class="font-italic" style="font-size: 28px;">Get in touch with us!</p>
       </div>
-      <div class="container">
+      <div class="container" >
         <div class="row">
-          <div class="col-8">
-            <div class="container">
-              <div class="row margin-grid">
+          <div class="col-8" >
+            <div class="container" style="background: #0071CE">
+              <div class="row margin-grid text-center"  >
                 <div class="col-md-6 px-2"><a class="title-city">Italy - Milan</a>
                   <br>
                   <a class="address">
@@ -31,7 +27,7 @@
                     T: +1 617 936 0212</a>
                 </div>
               </div>
-              <div class="row">
+              <div class="row text-center">
                 <div class="col-md-6 px-2 "><a class="title-city">
                   USA - Los Angeles
                 </a>
@@ -58,10 +54,17 @@
       <br>
       <div class="container">
         <div class="row">
-          <div class="col"></div>
+          <div class="col">
+            <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+              Message sent correctly!
+            </div>
+            <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
+              Error. Message not sent!
+            </div>
+          </div>
           <div class="col">
             <form id="contactform" v-on:submit.prevent="submitForm" method="post">
-              <h3 style="text-align: center">Contact Us!</h3>
+              <h3 class="text-light" style="text-align: center">Contact Us!</h3>
 
               <ul>
                 <li>
@@ -86,12 +89,6 @@
               </ul>
             </form>
           </div>
-        </div>
-        <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-          Message sent correctly!
-        </div>
-        <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-          Error. Message not sent!
         </div>
       </div>
     </div>
@@ -175,7 +172,7 @@ export default {
 }
 
 a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 form {
@@ -184,7 +181,7 @@ form {
   padding: 1em;
   border: 3px solid #CCC;
   border-radius: 1em;
-  background-color: #bee5eb;
+  background-color: #0071CE;
 }
 input{
   width: 60%;
@@ -200,6 +197,7 @@ ul {
 }
 
 label {
+  color: white;
   display: inline-block;
   width: 90px;
   text-align: right;

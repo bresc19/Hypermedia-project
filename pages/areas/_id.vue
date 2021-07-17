@@ -53,7 +53,7 @@
       <div class="container">
         <div class="row align-self-md-center">
           <div class="col text-center justify-content-center">
-            <h2>Bestselling</h2>
+            <h2 class="text-light">Bestselling</h2>
             <ItemProduct
               :product_name="product_data.name" :description="product_data.brief_description"
               :url = "product_data.image_product"
@@ -61,7 +61,8 @@
             />
           </div>
           <div class="col text-center justify-content-center">
-            <h2>Supervisor</h2>
+            <h2 class="text-light">Supervisor</h2>
+            <br>
             <ItemPerson
               :name="supervisor_data.name"
               :surname="supervisor_data.surname"

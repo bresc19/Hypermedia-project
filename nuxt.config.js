@@ -5,6 +5,7 @@ export default {
       handle: "~/server/rest/api.js"
     }
   ],
+  target: 'server',
   ssr: true,
   env: {
     BASE_URL: 'https://toptech-polimi.herokuapp.com',

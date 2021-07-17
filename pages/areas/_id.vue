@@ -108,7 +108,8 @@ export default {
 //Method used to retrieve data regarding an area, and its related supervisor and product best selling through an axios request
   async asyncData ({ $axios, route }) {
     const { id } = route.params
-    const { data } = await $axios.get(`${process.env.BASE_URL}/api/areas/${id}`)
+    console.log(`${process.env.BASE_URL}/api/areas/${id}`)
+    const { data } = await $axios.get(`${process.env.BASE_URL}/api/areas/${id}`, { headers: { 'Access-Control-Allow-Origin': '*' }})
     const area_data = data.area
     const supervisor_data= data.manager
     const product_data = data.topProduct

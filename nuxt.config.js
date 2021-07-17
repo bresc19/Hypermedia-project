@@ -5,7 +5,6 @@ export default {
     {
       path: "/api",
       handle: "~/server/rest/api.js",
-      changeOrigin: true
     }
   ],
   env: {

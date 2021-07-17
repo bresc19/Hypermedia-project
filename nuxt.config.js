@@ -1,4 +1,6 @@
 export default {
+  ssr: true,
+  target: 'server',
   serverMiddleware: [
     {
       path: "/api",
@@ -6,8 +8,6 @@ export default {
       changeOrigin: true
     }
   ],
-  target: 'server',
-  ssr: true,
   env: {
     BASE_URL: 'https://toptech-polimi.herokuapp.com',
     //BASE_URL: 'https://localhost:3000',
@@ -26,7 +26,10 @@ export default {
       {hid: 'description', name: 'description', content: 'Website implementation for Hypermedia Project, 2021'},
     ],
     link: [
-      {rel: 'icon', type: 'image/png', href: '/favicon.png'},
+      {
+        rel: 'icon', type: 'image/png',
+        href: '/favicon.png'
+      },
       {
         rel: "stylesheet",
         href: '/css/bootstrap.4.6.min.css'
@@ -86,7 +89,7 @@ export default {
 
   ],
   css: [
-    '@/assets/css/style.css'
+    '@assets/css/style.css'
   ],
 
 // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -97,6 +97,6 @@ export default {
   text-align: center;
 }
 img:hover {
-  border: solid 1px #ffffff;
+  border-bottom: solid 1.5px #ffffff;
 }
 </style>

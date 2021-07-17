@@ -1,38 +1,38 @@
 <template>
 
   <footer class="text-center text-lg-start text-muted footer" style="background: #0071CE">
-      <div class="container text-center text-md-start mt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4" style="text-align: left;">
-              <p>TopTech</p>
-            </h6>
-            <p style="text-align: left;">
-              Via Schiaffino 11<br>
-              20158 Milano, Italy <br>
-              P. IVA IT13187610152
-            </p>
-          </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <p>Explore</p>
-            </h6>
-              <a href="/products" class=""><p class="text-footer">Products</p></a>
-              <a href="/people" class=""><p class="text-footer">People</p></a>
-              <a href="/aboutus" class=""><p class="text-footer">About Us</p></a>
-              <a href="/contact" class=""><p class="text-footer">Contact</p></a>
-          </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <p>Areas</p>
-            </h6>
-              <a @click="goToArea(`/areas/1`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Data Base</p></a>
-              <a @click="goToArea(`/areas/2`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">IoT</p></a>
-              <a @click="goToArea(`/areas/3`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Security</p></a>
-              <a @click="goToArea(`/areas/4`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Machine Learning</p></a>
-          </div>
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4" style="text-align: left;">
+            <img src="~/assets/img/toptech_logo.png" width="50%">
+          </h6>
+          <p style="text-align: left;">
+            Via Schiaffino 11<br>
+            20158 Milano, Italy <br>
+            P. IVA IT13187610152
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <p>Explore</p>
+          </h6>
+          <a href="/products" class=""><p class="text-footer">Products</p></a>
+          <a href="/people" class=""><p class="text-footer">People</p></a>
+          <a href="/aboutus" class=""><p class="text-footer">About Us</p></a>
+          <a href="/contact" class=""><p class="text-footer">Contact</p></a>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <p>Areas</p>
+          </h6>
+          <a @click="goToArea(`/areas/1`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Data Base</p></a>
+          <a @click="goToArea(`/areas/2`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">IoT</p></a>
+          <a @click="goToArea(`/areas/3`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Security</p></a>
+          <a @click="goToArea(`/areas/4`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Machine Learning</p></a>
         </div>
       </div>
+    </div>
     <br>
     <br>
     <div class="text-center" style="background-color: white;">

@@ -2,7 +2,8 @@ export default {
   serverMiddleware: [
     {
       path: "/api",
-      handle: "~/server/rest/api.js"
+      handle: "~/server/rest/api.js",
+      changeOrigin: true
     }
   ],
   target: 'server',

@@ -66,7 +66,7 @@
           <div class="container">
             <div style="background-color: #0071CE;" >
               <h1 class="text-center text-light">{{ product_data.name }}</h1>
-              <p class="lead text-light ">{{product_data.brief_description}}</p>
+              <p class=" text-light ">{{product_data.brief_description}}</p>
             </div>
             <p>
               <button  @click="goToProduct(`/products/${product_data.id}`)" type="button" class="btn square_btn btn-primary ">See details</button>

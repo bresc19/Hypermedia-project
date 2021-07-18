@@ -5,7 +5,7 @@
       :topic="person_data.name">
     </Breadcumb>
     <br>
-    <div class="container people-card ">
+    <div class="container rounded people-card " style="  box-shadow: 10px 10px 5px #dedede; border:1px solid;">
       <div class="row w-75" style="margin: 0 auto;">
         <div class="col-md-6 justify-content-center align-self-center" style="text-align: center; vertical-align: middle;">
           <img class="img-thumbnail rounded" :src="require(`~/assets/img${person_data.id_image}`)" width="50%" height="50%">
@@ -14,8 +14,9 @@
           <ul>
             <li><p class="text-light">Name: {{person_data.name}}</p></li>
             <li><p class="text-light">Role: {{person_data.role}}</p></li>
-            <li @click="goToArea(`/areas/${id_area.id}`)"><p class="text-light">Area: {{person_data.area}}</p></li>
             <li><p class="text-light">Years of collaboration: {{person_data.contribution_years}}</p></li>
+            <br>
+            <li style="cursor: pointer; font-weight: bold;" @click="goToArea(`/areas/${id_area.id}`)"><p class="text-light" style="text-decoration: underline; ">Area: {{person_data.area}}</p></li>
           </ul>
         </div>
       </div>
@@ -40,29 +41,30 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-            Message sent correctly!
+          <br>
+          <img src="~/assets/img/toptech.png" width="100%">
+          <div id="alert_message" style="vertical-align: center; visibility: hidden; background: #0071CE;" class="alert alert-primary" role="alert">
+            <p class="text-light">Message sent correctly!</p>
           </div>
-          <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-            Error. Message not sent!
+          <div id="alert_message_error" style="text-align: center; visibility: hidden; background: #0071CE" class="alert alert-primary" role="alert">
+            <p class="text-light">Error. Message not sent!</p>
           </div>
         </div>
         <div class="col">
-          <hr>
           <form id="messageForm" v-on:submit.prevent="sendMessage" method="post">
             <h3 class="text-light" style="text-align: center">Send a Message!</h3>
             <br>
             <ul>
               <li>
-                <label>E-mail:</label>
+                <label class="text-light">E-mail:</label>
                 <input type="email" required="required" v-model="formAttr.email" placeholder="e-mail">
               </li>
               <li>
-                <label>Message:</label>
-                <textarea form="messageForm" type="text" required="required" v-model="formAttr.message"  placeholder="message" rows="4"></textarea>
+                <label class="text-light">Message:</label>
+                <textarea  form="messageForm" type="text" required="required" v-model="formAttr.message"  placeholder="message" rows="4"></textarea>
               </li>
               <li class="button">
-                <button  class="btn btn-primary">Submit</button>
+                <button  class="square_btn btn-primary">Submit</button>
               </li>
             </ul>
           </form>

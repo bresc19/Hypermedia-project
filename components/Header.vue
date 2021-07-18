@@ -4,7 +4,7 @@
       <div class="row align-self-md-center no-gutters" >
         <div class="col-sm container-menu-item " >
           <a class="align-self-md-center" href="/">
-            <img style="  transform: translate(0, 60%);"  src="~/assets/img/toptech_logo.png" width="135" height="30">
+            <img style="  transform: translate(0, 75%);"  src="~/assets/img/toptech_logo.png" width="135" height="30">
           </a>
         </div>
         <div class="col-sm">
@@ -84,7 +84,7 @@ export default {
   vertical-align: middle;
   text-decoration: none;
   color: white;
-  transform: translate(0, 50%);
+  transform: translate(0, 65%);
 }
 
 .menu-item:hover{

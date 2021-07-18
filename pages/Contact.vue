@@ -10,7 +10,7 @@
       <div class="container" >
         <div class="row">
           <div class="col-8" >
-            <div class="container" style="background: #0071CE">
+            <div class="container rounded" style="background: #0071CE; border:1px solid; box-shadow: 10px 10px 5px #dedede;">
               <div class="row margin-grid text-center"  >
                 <div class="col-md-6 px-2"><a class="title-city">Italy - Milan</a>
                   <br>

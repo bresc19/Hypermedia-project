@@ -51,19 +51,24 @@
       <br>
       <br>
       <br>
-      <br>
       <div class="row d-flex align-self-md-center">
-        <div class="col-lg justify-content-end">
+        <div class="col-lg justify-content-center">
           <h2>Functionalities</h2>
           <img src="~/assets/img/functionalities.png" width="70%">
         </div>
         <div class="col-lg justify-content-center">
+          <br>
+          <br>
           <p>{{product_data.functionalities[0]}}</p>
         </div>
         <div class="col-lg justify-content-center">
+          <br>
+          <br>
           <p>{{product_data.functionalities[1]}}</p>
         </div>
         <div class="col-lg justify-content-center">
+          <br>
+          <br>
           <p>{{product_data.functionalities[2]}}</p>
         </div>
       </div>
@@ -90,9 +95,7 @@ export default {
 
   async asyncData ({ $axios, route }) {
     const { id } = route.params
-    console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(process.env.BASE_URL+`/api/products/${id}`)
-
     const product_data = data.product
     const manager = data.manager
     const area_data = data.areaImage
@@ -144,9 +147,7 @@ export default {
 
 .area_logo:hover{
 border: 2px solid black;}
-p{
-  font: Helvetica;
-}
+
 
 
 </style>

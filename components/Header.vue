@@ -40,7 +40,7 @@
         </a>
         <a class=" menu-item col-sm" href="/contact">
           <div class="text-center" >
-            <p >Contacts</p>
+            <p>Contacts</p>
           </div>
         </a>
       </div>
@@ -75,7 +75,14 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .container-header {
-    height: 100%;
+    height: 110%;
+  }
+  .menu-item {
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    transform: translate(0, 20%);
+    font-weight: bold;
   }
 }
 
@@ -85,6 +92,7 @@ export default {
   text-decoration: none;
   color: white;
   transform: translate(0, 65%);
+  font-weight: bold;
 }
 
 .menu-item:hover{

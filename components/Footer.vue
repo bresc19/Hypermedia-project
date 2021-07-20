@@ -15,7 +15,7 @@
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
           <h6 class="text-uppercase fw-bold mb-4">
-            <p>Explore</p>
+            <p style="font-weight: bold;">Explore</p>
           </h6>
           <a href="/products" class=""><p class="text-footer">Products</p></a>
           <a href="/people" class=""><p class="text-footer">People</p></a>
@@ -24,7 +24,7 @@
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
           <h6 class="text-uppercase fw-bold mb-4">
-            <p>Areas</p>
+            <p style="font-weight: bold;">Areas</p>
           </h6>
           <a @click="goToArea(`/areas/1`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">Data Base</p></a>
           <a @click="goToArea(`/areas/2`)" style="cursor:pointer;" class="text-reset" ><p class="text-footer">IoT</p></a>

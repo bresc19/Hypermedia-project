@@ -55,11 +55,13 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <div id="alert_message" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-              Message sent correctly!
+            <br>
+            <img src="~/assets/img/toptech.png" width="100%">
+            <div id="alert_message" style="vertical-align: center; visibility: hidden; background: #0071CE;" class="alert alert-primary" role="alert">
+              <p class="text-light">Message sent correctly!</p>
             </div>
-            <div id="alert_message_error" style="text-align: center; visibility: hidden" class="alert alert-primary" role="alert">
-              Error. Message not sent!
+            <div id="alert_message_error" style="text-align: center; visibility: hidden; background: #0071CE" class="alert alert-primary" role="alert">
+              <p class="text-light">Error. Message not sent!</p>
             </div>
           </div>
           <div class="col">

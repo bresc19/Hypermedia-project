@@ -57,7 +57,7 @@
         </div>
         <br>
         <br>
-        <p class="h2 text-center">Latest updates</p>
+        <p class="h2 text-center">Latest product</p>
         <hr>
         <br>
         <div class="jumbotron text-center div-border" id="jumbotron-img" :style="{

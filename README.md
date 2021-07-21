@@ -60,7 +60,7 @@ Bresciani Matteo | D'Ascoli Gabriele
 
 Bresciani Matteo | D'Ascoli Gabriele
 --------- |---------
-Communication between Client and Server (api.js + db-conn.js);   | Database contents (db-conn.js)
+Communication between Client and Server ([*api.js*](server/rest/api.js) + [*db-conn.js*](server/db-conn.js));   | Database contents [*db-conn.js*](server/db-conn.js)
 Database structure |
 
 

@@ -47,13 +47,13 @@ Server is run on **Node.js** and is defined through 2 javascript file:
 
 Bresciani Matteo | D'Ascoli Gabriele
 --------- |--------- 
-[*areas/index.vue*](areas/index.vue)| people/index.vue
-[*areas/_id.vue*](areas/_id.vue)| AboutUs.vue
-[*products/index.vue*](products/index.vue)| Contact.vue
-[*products/_id.vue*](products/_id.vue)|
-[*people/index.vue*](people/index.vue)|
-[*people/_id.vue*](people/_id.vue)|
-[*index.vue*](index.vue) |
+[*areas/index.vue*](pages/areas/index.vue)| people/index.vue
+[*areas/_id.vue*](pages/areas/_id.vue)| AboutUs.vue
+[*products/index.vue*](pages/products/index.vue)| Contact.vue
+[*products/_id.vue*](pages/products/_id.vue)|
+[*people/index.vue*](pages/people/index.vue)|
+[*people/_id.vue*](pages/people/_id.vue)|
+[*index.vue*](pages/index.vue) |
 
 
 ### Back-end contribution

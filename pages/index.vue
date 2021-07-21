@@ -57,10 +57,11 @@
         </div>
         <br>
         <br>
+        <br>
         <p class="h2 text-center">Latest product</p>
         <hr>
         <br>
-        <div class="jumbotron text-center div-border" id="jumbotron-img" :style="{
+        <div style="box-shadow: 10px 10px 5px #dedede;" class="jumbotron text-center div-border" id="jumbotron-img" :style="{
       'backgroundImage': 'url(' + require(`~/assets/img${product_data.large_image}`) + ')'
   }">
           <div class="container">

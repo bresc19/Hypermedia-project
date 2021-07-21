@@ -15,32 +15,32 @@
         </div>
         <a class="menu-item col-sm align-self-md-center " href="/">
           <div class="text-center">
-            <p>Home</p>
+            <p class="text-menu">Home</p>
           </div>
         </a>
         <a class=" menu-item col-sm " href="/products">
           <div class="text-center" >
-            <p >Products</p>
+            <p class="text-menu">Products</p>
           </div>
         </a>
         <a class=" col-sm menu-item " href="/areas">
           <div class="text-center" >
-            <p >Areas</p>
+            <p class="text-menu">Areas</p>
           </div>
         </a>
         <a class=" menu-item col-sm " href="/people">
           <div class="text-center" >
-            <p >People</p>
+            <p class="text-menu">People</p>
           </div>
         </a>
         <a class=" menu-item col-sm" href="/aboutus">
           <div class="text-center" >
-            <p >About Us</p>
+            <p class="text-menu">About Us</p>
           </div>
         </a>
         <a class=" menu-item col-sm" href="/contact">
           <div class="text-center" >
-            <p>Contacts</p>
+            <p class="text-menu">Contacts</p>
           </div>
         </a>
       </div>
@@ -72,7 +72,7 @@ export default {
   height: 80px;
   width: 100%;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .container-header {
     height: 110%;
   }
@@ -80,8 +80,11 @@ export default {
     vertical-align: middle;
     text-decoration: none;
     color: white;
-    transform: translate(0, 20%);
     font-weight: bold;
+  }
+  .text-menu{
+    transform: translate(0, -30%);
+
   }
 }
 

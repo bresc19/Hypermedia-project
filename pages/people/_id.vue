@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="col">
-          <form id="messageForm" v-on:submit.prevent="sendMessage" method="post">
+          <form id="messageForm" style="box-shadow: 10px 10px 5px #dedede;" v-on:submit.prevent="sendMessage" method="post">
             <h3 class="text-light" style="text-align: center">Send a Message!</h3>
             <br>
             <ul>

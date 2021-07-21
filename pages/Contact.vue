@@ -5,7 +5,7 @@
     ></Breadcumb>
     <div class="container">
       <div class="image-contact" id="text">
-        <img class="img-thumbnail img-class small_img img-responsive" src="../assets/img/Contact-Us-Header.jpg" width=80% height=80%>
+        <img style="box-shadow: 10px 10px 5px #dedede;" class="img-thumbnail img-class small_img img-responsive" src="../assets/img/Contact-Us-Header.jpg" width=80% height=80%>
       </div>
       <div class="container" >
         <div class="row">
@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="col">
-            <form id="contactform" v-on:submit.prevent="submitForm" method="post">
+            <form id="contactform" style="box-shadow: 10px 10px 5px #dedede;" v-on:submit.prevent="submitForm" method="post">
               <h3 class="text-light" style="text-align: center">Contact Us!</h3>
 
               <ul>

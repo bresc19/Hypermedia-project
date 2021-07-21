@@ -47,9 +47,9 @@ Server is run on **Node.js** and is defined through 2 javascript file:
 
 Bresciani Matteo | D'Ascoli Gabriele
 --------- |--------- 
-[*areas/index.vue*](pages/areas/index.vue)| people/index.vue
-[*areas/_id.vue*](pages/areas/_id.vue)| AboutUs.vue
-[*products/index.vue*](pages/products/index.vue)| Contact.vue
+[*areas/index.vue*](pages/areas/index.vue)| [*people/index.vue*](pages/people/index.vue)
+[*areas/_id.vue*](pages/areas/_id.vue)| [*AboutUs.vue*](pages/AboutUs.vue)
+[*products/index.vue*](pages/products/index.vue)| [*Contact.vue*](pages/Contact.vue)
 [*products/_id.vue*](pages/products/_id.vue)|
 [*people/index.vue*](pages/people/index.vue)|
 [*people/_id.vue*](pages/people/_id.vue)|

@@ -36,8 +36,8 @@ Server is run on **Node.js** and is defined through 2 javascript file:
 
 ### Components used
 * [*Breadcumb.vue*](components/Breadcumb.vue): used to provide group link during navigation on group of/ single topic. For instance, in the page of the single product it allows user to go to the page of the group of all products;
-* [*Header.vue*](components/Header.vue): It's a singleton component that, with Footer, belongs to the template of each webiste pages (default.vue). It allows user to move to the pages of group of topics (such as Products, Areas and People) and others (About Us ad Contact pages);  
-* [*Footer.vue*](components/Footer.vue): It's a singleton component that, with Header, belongs to the template of each webiste pages (default.vue). It owns the same header's link, with the addition of each Area link and company's address;
+* [*Header.vue*](components/Header.vue): It's a singleton component that, with Footer, belongs to the template of each webiste pages ([*default.vue*](template/default.vue)). It allows user to move to the pages of group of topics (such as Products, Areas and People) and others (About Us ad Contact pages);  
+* [*Footer.vue*](components/Footer.vue): It's a singleton component that, with Header, belongs to the template of each webiste pages ([*default.vue*](template/default.vue)). It owns the same header's link, with the addition of each Area link and company's address;
 * [*ItemArea.vue*](components/ItemArea.vue): It's a card that is used in the Areas page to give basic information of each area. It links to each area's page;
 * [*ItemPerson.vue*](components/ItemPerson.vue): It's a card that is used in the People page to give basic information of each person. It links to each employee's page;
 * [*ItemProduct.vue*](components/ItemProduct.vue): It's a card that is used in the Products page to give basic information of each product. It links to each product's page;

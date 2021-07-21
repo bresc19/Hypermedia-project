@@ -29,7 +29,7 @@ Server is run on **Node.js** and is defined through 2 javascript file:
   * *Database definition*;
   * Method relevant to *tuples insertion* (Run only once. Now the code has been commented);
   
-##Front-End
+## Front-End
  For the front-end, most of the HTML elements are customized by **Bootstrap classes**. In this way we could:
   * improve efficiency in terms of time spent;
   * avoid cross-browser bugs;
@@ -43,7 +43,7 @@ Server is run on **Node.js** and is defined through 2 javascript file:
 * [*ItemProduct.vue*](components/ItemProduct.vue): It's a card that is used in the Products page to give basic information of each product. It links to each product's page;
 
 
-###Front-End contribution
+### Front-End contribution
 
 Bresciani Matteo | D'Ascoli Gabriele
 --------- |--------- 
@@ -56,7 +56,7 @@ people/_id.vue|
 index.vue |
 
 
-###Back-end contribution
+### Back-end contribution
 
 Bresciani Matteo | D'Ascoli Gabriele
 --------- |---------
@@ -65,7 +65,7 @@ Database structure |
 
 
 
-###Components contribution
+### Components contribution
 
 Bresciani Matteo | D'Ascoli Gabriele
 --------- |---------

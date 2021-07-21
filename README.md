@@ -53,7 +53,7 @@ Bresciani Matteo | D'Ascoli Gabriele
 [*products/_id.vue*](pages/products/_id.vue)|
 [*people/index.vue*](pages/people/index.vue)|
 [*people/_id.vue*](pages/people/_id.vue)|
-[*index.vue*](pages/index.vue) |
+[*pages/index.vue*](pages/index.vue) |
 
 
 ### Back-end contribution

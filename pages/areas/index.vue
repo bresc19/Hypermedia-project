@@ -59,7 +59,6 @@ export default {
   async asyncData({$axios}) {
     const {data} = await $axios.get(process.env.BASE_URL+'/api/areas')
     const info_area = data.areaInfo
-    console.log(data)
 
 
     return {

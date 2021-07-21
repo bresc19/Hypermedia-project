@@ -99,7 +99,6 @@ export default {
     const product_data = data.product
     const manager = data.manager
     const area_data = data.areaImage
-    console.log(data)
     return {
       product_data,
       manager,

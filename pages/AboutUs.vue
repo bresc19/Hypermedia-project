@@ -86,7 +86,6 @@
 /* eslint-disable */
 
 import ItemPerson from '../components/ItemPerson';
-//TODO  aboutus links + layout fix area id + add imagesproducts + layout general
 export default {
   name: "AboutUs",
   layout: "default",
@@ -95,8 +94,6 @@ export default {
   async asyncData ({ $axios }) {
     console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(process.env.BASE_URL+`/api/aboutus`)
-
-    console.log(data)
     const managers = data
     return {
       managers,

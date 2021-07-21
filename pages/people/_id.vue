@@ -105,7 +105,6 @@ export default {
     const id_area = data.areaID
     let products_data = data.products
     products_data = [].concat.apply([], products_data)
-    console.log(data.products)
     return {
       person_data,
       products_data,

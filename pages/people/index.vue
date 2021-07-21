@@ -71,8 +71,6 @@ export default {
   async asyncData({ $axios }) {
     const {data} = await $axios.get(process.env.BASE_URL+`/api/people`)
     // const peopleItems = data
-    console.log(peopleItems)
-
     var peopleItems = new Array(5); // create an empty array of length n
     for (var i = 0; i < 5; i++) {
       peopleItems[i] = new Array(3); // make each element an array

@@ -54,7 +54,6 @@
 export default {
   name: 'Header',
   mounted() {
-    console.log(window.location.pathname)
   }
 }
 

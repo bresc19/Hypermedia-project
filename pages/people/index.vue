@@ -41,6 +41,7 @@
     <div class="container">
       <br>
       <br>
+      <br>
       <div class="row">
         <div class="col">
           <img width="80%" class="rounded img-fluid border-4" src="../../assets/img/team-leasing-1024x700.jpg">

@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row featurette">
         <div class="col-md-7" style="display: flex; align-items: center;">
-          <p class="lead">{{area_data.large_description[0]}}</p>
+          <p >{{area_data.large_description[0]}}</p>
         </div>
         <div class="col-md-5" style="display: flex; align-items: center;">
           <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[0]}`)" >
@@ -46,7 +46,7 @@
       <br><br>
     <div class="row featurette">
       <div class="col-md-7 order-md-2" style="display: flex; align-items: center;">
-        <p class="lead">{{area_data.large_description[1]}}</p>
+        <p>{{area_data.large_description[1]}}</p>
       </div>
       <div class="col-md-5 order-md-1" style="display: flex; align-items: center;">
         <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[1]}`)" >
@@ -82,10 +82,10 @@
       <br><br>
     </div>
     <div class="container">
-      <br><br>
+      <br><br><br>
       <div class="row ">
         <div class="col-md-7" style="display: flex; align-items: center;">
-          <p  class="lead">{{area_data.large_description[2]}}</p>
+          <p>{{area_data.large_description[2]}}</p>
         </div>
         <div class="col-md-5" style="display: flex; align-items: center;">
           <img class="large_img rounded" :src="require(`~/assets/img${area_data.large_image[2]}`)" >
@@ -93,7 +93,6 @@
       </div>
       <br>
     </div>
-    <br>
   </div>
 </template>
 <script>

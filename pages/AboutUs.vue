@@ -40,9 +40,6 @@
             engineering research institutions.</p>
         </div>
       </div>-->
-      <br>
-      <br>
-      <br>
     </div>
     <div style="background: #0071CE">
       <br>
@@ -68,7 +65,7 @@
       </div>
     </div>
     <div class="container">
-      <br><br>
+      <br><br><br>
       <div class="row">
         <div class="col-sm align-self-center">
           <p>In all we do, our goal is to build trusted relationships through client proximity, providing industry and

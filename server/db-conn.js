@@ -125,7 +125,7 @@ async function createData() {
   await Product.create({
     id: "1",
     name: "TopTech Cloudant",
-    brief_description: "The data layer for hyperscale, resilient and globally available applications, based on open source Apache CouchDB",
+    brief_description: "Data layer for hyperscale, resilient and globally available applications",
     large_description: "A fully managed, distributed database optimized for high workloads and fast growing web and mobile apps, IBM® Cloudant® is available as a TopTech Cloud® service with an SLA of 99.99%. Cloudant adapts flexibly to throughput and storage, and its API and replication protocols are compatible with Apache CouchDB for hybrid or multicloud architectures",
     functionalities : ["Deploy an instance, create databases and adjust the throughput independently and archive data to meet application requirements", "Encrypt all data, with optional user-defined encryption key management via IBM Key Protect, and integrate with IBM Identity and Access Management", "Gain continuous availability with Cloudant distributing data across all Availability Zones and 6 Regions to meet app performance and disaster recovery requirements"],
     area: "Database",
@@ -137,7 +137,7 @@ async function createData() {
   await Product.create({
     id: "2",
     name: "TopTech Elasticache",
-    brief_description: "Memcached-compatible managed in-memory store. with sub-millisecond latencies for applications operating in real time",
+    brief_description: "Memcached-compatible managed in-memory store with sub-millisecond latencies",
     large_description: "TopTech ElastiCache for Memcached is a Memcached-compatible in-memory key-value store service that can be used as a cache or datastore. It offers the performance, intuitiveness and ease of use of Memcached. ElastiCache for Redis is secure, scalable, and fully managed; perfect for use cases where the most used data needs to be in memory",
     functionalities : ["TopTech ElastiCache for Memcached acts as an in-memory datastore and cache to support demanding applications requiring sub-millisecond response times", "TopTech ElastiCache for Memcached supports Amazon VPC, which allows you to isolate a cluster in the range of IP addresses chosen for the nodes", "ElastiCache is compliant with Memcached specifications, so the tools most used in such environments are fully compatible with the service"],
     area: "Database",
@@ -150,7 +150,7 @@ async function createData() {
     {
       id: "3",
       name: "TopTech db2-warehouse",
-      brief_description: "A highly flexible, client-managed operational data warehouse for private clouds and containerized deployments",
+      brief_description: "A highly flexible, client-managed operational data warehouse",
       large_description: "Client managed containers combined for easy portability across platforms. Fast and flexible deployment, combined with automated scalability. Integrated machine learning, SMP and MP processing and in-database analytics, combined with IBM BLU Acceleration®. All of these features are designed to bring AI to your business faster and easier than ever",
       functionalities : ["Deploy a preconfigured data warehouse in minutes on the infrastructure supported by Docker containers of your choice", "Open source Spark and R provide predictive modeling algorithms built directly into the database, enabling faster and more efficient business AI", "It uses Spark and BLU Acceleration in-memory columnar processing with an MPP cluster architecture to speed up complex queries and predictive modeling"],
       area: "Database",
@@ -202,7 +202,7 @@ async function createData() {
     {
       id: "7",
       name: "TopTech Maximo",
-      brief_description: "Intelligent asset management, monitoring, predictive maintenance and reliability, all in a single platform",
+      brief_description: "Intelligent asset management, monitoring, predictive maintenance and reliability",
       large_description: "TopTech Maximo Application Suite helps promote operational resilience and reliability with condition-based asset maintenance. With extended access to asset performance management, EAM and CMMS applications, teams can reach across the enterprise to unify operations and ensure business continuity, even under conditions of rapid change or disruption",
       functionalities : ["Organizations rely on hundreds, if not millions of assets to stay operational - and those assets are becoming smarter", "Enterprise asset management (EAM) is critical to gaining the insights and visibility needed to manage and control intelligent equipment and assets", "Renew your operations with EAM solutions, designed to optimize the quality and utilization of assets throughout their lifecycle"],
       area: "IoT",
@@ -215,7 +215,7 @@ async function createData() {
     {
       id: "8",
       name: "TopTech GreenGrass",
-      brief_description: "Brings local compute, messaging, data management, synchronization, and ML inference to edge devices",
+      brief_description: "Messaging, data management, synchronization, and ML inference to edge devices",
       large_description: "TopTech IoT Greengrass extends AWS linearly to edge devices so that they can act locally on the data they generate, while continuing to use the cloud for management, analysis and durable storage. With TopTech IoT Greengrass, connected devices can run TopTech Lambda functions, Docker containers or both and make predictions based on machine learning models",
       functionalities : ["TopTech IoT Greengrass allows connected devices to work even with an intermittent connection to the cloud", "TopTech IoT Greengrass authenticates and encrypts device data for local and cloud communications", "You can get insights at a lower cost by programming the device to filter data locally and transmit only the data needed for your applications to the cloud"],
       area: "IoT",

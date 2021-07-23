@@ -41,7 +41,7 @@
           <br>
           <br>
           <br>
-          <img class="large_img rounded" src="~/assets/img/areas_index.jpeg" width = 100%>
+          <img style="box-shadow: 0 0 15px rgb(0,0,0);" class="large_img rounded" src="~/assets/img/areas_index.jpeg" width = 100%>
         </div>
       </div>
     </div>

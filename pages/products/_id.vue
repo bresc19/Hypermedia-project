@@ -39,7 +39,7 @@
             <h4 class="text-light">Area</h4>
             <hr style="border: 1px solid white;">
             <div class="">
-              <img style="background: white; box-shadow: 0 0 15px rgba(255,255,255,0.3);" class="area_logo" width = "40%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
+              <img style="background: white; box-shadow: 0 0 15px rgba(255,255,255,0.3);" class="area_logo rounded" width = "40%" :src="require(`~/assets/img${area_data.area_logo}`)" role="button" @click="goToArea(`/areas/${area_data.id}`)">
             </div>
           </div>
         </div>

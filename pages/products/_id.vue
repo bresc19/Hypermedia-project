@@ -123,24 +123,11 @@ export default {
   max-width: 960px;
 }
 
-.site-header a {
-  color: #999;
-  transition: ease-in-out color .15s;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
 #image-product{
   margin: 0 auto;
   padding: 10px;
   width: 100%;
   height: 180px;
-}
-
-.area_logo{
-
 }
 
 .area_logo:hover{

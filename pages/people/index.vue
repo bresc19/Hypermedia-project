@@ -3,10 +3,12 @@
     <Breadcumb
       :group="'People'"
     ></Breadcumb>
-    <div class="container" >
+    <div class="container">
       <br>
       <div class="row">
-        <div class="col align-self-md-center"><h1 class="text-right">DIVERSITY EMPLOYEES GUARANTEES COMPETITIVENESS</h1></div>
+        <div class="col align-self-md-center">
+          <h1 class="text-right">DIVERSITY EMPLOYEES GUARANTEES COMPETITIVENESS</h1>
+        </div>
         <div class="col align-self-md-center">
           <h6 class="text-left">Our Group reflects the diversity of our employees. At TotalEnergies, the wide variety of talents drives our competitiveness, our ability to innovate and our attractiveness.
           </h6></div>
@@ -104,10 +106,14 @@ img{
   max-width: 100%;
 }
 
-
-
 a{
   color: black;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+ h1{
+   font-size: 28px;
+ }
 }
 </style>

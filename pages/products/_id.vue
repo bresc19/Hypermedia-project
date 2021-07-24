@@ -135,7 +135,7 @@ export default {
 #image-product{
   margin: 0 auto;
   padding: 10px;
-  width: 350px;
+  width: 100%;
   height: 180px;
 }
 

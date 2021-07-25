@@ -4,11 +4,11 @@ Project of Hypermedia Applications course, Politecnico di Milano 2020-2021<br>
 Name Group: **TopTech** <br>
 
 ### Deliverables
-Website :link: https://toptech-polimi.herokuapp.com/
+* Website :link: https://toptech-polimi.herokuapp.com/
 
-[*Usability Document*](Inspection&Usability/USABILITY23-3-BRESCIANI-D'ASCOLI.pdf)
+* [*Usability Document*](Inspection&Usability/Bresciani_D'Ascoli_UsabilityReport_26-07-2021.pdf)
 
-[*Design-Document*](Design-Document/Design-Document.pdf)
+* [*Design-Document*](Design-Document/Bresciani_D'Ascoli_DesignReport_26-07-2021.pdf)
 
 Member n. | First Name | Second Name| Matricola | Code Person | Email address
 --------- |--------- |--------- |--------- |--------- |--------- |

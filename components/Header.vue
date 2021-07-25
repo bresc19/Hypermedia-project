@@ -68,7 +68,6 @@ export default {
 
 .container-header {
   background-color: #0071CE;
-  border: 1px solid black;
   height: 80px;
   width: 100%;
 }
@@ -99,7 +98,7 @@ export default {
 
 .menu-item:hover{
   text-decoration: underline white;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
 
 }
 

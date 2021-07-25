@@ -21,7 +21,7 @@
       <br>
       <div class="container" v-for="(items, index) in peopleItems"
            v-bind:key="items.area_name">
-        <p class="h4 text-light" >{{area_names[index]}}</p>
+        <p class="h4 text-light" style="font-weight: bold;" >{{area_names[index]}}</p>
         <hr style="border: 1px solid white;">
         <br>
         <div class="row">
